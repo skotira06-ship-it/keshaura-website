@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="manifest" href="./site.webmanifest">
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Articles & Insights | Kesh Aura — Marrakesh</title>
+  <meta name="description" content="Real strategies, case studies, and digital marketing insights from Kesh Aura — Marrakesh's digital agency. Learn what actually works for brands in Morocco.">
+  <meta name="keywords" content="digital marketing Marrakesh, agence digitale Marrakech, social media management Morocco, branding Marrakesh, web design Morocco, Kesh Aura">
+  <meta name="author" content="Kesh Aura">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://keshaura.com/articles.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Digital Marketing Articles & Insights | Kesh Aura Marrakesh">
+  <meta property="og:description" content="Real strategies, case studies, and digital marketing insights from Kesh Aura — Marrakesh's digital agency. Learn what actually works for brands in Morocco.">
+  <meta property="og:url" content="https://keshaura.com/articles.html">
+  <meta property="og:image" content="https://keshaura.com/./og-image.jpg">
+  <meta property="og:site_name" content="Kesh Aura">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Digital Marketing Articles & Insights | Kesh Aura Marrakesh">
+  <meta name="twitter:description" content="Real strategies, case studies, and digital marketing insights from Kesh Aura — Marrakesh's digital agency. Learn what actually works for brands in Morocco.">
+  <meta name="twitter:image" content="https://keshaura.com/./og-image.jpg">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <style>
+    @font-face {
+      font-family: 'Sonny Gothic';
+      src: url('./Fontspring-DEMO-sonnygothic-black.otf') format('opentype');
+      font-weight: 900; font-style: normal; font-display: swap;
+    }
+    :root {
+      --bg-primary:       #050510;
+      --accent-purple:    #7c3aed;
+      --accent-cyan:      #06b6d4;
+      --accent-pink:      #ec4899;
+      --gradient-primary: linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%);
+      --gradient-accent:  linear-gradient(90deg, #7c3aed 0%, #06b6d4 100%);
+      --text-primary:     #ffffff;
+      --text-muted:       #7a7a9a;
+      --font-hero:        'Sonny Gothic', 'Impact', sans-serif;
+      --font-display:     'Rajdhani', sans-serif;
+      --font-body:        'Inter', sans-serif;
+      --container-max:    1380px;
+    }
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; -webkit-font-smoothing:antialiased; overflow-x:hidden; }
+    body {
+      background-color: var(--bg-primary);
+      background-image:
+        radial-gradient(ellipse 80% 60% at 60% 0%,   rgba(76,29,149,0.28)  0%, transparent 60%),
+        radial-gradient(ellipse 50% 40% at 100% 50%, rgba(124,58,237,0.10) 0%, transparent 55%),
+        radial-gradient(ellipse 40% 50% at 0%   80%, rgba(6,182,212,0)  0%, transparent 50%);
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    a { text-decoration:none; color:inherit; }
+    ul { list-style:none; }
+
+    /* gradient line at bottom — fades in on scroll */
+    .navbar::after {
+      content: '';
+      position: absolute; bottom: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg,
+        transparent 0%,
+        rgba(124,58,237,0.6) 30%,
+        rgba(6,182,212,0.4) 70%,
+        transparent 100%);
+      opacity: 0;
+      transition: opacity 0.6s cubic-bezier(0.16,1,0.3,1);
+      pointer-events: none;
+    }
+
+    /* frosted glass state when scrolled */
+    
+    .navbar.stuck::after { opacity: 1; }
+
+    
+
+    /* LOGO */
+    
+    
+    
+    
+    
+    
+
+    /* NAV LINKS */
+    
+    
+    
+    
+
+    /* CTA BUTTON */
+    
+    
+    
+    
+
+    /* BURGER */
+    
+    
+    /* Burger → X animation */
+    
+    
+    
+
+    /* MOBILE MENU */
+    
+    
+    
+    
+    
+    
+
+    /* PAGE HEADER */
+    .articles-hero {
+      padding: 160px clamp(24px,5vw,80px) 80px;
+      max-width: var(--container-max);
+      margin: 0 auto;
+    }
+    .articles-hero__eyebrow {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-family: var(--font-body); font-size: 0.65rem; font-weight: 600;
+      color: var(--accent-cyan); text-transform: uppercase; letter-spacing: 0.22em;
+      margin-bottom: 20px;
+    }
+    .articles-hero__eyebrow::before {
+      content: ''; width: 18px; height: 1px;
+      background: var(--accent-cyan); opacity: 0.5;
+    }
+    .articles-hero__title {
+      font-family: var(--font-hero);
+      font-size: clamp(3rem, 6vw, 6rem);
+      font-weight: 900;
+      text-transform: uppercase;
+      line-height: 0.92;
+      color: #fff;
+    }
+    .articles-hero__title span {
+      background: var(--gradient-primary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .articles-hero__sub {
+      margin-top: 24px;
+      font-size: 1rem;
+      color: rgba(255,255,255,0.45);
+      max-width: 480px;
+      line-height: 1.7;
+    }
+
+    /* GRID */
+    .articles-grid-section {
+      padding: 0 clamp(24px,5vw,80px) 120px;
+    }
+    .articles-grid {
+      max-width: var(--container-max);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    /* CARD */
+    .article-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 16px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: border-color 0.4s, transform 0.4s, box-shadow 0.4s;
+    }
+    .article-card:hover {
+      border-color: rgba(124,58,237,0.4);
+      transform: translateY(-6px);
+      box-shadow: 0 24px 60px rgba(0,0,0,0.4), 0 0 40px rgba(124,58,237,0.08);
+    }
+    .article-card__img {
+      position: relative; width: 100%; aspect-ratio: 16/9; overflow: hidden;
+    }
+    .article-card__img img {
+      width:100%; height:100%; object-fit:cover;
+      transition: transform 0.7s cubic-bezier(0.16,1,0.3,1);
+      filter: brightness(0.85);
+    }
+    .article-card:hover .article-card__img img { transform: scale(1.06); }
+    .article-card__cat {
+      position: absolute; top:16px; left:16px;
+      font-family: var(--font-body); font-size: 0.62rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.16em; color: #fff;
+      background: rgba(124,58,237,0.85); backdrop-filter: blur(8px);
+      padding: 5px 12px; border-radius: 20px;
+    }
+    .article-card__body { padding: 28px 28px 32px; display:flex; flex-direction:column; gap:12px; flex:1; }
+    .article-card__meta { font-size:0.68rem; font-weight:500; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.1em; }
+    .article-card__title { font-family:var(--font-display); font-size:1.15rem; font-weight:700; color:#fff; line-height:1.4; }
+    .article-card__excerpt { font-size:0.85rem; color:rgba(255,255,255,0.45); line-height:1.65; margin-top:auto; }
+    .article-card__readmore {
+      margin-top: 20px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      width: fit-content;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #fff;
+      background: var(--gradient-primary);
+      padding: 10px 16px;
+      border-radius: 999px;
+      box-shadow: none;
+      transition: transform 0.3s, gap 0.3s, opacity 0.3s;
+    }
+    .article-card__readmore svg { width:12px; height:12px; }
+    .article-card:hover .article-card__readmore {
+      gap: 10px;
+      transform: translateY(-2px);
+      opacity: 0.98;
+    }
+    .article-card:active .article-card__readmore {
+      transform: translateY(0) scale(0.98);
+      opacity: 0.94;
+    }
+
+    @media (max-width: 900px) { .articles-grid { grid-template-columns: repeat(2,1fr); } }
+    @media (max-width: 580px) { .articles-grid { grid-template-columns: 1fr; } }
+  
+  /* ── Scroll to Top ── */
+  .scroll-top {
+    position: fixed;
+    bottom:24px;right:24px; z-index: 9990;
+    width: 44px; height: 44px; border-radius: 50%;
+    background: linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%);
+    border: none; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: none;
+    opacity: 0; visibility: hidden; transform: translateY(12px);
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  }
+  .scroll-top.visible { opacity: 1; visibility: visible; transform: translateY(0); }
+  .scroll-top:hover { transform: translateY(-3px); }
+  .scroll-top:active { transform: translateY(0) scale(0.95); }
+  .scroll-top svg { width: 18px; height: 18px; color: #fff; }
+  .fade-up { opacity: 0; transform: translateY(24px); }
+</style>
+</head>
+<body>
+  <script src="navbar.js" data-page="articles"></script>
+
+
+  <div class="articles-hero fade-up">
+    <span class="articles-hero__eyebrow">Knowledge & Insights</span>
+    <h1 class="articles-hero__title">All <span>Articles</span></h1>
+    <p class="articles-hero__sub">Real strategies, case studies, and lessons from 4 years of building brands across three continents.</p>
+  </div>
+
+  <section class="articles-grid-section">
+    <div class="articles-grid">
+
+      <a href="article-1.html" class="article-card fade-up">
+        <div class="article-card__img">
+          <img src="https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=600&q=80" alt="Social Media Strategy">
+          <span class="article-card__cat">Social Media</span>
+        </div>
+        <div class="article-card__body">
+          <span class="article-card__meta">5 min read · March 2025</span>
+          <h3 class="article-card__title">Why 90% of Social Media Strategies Fail — And What to Do Instead</h3>
+          <p class="article-card__excerpt">Most brands post without a plan. Here's the framework we use to build content that actually converts.</p>
+          <span class="article-card__readmore">Read Article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="article-2.html" class="article-card fade-up">
+        <div class="article-card__img">
+          <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&q=80" alt="Brand Identity">
+          <span class="article-card__cat">Branding</span>
+        </div>
+        <div class="article-card__body">
+          <span class="article-card__meta">7 min read · February 2025</span>
+          <h3 class="article-card__title">The 3 Elements Every Strong Brand Identity Must Have</h3>
+          <p class="article-card__excerpt">A logo is not a brand. Here's what separates businesses people forget from brands people trust.</p>
+          <span class="article-card__readmore">Read Article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="article-3.html" class="article-card fade-up">
+        <div class="article-card__img">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80" alt="Paid Ads">
+          <span class="article-card__cat">Paid Ads</span>
+        </div>
+        <div class="article-card__body">
+          <span class="article-card__meta">6 min read · January 2025</span>
+          <h3 class="article-card__title">How We Achieved 3× ROI for a Local Business Using Meta Ads</h3>
+          <p class="article-card__excerpt">A real case study — the exact strategy, targeting, and creative decisions that tripled their return.</p>
+          <span class="article-card__readmore">Read Article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+
+  <script>
+    (function() {
+      if (!window.gsap) return;
+      gsap.fromTo('.fade-up',
+        { opacity: 0, y: 26 },
+        { opacity: 1, y: 0, duration: 0.85, ease: 'power3.out', stagger: 0.12 }
+      );
+    })();
+  </script>
+
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+  <script>
+    // Scroll to top
+    (function(){
+      var btn = document.getElementById('scrollTop');
+      if(!btn) return;
+      window.addEventListener('scroll', function(){ btn.classList.toggle('visible', window.scrollY > 300); }, { passive:true });
+      btn.addEventListener('click', function(){ window.scrollTo({ top:0, behavior:'smooth' }); });
+    })();
+  </script>
+  <script src="whatsapp-widget.js"></script>
+</body>
+</html>

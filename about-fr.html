@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="fr" class="about-fr-page">
+<head>
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="manifest" href="./site.webmanifest">
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./franklin-gothic-heavy.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qui sommes-nous | Kesh Aura — Marrakech</title>
+  <meta name="description" content="Fondée à Marrakech en 2023, Kesh Aura est une maison digitale : stratégie, design et performance au service de votre croissance, au Maroc et à l'international.">
+  <meta name="keywords" content="digital marketing Marrakesh, agence digitale Marrakech, social media management Morocco, branding Marrakesh, web design Morocco, Kesh Aura">
+  <meta name="author" content="Kesh Aura">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://keshaura.com/about-fr.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Qui sommes-nous | Kesh Aura — Marrakech">
+  <meta property="og:description" content="Fondée à Marrakech en 2023, Kesh Aura est une maison digitale : stratégie, design et performance au service de votre croissance, au Maroc et à l'international.">
+  <meta property="og:url" content="https://keshaura.com/about-fr.html">
+  <meta property="og:image" content="https://keshaura.com/./og-image.jpg">
+  <meta property="og:site_name" content="Kesh Aura">
+  <meta property="og:locale" content="fr_FR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Qui sommes-nous | Kesh Aura — Marrakech">
+  <meta name="twitter:description" content="Fondée à Marrakech en 2023, Kesh Aura est une maison digitale : stratégie, design et performance au service de votre croissance, au Maroc et à l'international.">
+  <meta name="twitter:image" content="https://keshaura.com/./og-image.jpg">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <style>
+    @font-face {
+      font-family: 'Sonny Gothic';
+      src: url('./Fontspring-DEMO-sonnygothic-black.otf') format('opentype');
+      font-weight: 900; font-style: normal; font-display: swap;
+    }
+    :root {
+      --bg:           #050510;
+      --purple:       #7c3aed;
+      --cyan:         #06b6d4;
+      --pink:         #ec4899;
+      --grad-primary: linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%);
+      --grad-cta:     linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%);
+      --grad-accent:  linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%);
+      --font-hero:    'Sonny Gothic', 'Impact', sans-serif;
+      --font-display: 'Rajdhani', sans-serif;
+      --font-body:    'Inter', sans-serif;
+      --nav-h:        60px;
+    }
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    html { -webkit-font-smoothing:antialiased; scroll-behavior:smooth; overflow-x:hidden; }
+    body {
+      background-color: var(--bg);
+      background-image:
+        radial-gradient(ellipse 80% 60% at 60% 0%,   rgba(76,29,149,0.30)  0%, transparent 60%),
+        radial-gradient(ellipse 50% 40% at 100% 50%, rgba(124,58,237,0.12) 0%, transparent 55%),
+        radial-gradient(ellipse 40% 50% at 0%   80%, rgba(6,182,212,0)  0%, transparent 50%);
+      color: #fff;
+      font-family: var(--font-body);
+      overflow-x: hidden;
+    }
+    a { text-decoration:none; color:inherit; }
+    ul { list-style:none; }
+
+    /* ═══════════ HERO ═══════════ */
+    .hero {
+      position:relative;
+      height:50vh; min-height:300px; max-height:460px;
+      overflow:hidden;
+      display:flex; flex-direction:column;
+    }
+    .hero__grid {
+      position:absolute; inset:0; z-index:0; pointer-events:none;
+      background-image:
+        linear-gradient(to right,  rgba(124,58,237,0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(124,58,237,0.05) 1px, transparent 1px);
+      background-size:40px 40px;
+      -webkit-mask-image:radial-gradient(ellipse 100% 100% at 50% 50%, black 10%, transparent 80%);
+      mask-image:radial-gradient(ellipse 100% 100% at 50% 50%, black 10%, transparent 80%);
+    }
+    .hero__ghost {
+      position:absolute; bottom:-2%; right:-3%;
+      font-family:var(--font-hero); font-size:46vw;
+      font-weight:900; text-transform:uppercase;
+      color:transparent;
+      -webkit-text-stroke:1.5px rgba(124,58,237,0.10);
+      line-height:1; pointer-events:none;
+      user-select:none; z-index:1; letter-spacing:-0.02em;
+    }
+    .hero__inner {
+      position:relative; z-index:2;
+      display:flex; flex-direction:column;
+      justify-content:space-between;
+      height:100%;
+      padding:calc(var(--nav-h) + 14px) 22px 0;
+    }
+    .hero__top {
+      flex:1; display:flex; flex-direction:column;
+      justify-content:center; gap:7px; padding-bottom:6px;
+    }
+    .hero__tag {
+      display:inline-flex; align-items:center; gap:8px;
+      font-family:var(--font-display); font-size:0.44rem;
+      font-weight:700; color:rgba(255,255,255,0.18);
+      text-transform:uppercase; letter-spacing:0.2em;
+      margin-bottom:6px;
+    }
+    .hero__tag-line {
+      width:18px; height:1px;
+      background:linear-gradient(90deg, rgba(124,58,237,0.5), transparent);
+      flex-shrink:0;
+    }
+    .hero__headline {
+      font-family:var(--font-hero);
+      font-size:clamp(1.9rem, 10.8vw, 3rem);
+      font-weight:900; text-transform:uppercase;
+      line-height:0.88; letter-spacing:-0.01em; margin:0;
+    }
+    .hero__headline .l1 { display:block; color:#fff; }
+    .hero__headline .l2 {
+      display:block; white-space:nowrap;
+      background:var(--grad-primary);
+      -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+    }
+    /* Fix apostrophe glyph in "C'EST" */
+    .fix-symbol {
+      font-family: Arial, sans-serif !important;
+      display: inline-block;
+      color: inherit;
+      font-size: 0.86em !important;
+      line-height: 1 !important;
+      transform: translateY(-0.02em) scale(0.98) !important;
+      transform-origin: 50% 70%;
+      vertical-align: baseline;
+    }
+    .hero__desc {
+      font-family:var(--font-body); font-size:0.73rem;
+      color:rgba(255,255,255,0.27); line-height:1.65; margin:0;
+    }
+    .hero__desc strong { color:rgba(255,255,255,0.6); font-weight:600; }
+    .hero__stats {
+      display:grid; grid-template-columns:repeat(3,1fr);
+      border-top:1px solid rgba(255,255,255,0.07); flex-shrink:0;
+    }
+    .hero__stat {
+      padding:11px 8px 11px 0;
+      border-right:1px solid rgba(255,255,255,0.06);
+    }
+    .hero__stat:first-child { padding-left:0; }
+    .hero__stat:not(:first-child) { padding-left:8px; }
+    .hero__stat:last-child { border-right:none; }
+    .hero__stat-lbl {
+      font-family:var(--font-display); font-size:0.38rem;
+      font-weight:700; color:rgba(255,255,255,0.16);
+      text-transform:uppercase; letter-spacing:0.14em;
+      display:block; margin-bottom:3px;
+    }
+    .hero__stat-val {
+      font-family:var(--font-display);
+      font-size:clamp(1.2rem,5.5vw,1.8rem);
+      font-weight:900; line-height:1;
+      background:var(--grad-primary);
+      -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+      display:block;
+    }
+
+    /* Hero — premium scroll cue */
+    .hero__scroll {
+      display:inline-flex;
+      align-items:center;
+      gap:14px;
+      margin-top:clamp(14px,3.5vw,24px);
+      padding:0;
+      border:none;
+      background:transparent;
+      cursor:pointer;
+      font:inherit;
+      text-align:left;
+      -webkit-tap-highlight-color:transparent;
+    }
+    .hero__scroll:focus-visible {
+      outline:2px solid rgba(167,139,250,0.6);
+      outline-offset:4px;
+      border-radius:4px;
+    }
+    .hero__scroll-ring {
+      position:relative;
+      width:42px; height:42px;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      flex-shrink:0;
+      background:rgba(124,58,237,0.07);
+      border:1px solid rgba(124,58,237,0.35);
+      box-shadow:0 4px 24px rgba(142,45,226,0.15), inset 0 1px 0 rgba(255,255,255,0.06);
+      backdrop-filter:blur(10px);
+      -webkit-backdrop-filter:blur(10px);
+      transition:border-color 0.45s cubic-bezier(0.16,1,0.3,1),
+        box-shadow 0.45s cubic-bezier(0.16,1,0.3,1),
+        transform 0.55s cubic-bezier(0.34,1.12,0.64,1);
+    }
+    .hero__scroll-ring::after {
+      content:'';
+      position:absolute;
+      inset:-1px;
+      border-radius:inherit;
+      padding:1px;
+      background:linear-gradient(135deg, rgba(142,45,226,0.65), rgba(74,0,224,0.35), rgba(6,182,212,0.2));
+      -webkit-mask:linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      mask:linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite:xor;
+      mask-composite:exclude;
+      opacity:0.55;
+      pointer-events:none;
+      animation:heroScrollRingGlow 4s ease-in-out infinite;
+    }
+    .hero__scroll:hover .hero__scroll-ring {
+      border-color:rgba(167,139,250,0.55);
+      box-shadow:0 8px 36px rgba(142,45,226,0.28), inset 0 1px 0 rgba(255,255,255,0.08);
+      transform:translateY(3px);
+    }
+    .hero__scroll:active .hero__scroll-ring {
+      transform:translateY(5px) scale(0.97);
+    }
+    .hero__scroll-icon {
+      width:18px; height:18px;
+      color:#c4b5fd;
+      position:relative;
+      z-index:1;
+      filter:drop-shadow(0 0 8px rgba(142,45,226,0.45));
+      animation:heroScrollChevron 2.2s cubic-bezier(0.45,0,0.55,1) infinite;
+    }
+    .hero__scroll-meta { display:flex; flex-direction:column; gap:3px; min-width:0; }
+    .hero__scroll-label {
+      font-family:var(--font-display);
+      font-size:0.62rem;
+      font-weight:700;
+      letter-spacing:0.22em;
+      text-transform:uppercase;
+      color:rgba(255,255,255,0.42);
+      transition:color 0.4s ease;
+    }
+    .hero__scroll:hover .hero__scroll-label { color:rgba(196,181,253,0.95); }
+    .hero__scroll-sub {
+      font-family:var(--font-body);
+      font-size:0.65rem;
+      font-weight:500;
+      color:rgba(255,255,255,0.22);
+      letter-spacing:0.04em;
+    }
+    .hero__scroll:hover .hero__scroll-sub { color:rgba(255,255,255,0.38); }
+    @keyframes heroScrollChevron {
+      0%, 100% { transform:translateY(-2px); opacity:0.88; }
+      50%       { transform:translateY(5px); opacity:1; }
+    }
+    @keyframes heroScrollRingGlow {
+      0%, 100% { opacity:0.45; }
+      50%      { opacity:0.75; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .hero__scroll-icon { animation:none; }
+      .hero__scroll-ring::after { animation:none; opacity:0.5; }
+      .hero__scroll-ring,
+      .hero__scroll:active .hero__scroll-ring { transition-duration:0.01ms; }
+    }
+
+    /* ═══════════ SECTIONS ═══════════ */
+    .section {
+      position:relative;
+      padding:52px 22px;
+      border-top:1px solid rgba(255,255,255,0.05);
+    }
+    .section__grid {
+      position:absolute; inset:0; z-index:0; pointer-events:none;
+      background-image:
+        linear-gradient(to right,  rgba(124,58,237,0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(124,58,237,0.04) 1px, transparent 1px);
+      background-size:40px 40px;
+      -webkit-mask-image:radial-gradient(ellipse 90% 90% at 50% 50%, black 20%, transparent 90%);
+      mask-image:radial-gradient(ellipse 90% 90% at 50% 50%, black 20%, transparent 90%);
+    }
+    .section__inner { position:relative; z-index:1; }
+    #our-story { scroll-margin-top:88px; }
+
+    .eyebrow {
+      display:inline-flex; align-items:center; gap:10px;
+      font-family:var(--font-display); font-size:0.58rem;
+      font-weight:700; text-transform:uppercase; letter-spacing:0.22em;
+      margin-bottom:14px;
+    }
+    .eyebrow::before { content:''; width:16px; height:1px; flex-shrink:0; opacity:0.6; }
+    .eyebrow--purple { color:var(--purple); }
+    .eyebrow--purple::before { background:var(--purple); }
+    .eyebrow--cyan { color:var(--cyan); }
+    .eyebrow--cyan::before { background:var(--cyan); }
+
+    /* ═══════════ STORY ═══════════ */
+    .story__quote {
+      font-family:'Franklin Gothic Heavy', var(--font-display), sans-serif;
+      font-size:clamp(1.2rem,5.5vw,1.6rem);
+      font-weight:normal;
+      line-height:1.18;
+      letter-spacing:0.06em;
+      text-transform:uppercase;
+      color:#fff; margin-bottom:22px;
+    }
+    .story__quote em {
+      font-style:normal; background:var(--grad-accent);
+      -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+    }
+    .story__body {
+      font-family:var(--font-body); font-size:0.84rem;
+      color:rgba(255,255,255,0.38); line-height:1.85;
+      display:flex; flex-direction:column; gap:15px;
+    }
+    .story__body strong { color:rgba(255,255,255,0.68); font-weight:500; }
+
+    /* ═══════════ PHILOSOPHY ═══════════ */
+    .philo__glow {
+      position:absolute; inset:0; pointer-events:none;
+      background:radial-gradient(ellipse 70% 50% at 50% 50%, rgba(124,58,237,0.07) 0%, transparent 70%);
+    }
+    .philo__word {
+      font-family:var(--font-hero);
+      font-size:clamp(2.5rem,13vw,4.5rem);
+      font-weight:900; text-transform:uppercase;
+      line-height:0.88; margin-bottom:12px;
+      background:var(--grad-primary);
+      -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+    }
+    .philo__sub {
+      font-family:var(--font-display); font-size:0.84rem;
+      font-weight:600; color:rgba(255,255,255,0.2);
+      text-transform:uppercase; letter-spacing:0.08em;
+      line-height:1.5; margin-bottom:24px;
+    }
+    .philo__divider {
+      width:100%; height:1px; margin-bottom:22px;
+      background:linear-gradient(90deg, rgba(124,58,237,0.3), rgba(6,182,212,0.2), transparent);
+    }
+    .philo__text {
+      font-family:var(--font-body); font-size:0.84rem;
+      color:rgba(255,255,255,0.38); line-height:1.85;
+      display:flex; flex-direction:column; gap:15px;
+    }
+    .philo__text strong { color:rgba(255,255,255,0.68); font-weight:500; }
+
+    /* ═══════════ SERVE ═══════════ */
+    .serve__title {
+      font-family:var(--font-hero);
+      font-size:clamp(1.9rem,9.5vw,3rem);
+      font-weight:900; text-transform:uppercase;
+      line-height:0.92; margin-bottom:32px;
+    }
+    .serve__title .g {
+      background:var(--grad-accent);
+      -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+    }
+    .serve__rows { border-top: 1px solid rgba(255,255,255,0.06); }
+    .serve-row {
+      display: grid;
+      grid-template-columns: 28px 1fr;
+      grid-template-rows: auto auto;
+      column-gap: 14px; row-gap: 0;
+      padding: 20px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      position: relative;
+    }
+    .serve-row__num-d {
+      grid-column: 1; grid-row: 1;
+      font-family: var(--font-display); font-size: 0.52rem;
+      font-weight: 700; color: rgba(255,255,255,0.15);
+      letter-spacing: 0.1em; padding-top: 3px; display: block;
+    }
+    .serve-row__name {
+      grid-column: 2; grid-row: 1;
+      font-family: var(--font-display); font-size: 0.95rem;
+      font-weight: 700; color: rgba(255,255,255,0.9);
+      text-transform: uppercase; letter-spacing: 0.06em; line-height: 1.2;
+    }
+    .serve-row__desc {
+      grid-column: 2; grid-row: 2;
+      font-family: var(--font-body); font-size: 0.72rem;
+      color: rgba(255,255,255,0.22); line-height: 1.55; margin-top: 5px;
+    }
+
+    /* ═══════════ VALUES (mobile-only) ═══════════ */
+    .values {
+      border-top:1px solid rgba(255,255,255,0.05);
+      padding:48px 22px;
+    }
+    .values__chips { display:flex; flex-direction:column; gap:10px; margin-top:20px; }
+    .values__chip {
+      display:flex; align-items:center; gap:14px;
+      padding:16px 18px;
+      background:rgba(255,255,255,0.02);
+      border:1px solid rgba(255,255,255,0.06);
+      border-radius:12px;
+    }
+    .values__chip-icon {
+      width:36px; height:36px; border-radius:9px; flex-shrink:0;
+      background:rgba(124,58,237,0.08);
+      border:1px solid rgba(124,58,237,0.15);
+      display:flex; align-items:center; justify-content:center;
+    }
+    .values__chip-icon svg { width:16px; height:16px; }
+    .values__chip-text { display:flex; flex-direction:column; gap:2px; }
+    .values__chip-title {
+      font-family:var(--font-display); font-size:0.85rem;
+      font-weight:700; color:#fff;
+      text-transform:uppercase; letter-spacing:0.06em;
+    }
+    .values__chip-sub {
+      font-family:var(--font-body); font-size:0.7rem;
+      color:rgba(255,255,255,0.28); line-height:1.4;
+    }
+
+    /* ═══════════ LET'S TALK ═══════════ */
+    .talk {
+      border-top:1px solid rgba(255,255,255,0.06);
+      background:rgba(255,255,255,0.015);
+      position:relative; overflow:hidden;
+    }
+    .talk__inner { position:relative; z-index:1; padding:44px 22px; }
+    .talk__intro {
+      display:flex;
+      flex-direction:column;
+      align-items:stretch;
+      gap:18px;
+      margin-bottom:28px;
+    }
+    .talk__heading {
+      font-family:var(--font-display);
+      font-size:clamp(3rem,15vw,5.5rem);
+      font-weight:700; text-transform:lowercase;
+      letter-spacing:-0.02em; line-height:0.88;
+      color:var(--cyan); margin:0;
+    }
+    .talk__heading em {
+      font-style:normal; color:transparent;
+      -webkit-text-stroke:1.5px rgba(6,182,212,0.4);
+    }
+    .talk__socials { display:flex; gap:8px; margin-bottom:28px; }
+    .talk__social {
+      width:40px; height:40px; border-radius:10px;
+      display:flex; align-items:center; justify-content:center;
+      border:1px solid rgba(255,255,255,0.08);
+      background:rgba(255,255,255,0.03);
+      color:rgba(255,255,255,0.35);
+    }
+    .talk__social svg { width:15px; height:15px; }
+    .talk__body {
+      display:grid; grid-template-columns:1fr 1fr;
+      gap:20px 12px;
+      border-top:1px solid rgba(255,255,255,0.05);
+      padding-top:24px;
+    }
+    .talk__group { display:flex; flex-direction:column; gap:4px; }
+    .talk__label {
+      font-family:var(--font-body); font-size:0.46rem;
+      font-weight:700; color:rgba(255,255,255,0.18);
+      text-transform:uppercase; letter-spacing:0.2em;
+    }
+    .talk__value {
+      font-family:var(--font-body); font-size:0.8rem;
+      color:rgba(255,255,255,0.58); word-break:break-word;
+    }
+
+    /* ═══════════ FOOTER ═══════════ */
+    .footer {
+      border-top:1px solid rgba(255,255,255,0.06);
+      padding:20px 22px;
+      display:flex; flex-direction:column;
+      align-items:center; gap:5px; text-align:center;
+    }
+    .footer p { font-family:var(--font-body); font-size:0.7rem; color:rgba(255,255,255,0.2); letter-spacing:0.04em; }
+    .footer span {
+      background:var(--grad-primary);
+      -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+      font-weight:700;
+    }
+
+    /* ═══════════ SCROLL TOP ═══════════ */
+    .scroll-top {
+      position:fixed; bottom:24px; right:24px; z-index:9990;
+      width:42px; height:42px; border-radius:50%;
+      background:var(--grad-primary); border:none; cursor:pointer;
+      display:flex; align-items:center; justify-content:center;
+      box-shadow:0 4px 18px rgba(124,58,237,0.45);
+      opacity:0; visibility:hidden; transform:translateY(10px);
+      transition:opacity 0.3s, visibility 0.3s, transform 0.3s;
+    }
+    .scroll-top.visible { opacity:1; visibility:visible; transform:translateY(0); }
+    .scroll-top svg { width:16px; height:16px; color:#fff; }
+
+    .fade-up { opacity:0; transform:translateY(24px); }
+
+    /* ═══════════ DESKTOP ═══════════ */
+    @media (min-width: 769px) {
+      :root { --nav-h: 72px; }
+      .hero { height:100vh !important; min-height:100vh !important; max-height:none !important; overflow:hidden !important; }
+      .hero__ghost { font-size:26vw !important; bottom:-2vw !important; right:-2vw !important; }
+      .hero__inner { height:100% !important; padding:calc(var(--nav-h)+20px) clamp(24px,5vw,80px) 0 !important; justify-content:space-between !important; max-width:1380px !important; margin-left:auto !important; margin-right:auto !important; width:100% !important; }
+      .hero__top { flex:1 !important; justify-content:center !important; padding-bottom:6px !important; }
+      .hero__headline { font-size:clamp(5rem,10.5vw,12rem) !important; line-height:0.88 !important; }
+      .hero__headline .l2 { white-space:nowrap !important; }
+      .hero__desc { display:block !important; font-size:0.9rem; max-width:480px; color:rgba(255,255,255,0.35); }
+      .hero__stats { background:none !important; border-top:1px solid rgba(255,255,255,0.07) !important; margin:0 !important; padding:0 !important; }
+      .hero__stat { padding:28px 40px 28px 0 !important; }
+      .hero__stat:not(:first-child) { padding-left:40px !important; }
+      .hero__stat-lbl { font-size:0.58rem !important; margin-bottom:8px !important; color:rgba(255,255,255,0.16) !important; }
+      .hero__stat-val { font-size:clamp(2.2rem,3.5vw,4rem) !important; }
+      .section { padding:120px clamp(24px,5vw,72px); }
+      .story__quote { font-size:clamp(1.7rem,2.8vw,2.6rem); letter-spacing:0.055em; line-height:1.14; }
+      .story__body { font-size:1rem; }
+      .philo__word { font-size:clamp(4rem,7vw,7.5rem); }
+      .philo__text { font-size:1rem; }
+      .serve__title { font-size:clamp(2.5rem,5vw,5rem); }
+      .serve-row { display:grid !important; grid-template-columns:72px 1fr 1.4fr !important; grid-template-rows:auto !important; align-items:center !important; gap:48px !important; column-gap:48px !important; padding:20px 0 !important; }
+      .serve-row:hover { background:rgba(124,58,237,0.03); padding:28px 20px !important; margin:0 -20px; }
+      .serve-row__num-d { display:block !important; grid-column:1 !important; grid-row:1 !important; font-family:var(--font-display); font-size:0.62rem; font-weight:700; color:rgba(255,255,255,0.1); letter-spacing:0.14em; }
+      .serve-row__name { grid-column:2 !important; grid-row:1 !important; font-size:1.2rem !important; margin-top:0 !important; }
+      .serve-row__desc { grid-column:3 !important; grid-row:1 !important; font-size:0.8rem !important; margin-top:0 !important; }
+      .values { display:none !important; }
+      .section { padding:120px clamp(24px,5vw,72px) !important; max-width:1380px !important; margin-left:auto !important; margin-right:auto !important; }
+      .talk__inner { padding:52px clamp(24px,5vw,72px) !important; max-width:1380px !important; margin-left:auto !important; margin-right:auto !important; }
+      .talk__inner::before { display:none !important; }
+      .talk__intro {
+        display:block !important;
+        margin-bottom:32px !important;
+      }
+      .talk__heading {
+        display:block !important;
+        flex:1 1 auto !important;
+        min-width:min(100%,280px) !important;
+        font-size:clamp(4rem,9vw,10rem) !important;
+        color:var(--cyan) !important;
+        -webkit-text-fill-color:var(--cyan) !important;
+        background:none !important;
+        flex-wrap:unset !important;
+        margin:0 !important;
+      }
+      .talk__heading em { display:inline !important; -webkit-text-fill-color:transparent !important; background:none !important; -webkit-text-stroke:1.5px rgba(6,182,212,0.4) !important; }
+      .talk__socials { justify-content:flex-start !important; margin-bottom:28px !important; }
+      .talk__body { grid-template-columns:repeat(5,1fr) !important; }
+      .footer { flex-direction:row; justify-content:space-between; padding:22px clamp(24px,4vw,80px); max-width:1380px; margin-left:auto; margin-right:auto; }
+    }
+
+    /* ═══════════ MOBILE ═══════════ */
+    @media (max-width: 768px) {
+      .hero { height: auto !important; min-height: 0 !important; max-height: none !important; overflow: hidden !important; }
+      .hero__ghost { font-size: 55vw !important; bottom: 30px !important; right: -5% !important; -webkit-text-stroke: 1px rgba(124,58,237,0.08) !important; overflow: hidden !important; max-width: 100% !important; }
+      .hero__inner { height: auto !important; padding: calc(var(--nav-h) + 32px) 22px 0 !important; justify-content: flex-start !important; }
+      .hero__top { flex: none !important; justify-content: flex-start !important; gap: 8px !important; padding-bottom: 24px !important; }
+      .hero__tag { font-size: 0.50rem !important; color: rgba(255,255,255,0.25) !important; margin-bottom: 8px !important; }
+      .hero__headline { font-size: clamp(2.4rem, 11.5vw, 3.2rem) !important; line-height: 0.9 !important; letter-spacing: -0.01em !important; }
+      .hero__headline .l2 { white-space: normal !important; }
+      .hero__desc { display: none !important; }
+      .hero__stats { border-top: 1px solid rgba(124,58,237,0.2) !important; background: rgba(124,58,237,0.03) !important; margin: 0 -22px !important; padding: 0 22px !important; }
+      .hero__stat { padding: 16px 10px 18px !important; border-right: 1px solid rgba(124,58,237,0.1) !important; }
+      .hero__stat:first-child  { padding-left: 0 !important; }
+      .hero__stat:not(:first-child) { padding-left: 10px !important; }
+      .hero__stat:last-child   { border-right: none !important; }
+      .hero__stat-lbl { font-size: 0.42rem !important; color: rgba(255,255,255,0.2) !important; margin-bottom: 4px !important; }
+      .hero__stat-val { font-size: clamp(1.4rem, 6.5vw, 1.9rem) !important; }
+      .hero__scroll { gap: 10px !important; margin-top: clamp(10px, 3vw, 18px) !important; }
+      .hero__scroll-ring { width: 34px !important; height: 34px !important; }
+      .hero__scroll-icon { width: 15px !important; height: 15px !important; }
+      .hero__scroll-label { font-size: 0.56rem !important; letter-spacing: 0.18em !important; }
+      .hero__scroll-sub { font-size: 0.58rem !important; }
+      .section { padding-top: 32px !important; padding-bottom: 40px !important; }
+      .talk__inner {
+        display: flex !important;
+        flex-direction: column !important;
+        padding: 44px 22px 40px !important;
+        position: relative !important;
+        z-index: 1 !important;
+      }
+      .talk__inner::before {
+        content: '— CONTACTEZ-NOUS' !important;
+        display: block !important;
+        font-family: var(--font-display) !important;
+        font-size: 0.50rem !important;
+        font-weight: 700 !important;
+        letter-spacing: 0.22em !important;
+        color: var(--purple) !important;
+        text-transform: uppercase !important;
+        margin-bottom: 10px !important;
+        order: 0 !important;
+      }
+      .talk__intro {
+        order: 1 !important;
+        gap: 20px !important;
+        margin-bottom: 24px !important;
+      }
+      .talk__heading {
+        font-family: var(--font-display) !important;
+        font-size: clamp(2.4rem, 12vw, 3.6rem) !important;
+        font-weight: 700 !important;
+        text-transform: lowercase !important;
+        letter-spacing: -0.02em !important;
+        line-height: 0.88 !important;
+        color: #fff !important;
+        margin-bottom: 0 !important;
+        display: flex !important;
+        align-items: baseline !important;
+        gap: 0.22em !important;
+        flex-wrap: nowrap !important;
+      }
+      .talk__heading em {
+        display: inline !important;
+        font-style: normal !important;
+        background: var(--grad-primary) !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        background-clip: text !important;
+        -webkit-text-stroke: 0 !important;
+      }
+      .talk__socials { display: flex !important; justify-content: flex-start !important; gap: 10px !important; margin-bottom: 24px !important; order: 2 !important; }
+      .talk__social { width: 42px !important; height: 42px !important; border-radius: 10px !important; background: rgba(124,58,237,0.06) !important; border: 1px solid rgba(124,58,237,0.2) !important; color: rgba(255,255,255,0.45) !important; }
+      .talk__social svg { width: 16px !important; height: 16px !important; }
+      .talk__body { grid-template-columns: 1fr 1fr !important; gap: 18px 16px !important; border-top: 1px solid rgba(124,58,237,0.15) !important; border-bottom: 1px solid rgba(124,58,237,0.12) !important; padding: 22px 0 !important; margin-bottom: 28px !important; order: 3 !important; }
+      .talk__label { font-size: 0.42rem !important; color: rgba(255,255,255,0.22) !important; letter-spacing: 0.18em !important; margin-bottom: 4px !important; display: block !important; }
+      .talk__value { font-size: 0.78rem !important; color: rgba(255,255,255,0.65) !important; font-weight: 500 !important; }
+    }
+
+    /* ═══════════ DESKTOP ≥1024px ═══════════ */
+    @media (min-width: 1024px) {
+      .talk__heading {
+        display: block !important;
+        font-size: clamp(4rem, 9vw, 10rem) !important;
+        color: transparent !important;
+        -webkit-text-fill-color: transparent !important;
+        background: var(--grad-primary) !important;
+        -webkit-background-clip: text !important;
+        background-clip: text !important;
+      }
+      .talk__heading em {
+        display: inline !important;
+        font-style: normal !important;
+        background: var(--grad-primary) !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        background-clip: text !important;
+        -webkit-text-stroke: 0 !important;
+      }
+      .talk__body {
+        border-top-color: rgba(163, 51, 255, 0.12) !important;
+      }
+    }
+  </style>
+</head>
+<body class="about-fr-page">
+  <script src="navbar.js" data-page="about"></script>
+  
+<!-- HERO -->
+  <section class="hero">
+    <div class="hero__grid"></div>
+    <div class="hero__ghost">AURA</div>
+    <div class="hero__inner">
+      <div class="hero__top">
+        <div class="hero__tag">
+          <span class="hero__tag-line"></span>
+          Marrakech, Maroc · Fondée en 2023
+        </div>
+        <h1 class="hero__headline">
+          <span class="l1">C<span class="fix-symbol">'</span>EST</span>
+          <span class="l2">KESH AURA</span>
+        </h1>
+        <p class="hero__desc">
+          Une agence digitale full-service basée à Marrakech, avec une priorité&nbsp;: faire de votre marque une évidence, en ligne comme hors ligne.
+        </p>
+        <button type="button" class="hero__scroll" id="heroScrollDown" aria-label="Faire défiler jusqu'à Notre histoire">
+          <span class="hero__scroll-ring" aria-hidden="true">
+            <svg class="hero__scroll-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m6 9 6 6 6-6"/>
+            </svg>
+          </span>
+          <span class="hero__scroll-meta">
+            <span class="hero__scroll-label">Défiler</span>
+            <span class="hero__scroll-sub">Découvrir notre histoire</span>
+          </span>
+        </button>
+      </div>
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <span class="hero__stat-lbl">Clients accompagnés</span>
+          <span class="hero__stat-val">37+</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-lbl">Expertises clés</span>
+          <span class="hero__stat-val">9</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-lbl">Année de création</span>
+          <span class="hero__stat-val">2023</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    (function () {
+      var btn = document.getElementById('heroScrollDown');
+      var target = document.getElementById('our-story');
+      if (!btn || !target) return;
+      btn.addEventListener('click', function () {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    })();
+  </script>
+
+  <!-- STORY -->
+  <section class="section fade-up" id="our-story">
+    <div class="section__grid"></div>
+    <div class="section__inner">
+      <div class="eyebrow eyebrow--purple">Notre histoire</div>
+      <h2 class="story__quote">
+        Un <em>potentiel réel</em> était ignoré — nous l'avons corrigé
+      </h2>
+      <div class="story__body">
+        <p>Kesh Aura est née en 2023 à Marrakech — pas dans une salle de conseil, mais par une équipe d'amis qui comprenaient à la fois la créativité et le business. Nous venions d'horizons différents, mais partagions une conviction : toute marque à réelle valeur mérite d'être prise au sérieux en ligne. Cette conviction est devenue notre socle.</p>
+        <p>Nous voyions le même schéma à travers les secteurs — entreprises locales, marques personnelles et entrepreneurs qui investissaient tout dans leur travail, tout en apparaissant en ligne comme s'ils s'en fichaient. Pas de stratégie claire, pas d'identité cohérente, pas de vrais résultats. Leur travail parlait pour eux hors ligne, mais numériquement, ils étaient invisibles.</p>
+        <p>Aujourd'hui, nous offrons tout ce dont une marque a besoin pour exister et se démarquer : réseaux sociaux, branding, création de sites, publicité et contenu. Nous ne livrons pas que des tâches. Nous traitons chaque projet comme le nôtre, car c'est la seule façon d'obtenir des résultats qui comptent vraiment.</p>
+        <p>Depuis le premier jour, nous avons accompagné plus de 37 clients — entreprises locales, marques personnelles, sociétés, médecins, avocats et prestataires — chacun avec une histoire et un marché différents, et un objectif commun : vos résultats.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY -->
+  <section class="section fade-up">
+    <div class="section__grid"></div>
+    <div class="philo__glow"></div>
+    <div class="section__inner">
+      <div class="eyebrow eyebrow--purple">Notre philosophie</div>
+      <div class="philo__word">Créativité</div>
+      <div class="philo__sub">Pas un simple décor —<br>un levier stratégique.</div>
+      <div class="philo__divider"></div>
+      <div class="philo__text">
+        <p>Nous croyons qu'une pensée originale, exercée avec précision, distingue les marques qui mènent de celles qui suivent. La créativité n'est pas une couche de vernis : c'est le moteur de chaque stratégie, chaque design et chaque campagne que nous bâtissons.</p>
+        <p>Chaque mission commence par une question : à quoi cette marque doit-elle ressembler, sonner et se sentir — pour devenir <strong>l'évidence</strong> sur son marché ?</p>
+        <p>Nous sommes jeunes, exigeants, et chaque collaboration nous rappelle pourquoi nous avons choisi ce chemin.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO WE SERVE -->
+  <section class="section fade-up">
+    <div class="section__grid"></div>
+    <div class="section__inner">
+      <div class="eyebrow eyebrow--cyan">Avec qui nous travaillons</div>
+      <h2 class="serve__title">Pensé pour<br><span class="g">chaque ambition</span></h2>
+      <div class="serve__rows">
+        <div class="serve-row">
+          <span class="serve-row__num-d">01</span>
+          <span class="serve-row__name">Marques &amp; entreprises</span>
+          <span class="serve-row__desc">Structures établies qui renforcent leur présence digitale et transforment l'attention en chiffre d'affaires.</span>
+        </div>
+        <div class="serve-row">
+          <span class="serve-row__num-d">02</span>
+          <span class="serve-row__name">Entrepreneurs</span>
+          <span class="serve-row__desc">Fondateurs qui construisent depuis le terrain et exigent une identité digitale irréprochable dès le premier jour.</span>
+        </div>
+        <div class="serve-row">
+          <span class="serve-row__num-d">03</span>
+          <span class="serve-row__name">Marques personnelles</span>
+          <span class="serve-row__desc">Médecins, avocats, consultants et experts qui veulent être reconnus, crédibles et trouvables en ligne.</span>
+        </div>
+        <div class="serve-row">
+          <span class="serve-row__num-d">04</span>
+          <span class="serve-row__name">Prestataires de services</span>
+          <span class="serve-row__desc">Acteurs du service qui ont besoin d'une présence à la hauteur de leur valeur — et qui génère des demandes qualifiées.</span>
+        </div>
+        <div class="serve-row">
+          <span class="serve-row__num-d">05</span>
+          <span class="serve-row__name">Start-up en croissance</span>
+          <span class="serve-row__desc">Structures early-stage qui doivent aller vite, asseoir leur crédibilité et poser des fondations digitales scalables.</span>
+        </div>
+        <div class="serve-row">
+          <span class="serve-row__num-d">06</span>
+          <span class="serve-row__name">Maroc &amp; au-delà</span>
+          <span class="serve-row__desc">Nos clients sont ancrés au Maroc et rayonnent bien au-delà des frontières.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES — mobile exclusive -->
+  <section class="values fade-up">
+    <div class="eyebrow eyebrow--purple">Ce qui nous anime</div>
+    <div class="values__chips">
+      <div class="values__chip">
+        <div class="values__chip-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="1.8" stroke-linecap="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          </svg>
+        </div>
+        <div class="values__chip-text">
+          <span class="values__chip-title">Exigence absolue</span>
+          <span class="values__chip-sub">Chaque détail compte. Nous refusons la médiocrité.</span>
+        </div>
+      </div>
+      <div class="values__chip">
+        <div class="values__chip-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="1.8" stroke-linecap="round">
+            <circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/>
+          </svg>
+        </div>
+        <div class="values__chip-text">
+          <span class="values__chip-title">Vitesse &amp; précision</span>
+          <span class="values__chip-sub">Rapides sans brûler les étapes ; précis sans ralentir l'exécution.</span>
+        </div>
+      </div>
+      <div class="values__chip">
+        <div class="values__chip-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="1.8" stroke-linecap="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        </div>
+        <div class="values__chip-text">
+          <span class="values__chip-title">Vous d'abord</span>
+          <span class="values__chip-sub">Votre croissance est la seule métrique qui nous intéresse.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LET'S TALK -->
+  <section class="talk fade-up">
+    <div class="talk__inner">
+      <div class="talk__intro">
+        <h2 class="talk__heading">let's <em>talk</em></h2>
+      </div>
+      <div class="talk__socials">
+        <a href="https://www.instagram.com/keshaura_agency/" target="_blank" class="talk__social" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="https://wa.me/212687714699" target="_blank" class="talk__social" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        </a>
+      </div>
+      <div class="talk__body">
+        <div class="talk__group">
+          <span class="talk__label">Téléphone</span>
+          <a href="tel:+212727095894" class="talk__value">+212 727 095 894</a>
+        </div>
+        <div class="talk__group">
+          <span class="talk__label">WhatsApp</span>
+          <a href="https://wa.me/212687714699" target="_blank" class="talk__value">+212 687 714 699</a>
+        </div>
+        <div class="talk__group">
+          <span class="talk__label">E-mail</span>
+          <a href="mailto:contact@keshaura.com" class="talk__value">contact@keshaura.com</a>
+        </div>
+        <div class="talk__group">
+          <span class="talk__label">Instagram</span>
+          <a href="https://www.instagram.com/keshaura_agency/" target="_blank" class="talk__value">@keshaura_agency</a>
+        </div>
+        <div class="talk__group">
+          <span class="talk__label">Horaires</span>
+          <span class="talk__value">Lun – Sam, 9h – 19h</span>
+        </div>
+        <div class="talk__group">
+          <span class="talk__label">Localisation</span>
+          <span class="talk__value">100 % en ligne</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Kesh Aura. Tous droits réservés.</p>
+    <p>Design &amp; développement par <span>Kesh Aura</span></p>
+    <p>Maroc · Marrakech</p>
+  </footer>
+
+  <!-- SCROLL TOP -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.utils.toArray('.fade-up').forEach(function(el) {
+      gsap.fromTo(el,
+        { opacity: 0, y: 26 },
+        { scrollTrigger: { trigger: el, start: 'top 88%' },
+          opacity: 1, y: 0, duration: 0.85, ease: 'power3.out' }
+      );
+    });
+
+    gsap.fromTo('.hero__tag',      { opacity:0, y:10 }, { opacity:1, y:0, duration:0.6, delay:0.2, ease:'power3.out' });
+    gsap.fromTo('.hero__headline', { opacity:0, y:20 }, { opacity:1, y:0, duration:0.75, delay:0.35, ease:'power3.out' });
+    gsap.fromTo('.hero__desc',     { opacity:0, y:12 }, { opacity:1, y:0, duration:0.6, delay:0.5,  ease:'power3.out' });
+    gsap.fromTo('.hero__stats',    { opacity:0, y:8  }, { opacity:1, y:0, duration:0.5, delay:0.65, ease:'power3.out' });
+
+    var scrollBtn = document.getElementById('scrollTop');
+    window.addEventListener('scroll', function() {
+      scrollBtn.classList.toggle('visible', window.scrollY > 300);
+    }, { passive: true });
+    scrollBtn.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+
+  <script src="whatsapp-widget.js"></script>
+</body>
+</html>

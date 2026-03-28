@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="manifest" href="./site.webmanifest">
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="splash.js"></script>
+
+  <title>Kesh Aura | Digital Marketing Agency & Growth Partner — Marrakesh, Morocco</title>
+  <meta name="description" content="Kesh Aura is a 360° Digital Marketing Agency and Growth Partner based in Marrakesh. We specialize in Social Media Strategy, Brand Identity, Performance Ads, Web Design, SEO & AI Automation across Morocco and beyond.">
+  <meta name="keywords" content="Digital Marketing Agency, Social Media Agency, SMMA, Agence de Marketing Digital, Agence de Communication, Agence Web, Boite de Communication, Publicité Meta Google, Création de site web Marrakech, Growth Marketing Partner, Brand Activation Studio, Performance Acquisition, SEO SEA Strategy, E-réputation Management, Conseil Transformation Digitale, Content Strategy Storytelling, digital agency Morocco, branding Marrakesh, web design Morocco, Kesh Aura">
+  <meta name="author" content="Kesh Aura">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://keshaura.com/">
+  <link rel="alternate" hreflang="fr" href="https://keshaura.com/index-fr.html" />
+  <link rel="alternate" hreflang="en" href="https://keshaura.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kesh Aura | Digital Marketing Agency & Growth Partner — Marrakesh">
+  <meta property="og:description" content="360° Digital Agency. Social Media, Branding, Performance Ads, Web Design, SEO & AI Automation. Based in Marrakesh, serving brands across Morocco and 3 continents.">
+  <meta property="og:url" content="https://keshaura.com/">
+  <meta property="og:image" content="https://keshaura.com/og-image.jpg">
+  <meta property="og:site_name" content="Kesh Aura">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="fr_MA">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kesh Aura | Digital Marketing Agency & Growth Partner — Marrakesh">
+  <meta name="twitter:description" content="360° Digital Agency. Social Media, Branding, Performance Ads, Web Design, SEO & AI Automation.">
+  <meta name="twitter:image" content="https://keshaura.com/og-image.jpg">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+  <style>
+    @font-face {
+      font-family: 'Sonny Gothic';
+      src: url('./Fontspring-DEMO-sonnygothic-black.otf') format('opentype');
+      font-weight: 900; font-style: normal; font-display: swap;
+    }
+    :root {
+      --bg-primary:       #050510;
+      --accent-purple:    #7c3aed;
+      --accent-cyan:      #06b6d4;
+      --accent-pink:      #ec4899;
+      --gradient-primary: linear-gradient(135deg, #7c3aed 0%, #ec4899 100%);
+      --gradient-cta:     linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%);
+      --gradient-accent:  linear-gradient(90deg, #7c3aed 0%, #06b6d4 100%);
+      --text-primary:     #ffffff;
+      --text-muted:       #7a7a9a;
+      --border-subtle:    rgba(255,255,255,0.06);
+      --font-hero:        'Sonny Gothic', 'Impact', sans-serif;
+      --font-display:     'Rajdhani', sans-serif;
+      --font-body:        'Inter', sans-serif;
+      --nav-height:       72px;
+      --container-max:    1380px;
+      --blur-glass:       blur(22px);
+      --ease-out-expo:    cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-out-quart:   cubic-bezier(0.25, 1, 0.5, 1);
+      --ease-in-out-soft: cubic-bezier(0.45, 0, 0.55, 1);
+      --ease-spring:      cubic-bezier(0.34, 1.12, 0.64, 1);
+      --transition:       all 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+      --transition-fast:  all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    section[id] { scroll-margin-top: 80px; }
+    html { scroll-behavior:smooth; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; overflow-x:hidden; }
+    body {
+      background-color: var(--bg-primary);
+      background-image:
+        radial-gradient(ellipse 80% 60% at 60% 0%,   rgba(76,29,149,0.28)  0%, transparent 60%),
+        radial-gradient(ellipse 50% 40% at 100% 50%, rgba(124,58,237,0.10) 0%, transparent 55%),
+        radial-gradient(ellipse 40% 50% at 0%   80%, rgba(6,182,212,0)  0%, transparent 50%),
+        radial-gradient(ellipse 70% 60% at 50% 100%, rgba(88,28,220,0.08)  0%, transparent 60%);
+      background-attachment: scroll;
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    a { text-decoration:none; color:inherit; }
+    ul { list-style:none; }
+    button { font-family:inherit; cursor:pointer; border:none; }
+    ::selection { background:var(--accent-purple); color:white; }
+
+    .mag-wrap { display:inline-flex; padding:20px; margin:-20px; cursor:pointer; }
+    .mag-btn { will-change:transform; transition:box-shadow 0.3s ease; }
+    .mag-btn__text { display:inline-flex; align-items:center; gap:8px; will-change:transform; transition:transform 0.1s ease; pointer-events:none; }
+
+    .navbar { position:fixed; top:0; left:0; right:0; height:72px; z-index:9999; display:flex; align-items:center; padding:0 clamp(24px,5vw,80px); background:transparent; border-bottom:1px solid transparent; transition:background 0.4s ease,border-color 0.4s ease,box-shadow 0.4s ease; }
+    .navbar.stuck { background:rgba(5,5,16,0.85); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); border-bottom:1px solid rgba(124,58,237,0.18); box-shadow:0 8px 32px rgba(0,0,0,0.35); }
+    .navbar__wrapper { display:flex; align-items:center; justify-content:space-between; width:100%; max-width:var(--container-max); margin:0 auto; position:relative; }
+    .logo { display:flex; align-items:center; text-decoration:none; flex-shrink:0; transition:opacity 0.25s ease; }
+    .logo:hover { opacity:0.8; }
+    .logo__icon { width:88px; height:88px; object-fit:contain; flex-shrink:0; filter:drop-shadow(0 0 10px rgba(124,58,237,0.45)); margin-left:-10px; margin-right:-14px; }
+    .logo__text { display:flex; flex-direction:column; gap:3px; }
+    .logo__name { font-family:var(--font-hero); font-size:1.05rem; font-weight:900; letter-spacing:0.10em; text-transform:uppercase; color:#fff; line-height:1; }
+    .logo__tagline { font-family:var(--font-body); font-size:0.48rem; letter-spacing:0.26em; text-transform:uppercase; color:rgba(255,255,255,0.38); line-height:1; }
+    .nav__links { position:absolute; left:50%; transform:translateX(-50%); display:flex; align-items:center; gap:2px; list-style:none; margin:0; padding:0; }
+    .nav__link { font-family:var(--font-body); font-size:0.84rem; font-weight:500; color:rgba(255,255,255,0.5); text-decoration:none; padding:7px 14px; border-radius:6px; white-space:nowrap; transition:color 0.2s ease,background 0.2s ease; }
+    .nav__link:hover { color:#fff; background:rgba(255,255,255,0.06); }
+    .nav__link.active { color:#fff; background:rgba(124,58,237,0.15); }
+    .nav__cta { font-family:var(--font-body); font-size:0.84rem; font-weight:600; color:#fff; text-decoration:none; padding:9px 22px; border-radius:50px; background:var(--gradient-cta); box-shadow:0 4px 16px rgba(142,45,226,0.35); white-space:nowrap; flex-shrink:0; transition:transform 0.2s ease,box-shadow 0.2s ease,opacity 0.2s ease,filter 0.2s ease; }
+    .nav__cta:hover { transform:translateY(-1px); box-shadow:0 8px 24px rgba(142,45,226,0.45); opacity:1; }
+    .nav__cta:active { transform:scale(0.95); }
+    .nav__burger { display:none; flex-direction:column; gap:5px; padding:8px; background:none; border:none; cursor:pointer; z-index:10001; flex-shrink:0; }
+    .nav__burger span { display:block; width:22px; height:2px; background:rgba(255,255,255,0.85); border-radius:2px; transition:transform 0.35s ease,opacity 0.25s ease; }
+    .nav__burger.open span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
+    .nav__burger.open span:nth-child(2) { opacity:0; }
+    .nav__burger.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
+    .nav__mobile-overlay { position:fixed; inset:0; background:rgba(5,5,16,0.96); backdrop-filter:blur(24px); -webkit-backdrop-filter:blur(24px); z-index:9998; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px; opacity:0; pointer-events:none; transition:opacity 0.3s ease; }
+    .nav__mobile-overlay.open { opacity:1; pointer-events:all; }
+    .nav__mobile-overlay .mob-link { font-family:var(--font-body); font-size:1.25rem; font-weight:600; color:rgba(255,255,255,0.65); text-decoration:none; padding:12px 28px; border-radius:10px; letter-spacing:0.04em; transition:color 0.2s ease,background 0.2s ease; }
+    .nav__mobile-overlay .mob-link:hover, .nav__mobile-overlay .mob-link.active { color:#fff; background:rgba(124,58,237,0.12); }
+    .nav__mobile-overlay .mob-cta { margin-top:16px; font-family:var(--font-body); font-size:0.9rem; font-weight:600; color:#fff; text-decoration:none; padding:11px 28px; border-radius:50px; background:var(--gradient-cta); box-shadow:0 4px 18px rgba(142,45,226,0.4); transition:transform 0.2s ease,box-shadow 0.2s ease; }
+    .nav__mobile-overlay .mob-cta:active { transform:scale(0.95); }
+    @media (max-width:900px) { .nav__link { font-size:0.8rem; padding:7px 10px; } }
+    @media (max-width:768px) { .navbar { padding:0 20px; } .nav__links,.nav__cta { display:none; } .nav__burger { display:flex; } }
+
+    /* ============================================ HERO ============================================ */
+    .hero { position:relative; display:flex; align-items:center; }
+    .hero__bg { display:none; }
+    .hero__grid { position:absolute; inset:0; z-index:1; pointer-events:none; background-image:linear-gradient(to right,rgba(124,58,237,0.05) 1px,transparent 1px),linear-gradient(to bottom,rgba(124,58,237,0.05) 1px,transparent 1px); background-size:48px 48px; -webkit-mask-image:radial-gradient(ellipse 100% 100% at 60% 40%,black 10%,transparent 80%); mask-image:radial-gradient(ellipse 100% 100% at 60% 40%,black 10%,transparent 80%); }
+    .hero__rays { position:absolute; inset:0; z-index:2; pointer-events:none; overflow:hidden; }
+    .hero__ray { position:absolute; top:-80%; width:1.5px; height:260%; transform:rotate(33deg); transform-origin:top center; }
+    .hero__ray:nth-child(1) { left:24%; background:linear-gradient(to bottom,transparent,rgba(124,58,237,0.14) 40%,rgba(124,58,237,0.22) 55%,rgba(124,58,237,0.14) 70%,transparent); }
+    .hero__ray:nth-child(2) { left:46%; background:linear-gradient(to bottom,transparent,rgba(124,58,237,0.09) 40%,rgba(124,58,237,0.15) 55%,rgba(124,58,237,0.09) 70%,transparent); }
+    .hero__ray:nth-child(3) { left:66%; background:linear-gradient(to bottom,transparent,rgba(124,58,237,0.06) 40%,rgba(124,58,237,0.11) 55%,rgba(124,58,237,0.06) 70%,transparent); }
+    .hero__container { position:relative; z-index:3; max-width:var(--container-max); margin:0 auto; width:100%; display:grid; grid-template-columns:52% 48%; align-items:center; min-height:unset; padding:0 clamp(24px,5vw,72px); padding-top:100px; }
+    .hero__content { display:flex; flex-direction:column; justify-content:center; gap:18px; padding-top:60px; padding-bottom:40px; }
+    .hero__badge { display:inline-flex; align-items:center; gap:8px; font-family:var(--font-display); font-size:0.68rem; font-weight:700; color:var(--accent-purple); text-transform:uppercase; letter-spacing:0.18em; padding:8px 18px; background:rgba(124,58,237,0.09); border:1px solid rgba(124,58,237,0.32); border-radius:50px; width:fit-content; backdrop-filter:blur(8px); }
+    .hero__title { font-family:var(--font-hero); font-size:clamp(3rem,6vw,5.8rem); font-weight:900; line-height:0.95; letter-spacing:0.01em; text-transform:uppercase; margin:0; }
+    .hero__title span { display:block; color:#ffffff; }
+    .hero__title--sub { font-size:0.38em; color:rgba(255,255,255,0.4) !important; letter-spacing:0.28em; font-family:var(--font-body); font-weight:500; text-transform:uppercase; margin:0.2em 0 0.1em 0.12em; line-height:1; }
+    .word-cycle { display:block; position:relative; overflow:hidden; height:1.05em; margin-top:0.06em; }
+    .word-cycle__item { display:block; position:absolute; left:0; top:0; width:100%; font-family:var(--font-hero); font-size:inherit; font-weight:900; letter-spacing:0.01em; text-transform:uppercase; background:var(--gradient-cta); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; text-shadow:none; opacity:0; transition:opacity 1.2s cubic-bezier(0.16,1,0.3,1); will-change:opacity; }
+    .word-cycle__item.is-active { opacity:1; }
+    .word-cycle__item.is-exit { opacity:0; transition:opacity 0.9s ease; }
+    .hero__subtitle { font-family:var(--font-body); font-size:0.95rem; color:var(--text-muted); line-height:1.75; max-width:400px; font-weight:400; margin-top:4px; }
+    .hero__cta { display:flex; gap:12px; align-items:center; flex-wrap:wrap; }
+    .btn { padding:14px 30px; border-radius:50px; font-family:var(--font-body); font-size:0.92rem; font-weight:600; transition:transform 0.5s var(--ease-spring),box-shadow 0.5s var(--ease-out-quart),background 0.4s var(--ease-out-quart),border-color 0.4s var(--ease-out-quart); display:inline-flex; align-items:center; gap:8px; cursor:pointer; position:relative; overflow:hidden; }
+    .btn--primary { background:var(--gradient-cta); color:white; box-shadow:0 4px 14px rgba(142,45,226,0.28); }
+    .btn--primary:hover { box-shadow:0 6px 20px rgba(142,45,226,0.38); }
+    .btn--primary:active { transform:scale(0.95); }
+    .btn--secondary { background:rgba(255,255,255,0.04); color:white; border:1.5px solid rgba(255,255,255,0.14); backdrop-filter:blur(8px); }
+    .btn--secondary:hover { border-color:rgba(124,58,237,0.4); background:rgba(124,58,237,0.07); }
+    .hero__stats { display:flex; gap:clamp(1.4rem,3vw,2.8rem); padding-top:22px; border-top:1px solid rgba(255,255,255,0.08); margin-top:4px; }
+    .stat { display:flex; flex-direction:column; gap:3px; }
+    .stat__value { font-family:var(--font-display); font-size:2.1rem; font-weight:700; color:#ffffff; line-height:1; letter-spacing:0.02em; }
+    .stat__label { font-family:var(--font-display); font-size:0.58rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.14em; font-weight:600; }
+    .hero__visual { position:relative; display:flex; align-items:flex-end; justify-content:center; overflow:visible; z-index:4; }
+    .hero__mascot-wrap { position:relative; z-index:5; width:100%; height:100%; display:flex; align-items:flex-end; justify-content:center; }
+    .hero__mascot { height:85vh; max-height:800px; width:auto; object-fit:contain; object-position:bottom; display:block; margin-top:20px; transform:scaleX(-1); filter:drop-shadow(0 0 18px rgba(124,58,237,0.28)) drop-shadow(0 20px 40px rgba(0,0,0,0.60)); animation:floatMascot 5.5s ease-in-out infinite; position:relative; z-index:5; pointer-events:none; user-select:none; -webkit-user-select:none; -webkit-user-drag:none; }
+    @keyframes floatMascot { 0%,100%{transform:scaleX(-1) translateY(0px);}50%{transform:scaleX(-1) translateY(-22px);} }
+    .metric-card { position:absolute; background:rgba(10,6,28,0.82); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); border:1px solid rgba(124,58,237,0.30); border-radius:16px; padding:14px 20px; display:flex; align-items:center; gap:13px; pointer-events:all; transition:transform 0.55s var(--ease-spring),border-color 0.4s var(--ease-out-quart),box-shadow 0.55s var(--ease-out-quart); box-shadow:0 8px 32px rgba(0,0,0,0.55),inset 0 1px 0 rgba(255,255,255,0.06); white-space:nowrap; }
+    .metric-card:hover { transform:translateY(-8px) scale(1.05); border-color:rgba(124,58,237,0.6); box-shadow:0 20px 48px rgba(0,0,0,0.6),0 0 24px rgba(124,58,237,0.15); }
+    .metric-card__icon { width:40px; height:40px; border-radius:9px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+    .metric-card__icon svg { width:19px; height:19px; }
+    .metric-card__value { font-family:var(--font-display); font-size:1.4rem; font-weight:700; line-height:1; color:#fff; letter-spacing:0.03em; display:block; }
+    .metric-card__label { font-family:var(--font-display); font-size:0.6rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.12em; font-weight:600; display:block; }
+    .mc-1 { top:96px; right:32px; animation:mcFloat 4s ease-in-out infinite; }
+    .mc-1 .metric-card__icon { background:rgba(124,58,237,0.20); }
+    .mc-2 { top:50%; right:24px; transform:translateY(-50%); animation:mcFloat2 5s ease-in-out infinite 0.7s; }
+    .mc-2 .metric-card__icon { background:rgba(59,130,246,0.20); }
+    .mc-2 .metric-card__value { color:#60a5fa; }
+    .mc-3 { bottom:120px; right:180px; animation:mcFloat 4.5s ease-in-out infinite 1.3s; }
+    .mc-3 .metric-card__icon { background:rgba(124,58,237,0.20); }
+    @keyframes mcFloat { 0%,100%{transform:translateY(0);}50%{transform:translateY(-10px);} }
+    @keyframes mcFloat2 { 0%,100%{transform:translateY(-50%);}50%{transform:translateY(calc(-50% - 10px));} }
+    .cube { position:absolute; border-radius:3px; pointer-events:none; z-index:20; animation:cubeFloat 7s ease-in-out infinite; }
+    .c1  { width:20px;height:20px; top:12%;   right:3%;   background:rgba(124,58,237,0.65); box-shadow:0 0 16px rgba(124,58,237,0.8),0 0 32px rgba(124,58,237,0.35); animation-duration:6s;   animation-delay:0s;   }
+    .c2  { width:12px;height:12px; top:38%;   right:-1%;  background:rgba(210,210,235,0.45); box-shadow:0 0 8px rgba(210,210,235,0.4); transform:rotate(45deg); animation-name:c2float; animation-duration:8s; animation-delay:1s; }
+    .c3  { width:15px;height:15px; top:55%;   right:2%;   background:rgba(59,130,246,0.60);  box-shadow:0 0 14px rgba(59,130,246,0.7);  animation-duration:7s;   animation-delay:0.5s; }
+    .c4  { width:24px;height:24px; bottom:5%; right:5%;   background:rgba(124,58,237,0.55);  box-shadow:0 0 22px rgba(124,58,237,0.75),0 0 44px rgba(124,58,237,0.30); animation-duration:8s; animation-delay:1.8s; }
+    .c5  { width:10px;height:10px; bottom:28%;right:1%;   background:rgba(6,182,212,0.55);   box-shadow:0 0 10px rgba(6,182,212,0.7);   animation-duration:5.5s; animation-delay:0.3s; }
+    .c6  { width:13px;height:13px; top:55%;   left:3%;    background:rgba(59,130,246,0.60);  box-shadow:0 0 12px rgba(59,130,246,0.7);  animation-duration:6.5s; animation-delay:0.8s; }
+    .c7  { width:18px;height:18px; bottom:32%;left:2%;    background:rgba(124,58,237,0.50);  box-shadow:0 0 16px rgba(124,58,237,0.6);  animation-duration:7.5s; animation-delay:2.2s; }
+    .c8  { width:8px; height:8px;  top:18%;   left:45%;   background:rgba(255,255,255,0.30); box-shadow:0 0 8px rgba(255,255,255,0.4);  transform:rotate(30deg); animation-duration:9s;  animation-delay:1.4s; }
+    .c9  { width:11px;height:11px; top:30%;   right:14%;  background:rgba(236,72,153,0.55);  box-shadow:0 0 12px rgba(236,72,153,0.6);  animation-duration:6s;   animation-delay:0.2s; }
+    .c10 { width:16px;height:16px; top:8%;    right:22%;  background:rgba(124,58,237,0.45);  box-shadow:0 0 14px rgba(124,58,237,0.55); animation-duration:7.2s; animation-delay:1.6s; }
+    .c11 { width:9px; height:9px;  top:22%;   right:8%;   background:rgba(99,102,241,0.60);  box-shadow:0 0 10px rgba(99,102,241,0.7);  animation-duration:5s;   animation-delay:0.9s; }
+    .c12 { width:22px;height:22px; bottom:2%; right:16%;  background:rgba(124,58,237,0.60);  box-shadow:0 0 20px rgba(124,58,237,0.8),0 0 40px rgba(124,58,237,0.35); animation-duration:9s; animation-delay:3s; }
+    @keyframes cubeFloat { 0%{transform:rotate(0deg) translateY(0px);}20%{transform:rotate(12deg) translateY(-5px);}50%{transform:rotate(3deg) translateY(-12px);}80%{transform:rotate(-8deg) translateY(-6px);}100%{transform:rotate(0deg) translateY(0px);} }
+    @keyframes c2float { 0%,100%{transform:rotate(45deg) translateY(0);}50%{transform:rotate(55deg) translateY(-9px);} }
+
+    .services__eyebrow::after, .why-us__eyebrow::after, .articles-section__eyebrow::after, .contact__eyebrow::after { display:none; }
+    @media (max-width:1100px) {
+      .hero__container { grid-template-columns:1fr; min-height:auto; }
+      .hero__visual { order:-1; align-items:center; }
+      .hero__content { text-align:center; align-items:center; padding-top:calc(var(--nav-height) + 20px); }
+      .hero__stats { justify-content:center; }
+    }
+    @media (max-width:768px) {
+      .hero__title { font-size:clamp(2.4rem,11vw,4rem); }
+      .hero__subtitle { font-size:0.9rem; }
+      .hero__stats { flex-wrap:wrap; gap:24px; }
+      .metric-cards,.cube { display:none; }
+      .btn { padding:13px 26px; font-size:0.88rem; }
+    }
+
+    .section-divider { display:none; }
+
+    /* ============================================ SERVICES ============================================ */
+    .services { position:relative; scroll-margin-top:72px; padding:80px clamp(24px,5vw,72px) 60px; }
+    .services::before { content:''; position:absolute; inset:0; z-index:-1; pointer-events:none; background-image:linear-gradient(to right,rgba(124,58,237,0.04) 1px,transparent 1px),linear-gradient(to bottom,rgba(124,58,237,0.04) 1px,transparent 1px); background-size:48px 48px; -webkit-mask-image:radial-gradient(ellipse 90% 90% at 50% 50%,black 20%,transparent 90%); mask-image:radial-gradient(ellipse 90% 90% at 50% 50%,black 20%,transparent 90%); }
+    .services::after { display:none; }
+    .services__inner { position:relative; z-index:1; max-width:var(--container-max); margin:0 auto; display:grid; grid-template-columns:1fr 340px; gap:64px; align-items:stretch; }
+    .services__panel { grid-column:2; grid-row:1; }
+    .services__grid-wrap { grid-column:1; grid-row:1; }
+    .services__grid { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; overflow:visible; }
+    .service-card { position:relative; min-height:168px; background:rgba(255,255,255,0.022); border:1px solid rgba(255,255,255,0.055); border-radius:12px; padding:20px 18px 28px; display:block; overflow:hidden; cursor:default; will-change:transform; }
+    .service-card__icon { width:44px; height:44px; border-radius:10px; background:rgba(124,58,237,0.07); border:1px solid rgba(124,58,237,0.11); display:flex; align-items:center; justify-content:center; margin-bottom:14px; transition:background 0.5s var(--ease-out-quart),border-color 0.5s var(--ease-out-quart); position:relative; z-index:1; }
+    .service-card.is-active .service-card__icon { background:rgba(124,58,237,0.14); border-color:rgba(124,58,237,0.25); }
+    .service-card__icon svg { width:24px; height:24px; overflow:visible; }
+
+    @keyframes smc-ring1 { 0%,100%{r:3;opacity:1} 50%{r:5;opacity:.5} }
+    @keyframes smc-ring2 { 0%,100%{r:5;opacity:.6} 50%{r:7;opacity:.2} }
+    @keyframes smc-ring3 { 0%,100%{r:7;opacity:.3} 50%{r:9;opacity:0} }
+    @keyframes smc-dot   { 0%,100%{opacity:1} 50%{opacity:.4} }
+    .ic-smc-dot { animation:smc-dot 2.4s ease-in-out infinite; }
+    .ic-smc-r1  { animation:smc-ring1 2.4s ease-in-out infinite 0.1s; }
+    .ic-smc-r2  { animation:smc-ring2 2.4s ease-in-out infinite 0.3s; }
+    .ic-smc-r3  { animation:smc-ring3 2.4s ease-in-out infinite 0.5s; }
+    .ic-smc-node { animation:smc-dot 2.4s ease-in-out infinite 0.8s; }
+    @keyframes ai-dash { 0%{stroke-dashoffset:60} 60%{stroke-dashoffset:0} 100%{stroke-dashoffset:0} }
+    @keyframes ai-pulse { 0%,100%{opacity:1;r:2} 50%{opacity:.3;r:3} }
+    .ic-ai-path { stroke-dasharray:60; animation:ai-dash 2.8s ease-in-out infinite; }
+    .ic-ai-node { animation:ai-pulse 2.8s ease-in-out infinite; }
+    .ic-ai-node2 { animation:ai-pulse 2.8s ease-in-out infinite 0.6s; }
+    .ic-ai-node3 { animation:ai-pulse 2.8s ease-in-out infinite 1.2s; }
+    @keyframes wd-cursor { 0%,49%{opacity:1} 50%,100%{opacity:0} }
+    @keyframes wd-bracket { 0%,100%{transform:translateX(0)} 50%{transform:translateX(-1px)} }
+    .ic-wd-cursor { animation:wd-cursor 1.1s step-end infinite; }
+    .ic-wd-bl { animation:wd-bracket 2.2s ease-in-out infinite; }
+    .ic-wd-br { animation:wd-bracket 2.2s ease-in-out infinite 1.1s; }
+    @keyframes gd-draw { 0%{stroke-dashoffset:40} 70%{stroke-dashoffset:0} 100%{stroke-dashoffset:0} }
+    @keyframes gd-nib  { 0%,100%{transform:translate(0,0)} 50%{transform:translate(2px,-2px)} }
+    .ic-gd-path { stroke-dasharray:40; animation:gd-draw 2.6s ease-in-out infinite; }
+    .ic-gd-nib  { animation:gd-nib 2.6s ease-in-out infinite; transform-origin:center; }
+    @keyframes ph-shutter { 0%,85%,100%{opacity:0;transform:scale(1)} 88%{opacity:1;transform:scale(0.7)} 92%{opacity:0;transform:scale(1)} }
+    @keyframes ph-lens    { 0%,100%{r:4.5} 88%{r:3.5} }
+    .ic-ph-shutter { animation:ph-shutter 3s ease-in-out infinite; transform-origin:center; }
+    .ic-ph-lens    { animation:ph-lens 3s ease-in-out infinite; }
+    @keyframes da-bar1 { 0%,100%{transform:scaleY(1)} 50%{transform:scaleY(0.5)} }
+    @keyframes da-bar2 { 0%,100%{transform:scaleY(1)} 50%{transform:scaleY(1.3)} }
+    @keyframes da-bar3 { 0%,100%{transform:scaleY(1)} 50%{transform:scaleY(0.7)} }
+    @keyframes da-arrow { 0%,100%{transform:translate(0,0)} 50%{transform:translate(1px,-2px)} }
+    .ic-da-b1 { animation:da-bar1 2s ease-in-out infinite; transform-origin:center bottom; }
+    .ic-da-b2 { animation:da-bar2 2s ease-in-out infinite 0.3s; transform-origin:center bottom; }
+    .ic-da-b3 { animation:da-bar3 2s ease-in-out infinite 0.6s; transform-origin:center bottom; }
+    .ic-da-arrow { animation:da-arrow 2s ease-in-out infinite; }
+    @keyframes seo-scan { 0%,100%{transform:translate(0,0) rotate(-5deg)} 50%{transform:translate(2px,2px) rotate(5deg)} }
+    @keyframes seo-line { 0%,100%{opacity:0.2} 50%{opacity:0.8} }
+    .ic-seo-glass { animation:seo-scan 2.5s ease-in-out infinite; transform-origin:10px 10px; }
+    .ic-seo-line  { animation:seo-line 2.5s ease-in-out infinite; }
+    @keyframes sw-cur { 0%,49%{opacity:1} 50%,100%{opacity:0} }
+    .ic-sw-cur { animation:sw-cur 1s step-end infinite; }
+    @keyframes bs-needle { 0%{transform:rotate(-20deg)} 50%{transform:rotate(20deg)} 100%{transform:rotate(-20deg)} }
+    @keyframes bs-ring   { 0%,100%{opacity:.4} 50%{opacity:1} }
+    .ic-bs-needle { animation:bs-needle 3s ease-in-out infinite; transform-origin:12px 12px; }
+    .ic-bs-ring   { animation:bs-ring 3s ease-in-out infinite; }
+
+    .service-card__num { position:absolute; top:14px; right:16px; font-family:var(--font-display); font-size:0.58rem; font-weight:700; color:rgba(255,255,255,0.055); letter-spacing:0.1em; transition:color 0.5s var(--ease-out-quart); z-index:1; }
+    .service-card.is-active .service-card__num { color:rgba(124,58,237,0.35); }
+    .service-card__title { font-family:var(--font-body); font-size:0.825rem; font-weight:700; color:rgba(255,255,255,0.88); margin-bottom:6px; letter-spacing:0.01em; line-height:1.3; position:relative; z-index:1; transition:color 0.5s var(--ease-out-quart); }
+    .service-card.is-active .service-card__title { color:#fff; }
+    .service-card__desc { font-family:var(--font-body); font-size:0.72rem; color:rgba(255,255,255,0.38); line-height:1.65; position:relative; z-index:1; transition:color 0.5s var(--ease-out-quart); }
+    .service-card.is-active .service-card__desc { color:rgba(255,255,255,0.65); }
+    .service-card__readmore { display:inline-flex; align-items:center; gap:6px; margin-top:14px; font-size:0.68rem; font-weight:700; color:rgba(124,58,237,0.5); text-decoration:none; text-transform:uppercase; letter-spacing:0.14em; transition:color 0.3s,gap 0.3s; pointer-events:auto; }
+    .service-card__readmore svg { width:11px; height:11px; transition:transform 0.3s; }
+    .service-card__readmore:hover { color:#a78bfa; gap:10px; }
+    .service-card__readmore:hover svg { transform:translateX(3px); }
+    .service-card.is-active .service-card__readmore { color:rgba(167,139,250,0.7); }
+    .service-card.is-active .service-card__readmore:hover { color:#a78bfa; }
+
+    .services__panel { padding-left:32px; border-left:1px solid rgba(255,255,255,0.055); display:flex; flex-direction:column; }
+    .services__panel-spacer { flex:1; }
+    .services__eyebrow { display:inline-flex; align-items:center; gap:10px; font-family:var(--font-body); font-size:0.65rem; font-weight:600; color:var(--accent-cyan); text-transform:uppercase; letter-spacing:0.22em; margin-bottom:20px; }
+    .services__eyebrow::before { content:''; width:18px; height:1px; background:var(--accent-cyan); opacity:0.5; flex-shrink:0; }
+    .services__label { font-family:var(--font-hero); font-size:clamp(2rem,2.6vw,2.6rem); font-weight:900; text-transform:uppercase; line-height:0.95; letter-spacing:0.01em; color:#ffffff; margin-bottom:28px; }
+    .services__pitch { font-family:var(--font-body); font-size:1rem; font-weight:400; color:rgba(255,255,255,0.55); line-height:1.9; margin-bottom:32px; }
+    .services__pitch strong { color:rgba(255,255,255,0.88); font-weight:600; }
+    .services__panel-divider { width:100%; height:1px; background:rgba(255,255,255,0.06); margin-bottom:28px; }
+    .services__metrics { display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-bottom:32px; }
+    .services__metric { display:flex; flex-direction:column; gap:4px; }
+    .services__metric-val { font-family:var(--font-display); font-size:1.8rem; font-weight:700; color:#ffffff; line-height:1; letter-spacing:0.02em; }
+    .services__metric-val span { background:linear-gradient(100deg,#7c3aed 0%,#38bdf8 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+    .services__metric-label { font-family:var(--font-body); font-size:0.7rem; color:rgba(255,255,255,0.30); font-weight:500; letter-spacing:0.02em; }
+    .services__cta { display:inline-flex; align-items:center; gap:10px; font-family:var(--font-body); font-size:0.82rem; font-weight:600; color:rgba(255,255,255,0.7); padding:12px 20px; border:1px solid rgba(255,255,255,0.1); border-radius:50px; transition:color 0.45s var(--ease-out-quart),border-color 0.45s var(--ease-out-quart),background 0.45s var(--ease-out-quart),transform 0.5s var(--ease-spring); cursor:pointer; text-decoration:none; }
+    .services__cta:hover { color:#fff; border-color:rgba(124,58,237,0.5); background:rgba(124,58,237,0.08); transform:translateY(-2px); }
+    .services__cta svg { width:14px; height:14px; stroke:currentColor; transition:transform 0.5s var(--ease-spring); }
+    .services__cta:hover svg { transform:translateX(5px); }
+
+    @media (max-width:1200px) { .services__inner { grid-template-columns:1fr 300px; gap:48px; } }
+    @media (max-width:1024px) { .services__inner { grid-template-columns:1fr; gap:48px; } .services__panel { position:static; padding-left:0; border-left:none; border-top:1px solid rgba(255,255,255,0.055); padding-top:32px; } .services__grid { grid-template-columns:repeat(3,1fr); } }
+    @media (max-width:768px) { .services__grid { grid-template-columns:repeat(2,1fr); } .services { padding:60px clamp(16px,5vw,32px) 80px; } }
+    @media (max-width:480px) { .services__grid { grid-template-columns:1fr; } }
+
+    /* ============================================ WHY US ============================================ */
+    .why-us { position:relative; scroll-margin-top:72px; padding:60px clamp(24px,5vw,80px) 100px; isolation:isolate; }
+    .why-us::before { content:''; position:absolute; inset:0; z-index:0; pointer-events:none; background-image:linear-gradient(to right,rgba(124,58,237,0.04) 1px,transparent 1px),linear-gradient(to bottom,rgba(124,58,237,0.04) 1px,transparent 1px); background-size:48px 48px; -webkit-mask-image:radial-gradient(ellipse 90% 90% at 50% 50%,black 20%,transparent 90%); mask-image:radial-gradient(ellipse 90% 90% at 50% 50%,black 20%,transparent 90%); }
+    .why-us__container { position:relative; z-index:2; max-width:var(--container-max); margin:0 auto; display:grid; grid-template-columns:50% 50%; align-items:center; gap:0; min-height:560px; }
+    .why-us__left { display:flex; flex-direction:column; gap:0; padding-right:48px; }
+    .why-us__eyebrow { display:inline-flex; align-items:center; gap:10px; font-family:var(--font-body); font-size:0.65rem; font-weight:600; color:var(--accent-cyan); text-transform:uppercase; letter-spacing:0.22em; margin-bottom:14px; }
+    .why-us__eyebrow::before { content:''; width:18px; height:1px; background:var(--accent-cyan); opacity:0.5; flex-shrink:0; }
+    .why-us__headline { font-family:var(--font-hero); font-size:clamp(2.8rem,4vw,4.2rem); font-weight:900; text-transform:uppercase; line-height:0.92; letter-spacing:0.01em; color:#ffffff; white-space:nowrap; margin-bottom:28px; }
+    .why-us__headline span { background:var(--gradient-cta); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+    .why-us__pitch { font-family:var(--font-body); font-size:clamp(1rem,1.15vw,1.08rem); color:rgba(255,255,255,0.62); line-height:1.75; letter-spacing:0.01em; margin-bottom:0; display:flex; flex-direction:column; gap:16px; }
+    .why-us__pitch p { margin:0; }
+    .why-us__pitch strong { color:#ffffff; font-weight:700; }
+    .why-us__pitch em { font-style:normal; background:var(--gradient-accent); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; font-weight:600; }
+    .why-us__pitch .pitch-hook { font-family:var(--font-body); font-size:clamp(1.05rem,1.25vw,1.15rem); color:rgba(255,255,255,0.75); line-height:1.7; }
+    .why-us__pitch .pitch-statement { font-family:var(--font-body); font-size:clamp(1.1rem,1.4vw,1.22rem); font-weight:700; color:#ffffff; line-height:1.5; letter-spacing:0.005em; }
+    .why-us__pitch .pitch-proof { font-family:var(--font-body); font-size:clamp(0.88rem,1vw,0.95rem); color:rgba(255,255,255,0.42); line-height:1.65; letter-spacing:0.01em; }
+    .why-us__pitch .pitch-close { font-family:var(--font-body); font-size:clamp(1rem,1.15vw,1.08rem); color:rgba(255,255,255,0.72); line-height:1.7; font-style:italic; }
+    .why-us__right { position:relative; height:560px; display:flex; align-items:center; justify-content:center; overflow:visible; }
+    .why-us__mascot { width:145%; max-width:none; height:auto; object-fit:contain; position:relative; z-index:2; margin-left:-5%; filter:drop-shadow(0 0 30px rgba(124,58,237,0.28)) drop-shadow(0 16px 32px rgba(0,0,0,0.3)); animation:whyMascotFloat 7s ease-in-out infinite; pointer-events:none; user-select:none; -webkit-user-select:none; -webkit-user-drag:none; }
+    @keyframes whyMascotFloat { 0%,100%{transform:translateY(0px) rotate(-0.5deg);}50%{transform:translateY(-28px) rotate(0.5deg);} }
+    .why-us__glow { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:420px; height:420px; border-radius:50%; background:radial-gradient(circle,rgba(124,58,237,0.04) 0%,rgba(124,58,237,0.01) 50%,transparent 70%); pointer-events:none; z-index:1; animation:whyGlowPulse 8s ease-in-out infinite; }
+    @keyframes whyGlowPulse { 0%,100%{transform:translate(-50%,-50%) scale(1);opacity:0.7;}50%{transform:translate(-50%,-50%) scale(1.1);opacity:1;} }
+    .why-pulse { display:none; }
+    .why-us__shadow { position:absolute; bottom:4%; left:50%; transform:translateX(-50%); width:200px; height:10px; background:rgba(124,58,237,0.2); filter:blur(24px); border-radius:50%; z-index:1; animation:whyShadow 7s ease-in-out infinite; }
+    @keyframes whyShadow { 0%,100%{width:200px;opacity:0.18;}50%{width:260px;opacity:0.32;} }
+    @media (max-width:1024px) { .why-us__container { grid-template-columns:1fr; gap:60px; min-height:unset; } .why-us__left { padding-right:0; } .why-us__right { height:480px; order:-1; overflow:visible; } .why-us__mascot { width:100%; margin-left:0; } .why-us__glow { width:360px; height:360px; } }
+    @media (max-width:700px) { .why-us { padding:100px clamp(16px,5vw,32px) 100px; } .why-us__headline { font-size:clamp(2.6rem,9vw,3.4rem); } .why-us__pitch { font-size:1.05rem; } .why-us__stats { flex-wrap:wrap; gap:28px; } .why-stat { flex:1 1 40%; border-right:none; padding:0; } }
+    .why-us__about-btn { position:relative; overflow:hidden; display:inline-flex; align-items:center; gap:16px; padding:18px 44px; background:transparent; border:1px solid rgba(255,255,255,0.12); border-radius:12px; font-family:var(--font-display); font-size:1rem; font-weight:700; color:#fff; text-decoration:none; text-transform:uppercase; letter-spacing:0.16em; backdrop-filter:blur(10px); transition:border-color 0.3s,box-shadow 0.3s; }
+    .why-us__about-btn:hover { border-color:rgba(124,58,237,0.5); box-shadow:0 0 32px rgba(124,58,237,0.15); }
+    .why-us__about-btn__shimmer { position:absolute; inset:0; background:linear-gradient(90deg,transparent 0%,rgba(255,255,255,0.06) 50%,transparent 100%); transform:translateX(-100%); transition:transform 0.6s ease; }
+    .why-us__about-btn:hover .why-us__about-btn__shimmer { transform:translateX(100%); }
+    .why-us__about-btn__arrow { width:36px; height:36px; border-radius:50%; background:var(--gradient-cta); display:flex; align-items:center; justify-content:center; flex-shrink:0; transition:transform 0.3s ease; }
+    .why-us__about-btn__arrow svg { width:14px; height:14px; }
+    .why-us__about-btn:hover .why-us__about-btn__arrow { transform:translateX(4px); }
+  </style>
+  <link rel="stylesheet" href="mobile.css">
+
+  <!-- ═══════════════════════════════════════════════════════
+       STRUCTURED DATA — Rich, comprehensive, crawler-first
+       No city name repeated more than necessary in the UI
+  ════════════════════════════════════════════════════════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Kesh Aura",
+    "alternateName": ["Kesh Aura Agency", "Kesh Aura Digital", "Agence Kesh Aura"],
+    "description": "Kesh Aura is a 360° Digital Marketing Agency and Growth Partner based in Marrakesh, Morocco. Services include Social Media Strategy & Engagement Management, Brand Identity & Visual Storytelling, Performance Acquisition (SEA & Social Ads), Web Design & Development, SEO & Technical Optimization, AI Automation, Photography & Videography, Custom Software, and Brand Strategy. We serve brands across Morocco, Europe, and beyond.",
+    "url": "https://keshaura.com",
+    "logo": "https://keshaura.com/LOGO.png",
+    "image": "https://keshaura.com/og-image.jpg",
+    "telephone": "+212727095894",
+    "email": "contact@keshaura.com",
+    "foundingDate": "2023",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Marrakesh",
+      "addressRegion": "Marrakesh-Safi",
+      "addressCountry": "MA",
+      "postalCode": "40000"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 31.6295,
+      "longitude": -7.9811
+    },
+    "areaServed": [
+      { "@type": "City",    "name": "Marrakesh" },
+      { "@type": "Country", "name": "Morocco" },
+      { "@type": "Place",   "name": "Europe" },
+      { "@type": "Place",   "name": "Middle East" }
+    ],
+    "openingHours": "Mo-Sa 09:00-19:00",
+    "sameAs": [
+      "https://www.instagram.com/keshaura_agency/"
+    ],
+    "knowsAbout": [
+      "Digital Marketing", "Social Media Management", "SMMA",
+      "Brand Identity", "Visual Storytelling", "Branding",
+      "Performance Advertising", "SEA", "Meta Ads", "Google Ads", "TikTok Ads",
+      "Web Design", "Web Development", "E-commerce",
+      "Search Engine Optimization", "Technical SEO", "Local SEO Marrakesh",
+      "AI Automation", "Marketing Automation",
+      "Photography", "Videography", "Content Production",
+      "Custom Software Development",
+      "Brand Strategy", "Growth Marketing",
+      "Agence de Communication Marrakech",
+      "Agence Web Maroc",
+      "Marketing Digital Maroc",
+      "Création de site web Marrakech",
+      "Publicité Meta Google Maroc",
+      "E-réputation Management",
+      "Conseil en Transformation Digitale",
+      "Content Strategy & Storytelling"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "360° Digital Marketing Services",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Social Media Strategy & Engagement Management", "description": "Full-service social media management across Instagram, TikTok, Meta, and LinkedIn."}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Brand Identity & Visual Storytelling", "description": "Logo design, brand guidelines, and visual identity systems."}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Performance Acquisition — SEA & Social Ads", "description": "Paid campaigns on Meta, Google, and TikTok engineered for maximum ROI."}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Web Design & Development", "description": "Premium websites and web apps built for performance and conversion."}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "SEO & Technical Optimization", "description": "Technical and content SEO that drives sustained organic growth."}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AI Automation", "description": "Intelligent workflows and AI-powered tools that save time and scale fast."}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Photography & Videography", "description": "Cinematic production for brands that demand the best."}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Custom Software Development", "description": "Apps, platforms, and tools built precisely around your vision."}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Brand Strategy & Growth Marketing", "description": "Positioning and messaging that builds brands outlasting trends."}}
+      ]
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "47",
+      "bestRating": "5"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <script src="navbar.js" data-page="home"></script>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero__bg"></div>
+    <div class="hero__grid"></div>
+    <div class="hero__rays">
+      <div class="hero__ray"></div><div class="hero__ray"></div><div class="hero__ray"></div>
+    </div>
+    <div class="hero__container">
+      <div class="hero__content">
+        <div class="hero__badge">★ Digital Agency</div>
+        <h1 class="hero__title">
+          <span>CREATIVITY</span>
+          <span class="hero__title--sub">IS OUR</span>
+          <span class="word-cycle" aria-label="IMPACT" id="wordCycle">
+            <span class="word-cycle__item is-active">IMPACT</span>
+            <span class="word-cycle__item">STRATEGY</span>
+            <span class="word-cycle__item">VISION</span>
+          </span>
+        </h1>
+        <p class="hero__subtitle">360° Digital Marketing Agency. We help businesses accelerate online.</p>
+        <div class="hero__cta">
+          <a href="contact.html" class="btn btn--primary mag-btn"><span class="mag-btn__text">Let's Talk</span></a>
+          <a href="about.html" class="btn btn--secondary mag-btn"><span class="mag-btn__text">Who We Are →</span></a>
+        </div>
+        <div class="hero__stats">
+          <div class="stat"><span class="stat__value">37+</span><span class="stat__label">Clients Served</span></div>
+          <div class="stat"><span class="stat__value">7</span><span class="stat__label">Disciplines</span></div>
+          <div class="stat"><span class="stat__value">4yr</span><span class="stat__label">Experience</span></div>
+          <div class="stat"><span class="stat__value">3</span><span class="stat__label">Continents</span></div>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="cube c1"></div><div class="cube c2"></div><div class="cube c3"></div>
+        <div class="cube c4"></div><div class="cube c5"></div><div class="cube c6"></div>
+        <div class="cube c7"></div><div class="cube c8"></div><div class="cube c9"></div>
+        <div class="cube c10"></div><div class="cube c11"></div><div class="cube c12"></div>
+        <div class="hero__mascot-wrap">
+          <!-- FILE RENAMED: mascot.png → kesh-aura-digital-architect-creative-lead.png -->
+          <img
+            src="./kesh-aura-digital-architect-creative-lead.png"
+            alt="Kesh Aura Digital Architect - Specialist in High-End Digital Strategy and Creative Direction"
+            class="hero__mascot"
+            draggable="false"
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services" id="services">
+    <div class="services__inner">
+
+      <div class="services__panel">
+        <span class="services__eyebrow">What We Do</span>
+        <h2 class="services__label">Our Services</h2>
+        <p class="services__pitch">
+          Most agencies sell you deliverables.<br>
+          <strong>We sell you outcomes.</strong><br><br>
+          Your brand has 3 seconds to make someone stop scrolling.
+          We make sure those 3 seconds count — with work that's sharp,
+          intentional, and built to <strong>convert attention into revenue</strong>.<br><br>
+          Nine disciplines. One obsession:
+          <strong>your growth.</strong>
+        </p>
+        <div class="services__panel-spacer"></div>
+        <div class="services__panel-divider"></div>
+        <div class="mag-wrap services__cta-desktop">
+          <a href="services.html" class="services__cta mag-btn">
+            <span class="mag-btn__text">Explore All Services
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="svc-ui-wrap" id="svcUiWrap" style="display:none">
+        <div class="svc-progress-wrap">
+          <div class="svc-progress-track" id="svcDotsTrack"></div>
+        </div>
+      </div>
+
+      <div class="services__grid-wrap">
+      <div class="services__grid">
+
+        <div class="service-card">
+          <span class="service-card__num">01</span>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-linecap="round">
+              <circle cx="12" cy="12" r="2" fill="#a855f7" class="ic-smc-dot"/>
+              <circle cx="12" cy="12" r="5"  fill="none" stroke-width="1.2" class="ic-smc-r1"/>
+              <circle cx="12" cy="12" r="8"  fill="none" stroke-width="1"   class="ic-smc-r2"/>
+              <circle cx="12" cy="12" r="11" fill="none" stroke-width="0.7" class="ic-smc-r3"/>
+              <circle cx="4.5" cy="4.5" r="1.5" fill="#a855f7" class="ic-smc-node"/>
+              <circle cx="19.5" cy="4.5" r="1.5" fill="#a855f7" class="ic-smc-node"/>
+              <circle cx="4.5" cy="19.5" r="1.5" fill="#a855f7" class="ic-smc-node"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Social Media Management</h3>
+          <p class="service-card__desc">Strategy, content creation, and community growth across all platforms.</p>
+          <a href="services.html#social-media" class="service-card__readmore">Read More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+
+        <div class="service-card">
+          <span class="service-card__num">02</span>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-linecap="round">
+              <path d="M3 12 Q7 5 12 12 Q17 19 21 12" stroke-width="1.6" class="ic-ai-path" fill="none"/>
+              <circle cx="3"  cy="12" r="2" fill="#06b6d4" class="ic-ai-node"/>
+              <circle cx="12" cy="12" r="2" fill="#06b6d4" class="ic-ai-node2"/>
+              <circle cx="21" cy="12" r="2" fill="#06b6d4" class="ic-ai-node3"/>
+              <line x1="12" y1="3"  x2="12" y2="6"  stroke="#06b6d4" stroke-width="1" opacity="0.4"/>
+              <line x1="12" y1="18" x2="12" y2="21" stroke="#06b6d4" stroke-width="1" opacity="0.4"/>
+              <circle cx="12" cy="2.5"  r="1" fill="#06b6d4" opacity="0.5" class="ic-ai-node"/>
+              <circle cx="12" cy="21.5" r="1" fill="#06b6d4" opacity="0.5" class="ic-ai-node2"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">AI & Automation</h3>
+          <p class="service-card__desc">Intelligent workflows and AI-powered tools that save time and scale fast.</p>
+          <a href="services.html#automation" class="service-card__readmore">Read More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+
+        <div class="service-card">
+          <span class="service-card__num">03</span>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <g class="ic-wd-bl"><polyline points="8 6 3 12 8 18"/></g>
+              <g class="ic-wd-br"><polyline points="16 6 21 12 16 18"/></g>
+              <line x1="12" y1="8" x2="12" y2="16" stroke="#a855f7" stroke-width="2.5" class="ic-wd-cursor"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Web Development</h3>
+          <p class="service-card__desc">Premium websites and web apps built for performance and conversion.</p>
+          <a href="services.html#web-dev" class="service-card__readmore">Read More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+
+        <div class="service-card">
+          <span class="service-card__num">04</span>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 21 Q7 15 11 11" class="ic-gd-path"/>
+              <g class="ic-gd-nib">
+                <path d="M11 11 L15 7 L18 9 L14 15 Z" fill="none"/>
+                <line x1="15" y1="7" x2="21" y2="4" opacity="0.5"/>
+                <circle cx="11" cy="11" r="1.5" fill="#ec4899"/>
+              </g>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Graphic Design & Video</h3>
+          <p class="service-card__desc">Visual identities and motion graphics that stop the scroll.</p>
+          <a href="services.html#design-video" class="service-card__readmore">Read More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+
+        <div class="service-card">
+          <span class="service-card__num">05</span>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="1.6" stroke-linecap="round">
+              <circle cx="12" cy="12" r="9"/>
+              <circle cx="12" cy="12" r="4.5" class="ic-ph-lens"/>
+              <g class="ic-ph-shutter" stroke-width="1.2" opacity="0.6">
+                <line x1="12" y1="3"    x2="12" y2="7.5"/>
+                <line x1="12" y1="16.5" x2="12" y2="21"/>
+                <line x1="3"  y1="12"   x2="7.5" y2="12"/>
+                <line x1="16.5" y1="12" x2="21" y2="12"/>
+              </g>
+              <circle cx="12" cy="12" r="1.5" fill="#06b6d4"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Photography & Videography</h3>
+          <p class="service-card__desc">Cinematic production for brands that demand the best.</p>
+          <a href="services.html#photography" class="service-card__readmore">Read More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+
+        <div class="service-card">
+          <span class="service-card__num">06</span>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-linecap="round">
+              <line x1="2" y1="20" x2="22" y2="20" stroke-width="1" opacity="0.3"/>
+              <rect x="3"  y="13" width="4" height="7" rx="1" fill="#a855f7" opacity="0.45" class="ic-da-b1"/>
+              <rect x="10" y="8"  width="4" height="12" rx="1" fill="#a855f7" opacity="0.65" class="ic-da-b2"/>
+              <rect x="17" y="11" width="4" height="9"  rx="1" fill="#a855f7" opacity="0.45" class="ic-da-b3"/>
+              <g class="ic-da-arrow" stroke-width="1.6">
+                <polyline points="3 10 8 5 13 8 20 2"/>
+                <polyline points="17 2 20 2 20 5"/>
+              </g>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Digital Advertising</h3>
+          <p class="service-card__desc">Paid campaigns on Meta, Google, and TikTok engineered for max ROI.</p>
+          <a href="services.html#advertising" class="service-card__readmore">Read More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+
+        <div class="service-card">
+          <span class="service-card__num">07</span>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="1.6" stroke-linecap="round">
+              <g class="ic-seo-glass">
+                <circle cx="10" cy="10" r="6"/>
+                <line x1="14.5" y1="14.5" x2="20" y2="20" stroke-width="2"/>
+                <line x1="7.5" y1="10" x2="12.5" y2="10" class="ic-seo-line" stroke-width="1.2"/>
+                <line x1="10"  y1="7.5" x2="10"  y2="12.5" class="ic-seo-line" stroke-width="1.2"/>
+              </g>
+            </svg>
+          </div>
+          <h3 class="service-card__title">SEO</h3>
+          <p class="service-card__desc">Technical and content SEO that drives sustained organic growth.</p>
+          <a href="services.html#seo" class="service-card__readmore">Read More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+
+        <div class="service-card">
+          <span class="service-card__num">08</span>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="1.4" stroke-linecap="round">
+              <rect x="2" y="3" width="20" height="18" rx="2" fill="none"/>
+              <line x1="6" y1="8"  x2="16" y2="8"  opacity="0.8"/>
+              <line x1="6" y1="12" x2="13" y2="12" opacity="0.55"/>
+              <line x1="6" y1="16" x2="10" y2="16" opacity="0.35"/>
+              <line x1="17" y1="11" x2="17" y2="13" stroke-width="2.2" stroke-linecap="square" class="ic-sw-cur"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Custom Software</h3>
+          <p class="service-card__desc">Apps, platforms, and tools built precisely around your vision.</p>
+          <a href="services.html#software" class="service-card__readmore">Read More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+
+        <div class="service-card">
+          <span class="service-card__num">09</span>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="1.6" stroke-linecap="round">
+              <circle cx="12" cy="12" r="9" class="ic-bs-ring"/>
+              <circle cx="12" cy="12" r="1.5" fill="#a855f7"/>
+              <g class="ic-bs-needle">
+                <line x1="12" y1="12" x2="12" y2="5.5" stroke-width="1.8"/>
+                <polygon points="12,4.5 10.8,7 13.2,7" fill="#a855f7"/>
+                <line x1="12" y1="12" x2="12" y2="17" opacity="0.3" stroke-width="1.4"/>
+              </g>
+              <circle cx="12" cy="3"  r="0.7" fill="#a855f7" opacity="0.5"/>
+              <circle cx="12" cy="21" r="0.7" fill="#a855f7" opacity="0.5"/>
+              <circle cx="3"  cy="12" r="0.7" fill="#a855f7" opacity="0.5"/>
+              <circle cx="21" cy="12" r="0.7" fill="#a855f7" opacity="0.5"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Brand Strategy</h3>
+          <p class="service-card__desc">Positioning and messaging that builds brands outlasting trends.</p>
+          <a href="services.html#brand-strategy" class="service-card__readmore">Read More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+
+      </div>
+      </div>
+    </div>
+
+    <div class="svc-cta-mobile" id="svcCtaMobile" style="display:none">
+      <a href="services.html" class="services__cta">
+        Explore All Services
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== WHY US ===== -->
+  <section class="why-us" id="why-us">
+    <div class="why-us__container">
+      <div class="why-us__left">
+        <span class="why-us__eyebrow">Our Edge</span>
+        <h2 class="why-us__headline">Why <span>Us?</span></h2>
+        <div class="why-us__pitch">
+          <p class="pitch-hook">Your market is crowded. Everyone is posting. Everyone is running ads. Most of it goes <strong>nowhere.</strong></p>
+          <p class="pitch-hook">The difference is not the budget. It is the <strong>thinking behind it.</strong></p>
+          <p class="pitch-hook">We don't follow trends. We study them, break them down, and build something <strong>better.</strong> Something that feels fresh, looks sharp, and hits exactly the right people at exactly the right moment.</p>
+          <p class="pitch-statement">Creativity is not decoration for us. It is the strategy.</p>
+          <p class="pitch-hook">Every campaign we build, every brand we shape, every piece of content we create — starts with one question: <em>what will make people stop and feel something?</em></p>
+          <p class="pitch-hook">We find what your competitors are missing. We build what your audience didn't know they were waiting for. Then we make sure your business <strong>stands out and stays out.</strong></p>
+          <p class="pitch-proof">Four years. Three continents. Brands, services, doctors, restaurants, coaches — <strong>all grew. None came back saying it didn't work.</strong></p>
+          <p class="pitch-close">That is why you choose us.</p>
+        </div>
+        <div class="mag-wrap" style="margin-top:16px;align-self:flex-start;">
+          <a href="about.html" class="services__cta mag-btn" style="font-size:0.88rem;padding:14px 28px;letter-spacing:0.12em;">
+            <span class="mag-btn__text">Who We Are
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="why-us__right">
+        <div class="why-pulse why-pulse--1"></div>
+        <div class="why-pulse why-pulse--2"></div>
+        <div class="why-us__glow"></div>
+        <!-- FILE RENAMED: MOS.png → kesh-aura-growth-guardian-roi-specialist.png -->
+        <img
+          src="./kesh-aura-growth-guardian-roi-specialist.png"
+          alt="Kesh Aura Growth Guardian - Ensuring ROI and Sustainable Digital Scaling for Brands"
+          class="why-us__mascot"
+          draggable="false"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ARTICLES ===== -->
+  <section class="articles-section" id="articles">
+    <div class="articles-section__inner">
+      <div class="articles-section__header">
+        <span class="articles-section__eyebrow">Knowledge & Insights</span>
+        <div class="articles-section__title-row">
+          <h2 class="articles-section__headline">Latest <span>Articles</span></h2>
+          <a href="articles.html" class="articles-section__viewall">
+            View all
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="articles-track-wrapper">
+        <div class="articles-track" id="articlesTrack">
+          <a href="article-1.html" class="article-card">
+            <div class="article-card__img">
+              <img src="https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=600&q=80" alt="Social Media Strategy">
+              <span class="article-card__cat">Social Media</span>
+            </div>
+            <div class="article-card__body">
+              <span class="article-card__meta">5 min read · March 2025</span>
+              <h3 class="article-card__title">Why 90% of Social Media Strategies Fail — And What to Do Instead</h3>
+              <p class="article-card__excerpt">Most brands post without a plan. Here's the framework we use to build content that actually converts.</p>
+            </div>
+          </a>
+          <a href="article-2.html" class="article-card">
+            <div class="article-card__img">
+              <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&q=80" alt="Brand Identity">
+              <span class="article-card__cat">Branding</span>
+            </div>
+            <div class="article-card__body">
+              <span class="article-card__meta">7 min read · February 2025</span>
+              <h3 class="article-card__title">The 3 Elements Every Strong Brand Identity Must Have</h3>
+              <p class="article-card__excerpt">A logo is not a brand. Here's what separates businesses people forget from brands people trust.</p>
+            </div>
+          </a>
+          <a href="article-3.html" class="article-card">
+            <div class="article-card__img">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80" alt="Digital Ads">
+              <span class="article-card__cat">Paid Ads</span>
+            </div>
+            <div class="article-card__body">
+              <span class="article-card__meta">6 min read · January 2025</span>
+              <h3 class="article-card__title">How We Achieved 3× ROI for a Local Business Using Meta Ads</h3>
+              <p class="article-card__excerpt">A real case study — the exact strategy, targeting, and creative decisions that tripled their return.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="articles-dots" id="articlesDots">
+        <span class="articles-dot active"></span>
+        <span class="articles-dot"></span>
+        <span class="articles-dot"></span>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .articles-section { position:relative; scroll-margin-top:72px; padding:60px clamp(24px,5vw,80px) 100px; }
+    .articles-section::before { content:''; position:absolute; inset:0; pointer-events:none; background-image:linear-gradient(to right,rgba(124,58,237,0.05) 1px,transparent 1px),linear-gradient(to bottom,rgba(124,58,237,0.05) 1px,transparent 1px); background-size:48px 48px; -webkit-mask-image:radial-gradient(ellipse 90% 90% at 50% 50%,black 20%,transparent 90%); mask-image:radial-gradient(ellipse 90% 90% at 50% 50%,black 20%,transparent 90%); }
+    .articles-section__inner { max-width:var(--container-max); margin:0 auto; }
+    .articles-section__header { display:flex; flex-direction:column; align-items:flex-start; margin-bottom:48px; }
+    .articles-section__title-row { display:flex; align-items:flex-end; justify-content:space-between; width:100%; margin-top:12px; }
+    .articles-section__eyebrow { display:block; font-family:var(--font-body); font-size:0.65rem; font-weight:600; color:var(--accent-cyan); text-transform:uppercase; letter-spacing:0.22em; margin-bottom:12px; }
+    .articles-section__eyebrow::before { content:''; display:inline-block; width:18px; height:1px; background:var(--accent-cyan); opacity:0.5; margin-right:10px; vertical-align:middle; }
+    .articles-section__headline { font-family:var(--font-hero); font-size:clamp(2.4rem,4vw,3.8rem); font-weight:900; text-transform:uppercase; line-height:0.92; color:#fff; }
+    .articles-section__headline span { background:var(--gradient-cta); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+    .articles-section__viewall { display:inline-flex; align-items:center; gap:8px; font-family:var(--font-body); font-size:0.8rem; font-weight:600; color:rgba(255,255,255,0.5); text-transform:uppercase; letter-spacing:0.12em; transition:color 0.3s; padding-bottom:4px; }
+    .articles-section__viewall svg { width:14px; height:14px; transition:transform 0.3s; }
+    .articles-section__viewall:hover { color:#fff; }
+    .articles-section__viewall:hover svg { transform:translateX(4px); }
+    .articles-track-wrapper { position:relative; overflow:hidden; }
+    .articles-track { display:flex; gap:28px; transition:transform 0.7s cubic-bezier(0.16,1,0.3,1); will-change:transform; }
+    .article-card { flex:0 0 calc(33.333% - 19px); background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.07); border-radius:16px; overflow:hidden; text-decoration:none; color:inherit; transition:border-color 0.4s,transform 0.4s,box-shadow 0.4s; display:flex; flex-direction:column; }
+    .article-card:hover { border-color:rgba(124,58,237,0.4); transform:translateY(-6px); box-shadow:0 24px 60px rgba(0,0,0,0.4),0 0 40px rgba(124,58,237,0.08); }
+    .article-card__img { position:relative; width:100%; aspect-ratio:16/9; overflow:hidden; }
+    .article-card__img img { width:100%; height:100%; object-fit:cover; transition:transform 0.7s cubic-bezier(0.16,1,0.3,1); filter:brightness(0.85); }
+    .article-card:hover .article-card__img img { transform:scale(1.06); }
+    .article-card__cat { position:absolute; top:16px; left:16px; font-family:var(--font-body); font-size:0.62rem; font-weight:700; text-transform:uppercase; letter-spacing:0.16em; color:#fff; background:rgba(124,58,237,0.85); backdrop-filter:blur(8px); padding:5px 12px; border-radius:20px; }
+    .article-card__body { padding:28px 28px 32px; display:flex; flex-direction:column; gap:12px; flex:1; }
+    .article-card__meta { font-family:var(--font-body); font-size:0.68rem; font-weight:500; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.1em; }
+    .article-card__title { font-family:var(--font-display); font-size:clamp(1rem,1.3vw,1.18rem); font-weight:700; color:#fff; line-height:1.4; letter-spacing:0.01em; }
+    .article-card__excerpt { font-family:var(--font-body); font-size:0.85rem; color:rgba(255,255,255,0.45); line-height:1.65; margin-top:auto; }
+    .articles-nav { position:absolute; top:50%; transform:translateY(-50%); width:48px; height:48px; border-radius:50%; background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); color:rgba(255,255,255,0.6); display:flex; align-items:center; justify-content:center; transition:all 0.3s; z-index:10; backdrop-filter:blur(12px); }
+    .articles-nav svg { width:18px; height:18px; }
+    .articles-nav--prev { left:-24px; }
+    .articles-nav--next { right:-24px; }
+    .articles-nav:hover { background:rgba(124,58,237,0.3); border-color:rgba(124,58,237,0.5); color:#fff; }
+    .articles-nav:disabled { opacity:0.2; pointer-events:none; }
+    .articles-dots { display:flex; align-items:center; justify-content:center; gap:8px; margin-top:40px; }
+    .articles-dot { width:6px; height:6px; border-radius:50%; background:rgba(255,255,255,0.2); transition:all 0.4s; cursor:pointer; }
+    .articles-dot.active { background:var(--accent-purple); width:24px; border-radius:3px; }
+    @media (max-width:900px) { .article-card { flex:0 0 calc(50% - 14px); } }
+    @media (max-width:600px) { .article-card { flex:0 0 100%; } .articles-nav--prev { left:-12px; } .articles-nav--next { right:-12px; } }
+  </style>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contact">
+    <div class="contact__inner">
+      <div class="contact__panel">
+        <div class="contact__panel-left">
+          <div class="contact__status">
+            <span class="contact__status-dot"></span>
+            Available for new projects
+          </div>
+          <span class="contact__eyebrow">Get In Touch</span>
+          <h2 class="contact__headline">START A <span>PROJECT</span></h2>
+          <p class="contact__sub">Tell us about your business. We study it, understand it, and build something that makes people stop and feel something.</p>
+          <div class="contact__details">
+            <div class="contact__detail">
+              <div class="contact__dicon contact__dicon--purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="contact__dtext">
+                <span class="contact__dlabel">Email</span>
+                <a href="mailto:contact@keshaura.com" class="contact__dvalue">contact@keshaura.com</a>
+              </div>
+            </div>
+            <div class="contact__detail">
+              <div class="contact__dicon contact__dicon--purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.46 2 2 0 0 1 3.6 1.28h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div class="contact__dtext">
+                <span class="contact__dlabel">Phone</span>
+                <a href="tel:+212727095894" class="contact__dvalue">+212 727 095 894</a>
+              </div>
+            </div>
+            <div class="contact__detail">
+              <div class="contact__dicon contact__dicon--green">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              <div class="contact__dtext">
+                <span class="contact__dlabel">Location</span>
+                <span class="contact__dvalue contact__online"><span class="contact__online-dot"></span>100% Online</span>
+              </div>
+            </div>
+            <div class="contact__detail">
+              <div class="contact__dicon contact__dicon--cyan">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div class="contact__dtext">
+                <span class="contact__dlabel">Working Hours</span>
+                <span class="contact__dvalue">Mon – Sat &nbsp;<em>9AM – 7PM</em></span>
+              </div>
+            </div>
+          </div>
+          <div class="contact__socials">
+            <a href="https://www.instagram.com/keshaura_agency/" target="_blank" class="contact__social contact__social--ig" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://wa.me/212687714699" target="_blank" class="contact__social contact__social--wa" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact__mobile-cta">
+          <a href="contact.html">
+            Start a Project
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="contact__panel-divider"></div>
+
+        <div class="contact__panel-right">
+          <div class="contact__form-header">
+            <div>
+              <h3 class="contact__form-title">Your Project Details</h3>
+              <p class="contact__form-sub">Fill in your information and we'll get back to you within 24 hours</p>
+            </div>
+            <div class="contact__response-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" width="11" height="11"><polyline points="20 6 9 17 4 12"/></svg>
+              Fast Reply
+            </div>
+          </div>
+          <form class="contact__form" id="contactForm" action="https://formspree.io/f/xpqynnlo" method="POST">
+            <div class="contact__row">
+              <div class="contact__field">
+                <label class="contact__label">Your Name</label>
+                <input type="text" name="name" class="contact__input" placeholder="Ahmed El Mansouri" required>
+              </div>
+              <div class="contact__field">
+                <label class="contact__label">Email Address</label>
+                <input type="email" name="email" class="contact__input" placeholder="ahmed@company.com" required>
+              </div>
+            </div>
+            <div class="contact__field">
+              <label class="contact__label">Phone Number</label>
+              <input type="tel" name="phone" class="contact__input" placeholder="+212 600 000 000">
+            </div>
+            <div class="contact__field contact__field--grow">
+              <label class="contact__label">Your Project</label>
+              <textarea name="message" class="contact__input contact__textarea" placeholder="Tell us what you need — social media, branding, ads, website..." required></textarea>
+            </div>
+            <button type="submit" class="contact__submit">
+              <span>Launch My Project</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              <span class="contact__shimmer"></span>
+            </button>
+            <div class="contact__success" id="contactSuccess">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>Message sent! We'll get back to you within 24 hours.</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .contact { position:relative; padding:100px 0 0; scroll-margin-top:72px; }
+    .contact::before { display:none; }
+    .contact__inner { position:relative; z-index:1; width:100%; }
+    .contact__panel { position:relative; display:grid; grid-template-columns:1fr 1px 1.6fr; width:100%; background:rgba(255,255,255,0.02); border-top:1px solid rgba(88,28,180,0.22); border-bottom:1px solid rgba(88,28,180,0.18); border-radius:0; overflow:hidden; transition:border-color 0.3s; box-shadow:none; }
+    .contact__panel:hover { border-color:rgba(124,58,237,0.28); box-shadow:none; }
+    .contact__panel-left { padding:56px 60px; position:relative; z-index:1; display:flex; flex-direction:column; }
+    .contact__status { display:inline-flex; align-items:center; gap:8px; background:rgba(34,197,94,0.07); border:1px solid rgba(34,197,94,0.18); border-radius:20px; padding:5px 14px; font-size:0.68rem; font-weight:600; color:#22c55e; letter-spacing:0.05em; margin-bottom:24px; width:fit-content; }
+    .contact__status-dot { width:6px; height:6px; border-radius:50%; background:#22c55e; flex-shrink:0; animation:onlinePulse 2s ease-in-out infinite; }
+    .contact__eyebrow { display:inline-flex; align-items:center; gap:8px; font-size:0.6rem; font-weight:600; color:rgba(167,139,250,0.9); text-transform:uppercase; letter-spacing:0.22em; margin-bottom:12px; }
+    .contact__eyebrow::before { content:''; width:16px; height:1px; background:rgba(124,58,237,0.55); opacity:1; }
+    .contact__headline { font-family:var(--font-hero); font-size:clamp(2rem,2.8vw,3rem); font-weight:900; text-transform:uppercase; line-height:1; color:#fff; margin-bottom:14px; white-space:nowrap; }
+    .contact__headline span { background:var(--gradient-cta); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+    .contact__sub { font-size:0.8rem; color:rgba(255,255,255,0.3); line-height:1.7; margin-bottom:28px; }
+    .contact__details { display:flex; flex-direction:column; margin-bottom:28px; }
+    .contact__detail { display:flex; align-items:center; gap:13px; padding:11px 0; border-bottom:1px solid rgba(76,29,149,0.18); }
+    .contact__detail:first-child { border-top:1px solid rgba(76,29,149,0.18); }
+    .contact__dicon { width:34px; height:34px; border-radius:8px; flex-shrink:0; display:flex; align-items:center; justify-content:center; }
+    .contact__dicon svg { width:14px; height:14px; }
+    .contact__dicon--purple { background:rgba(124,58,237,0.12); border:1px solid rgba(124,58,237,0.22); color:#a78bfa; }
+    .contact__dicon--green  { background:rgba(34,197,94,0.10);  border:1px solid rgba(34,197,94,0.22);  color:#22c55e; }
+    .contact__dicon--cyan   { background:rgba(6,182,212,0.10);  border:1px solid rgba(6,182,212,0.22);  color:var(--accent-cyan); }
+    .contact__dtext { display:flex; flex-direction:column; gap:1px; }
+    .contact__dlabel { font-size:0.54rem; font-weight:700; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.18em; }
+    .contact__dvalue { font-family:var(--font-body); font-size:0.92rem; font-weight:500; color:#ffffff; transition:color 0.3s; letter-spacing:0.01em; }
+    .contact__dvalue em { font-style:normal; color:#ffffff; font-weight:600; }
+    a.contact__dvalue:hover { color:#fff; }
+    .contact__online { display:inline-flex; align-items:center; gap:7px; color:#22c55e !important; font-weight:600; }
+    .contact__online-dot { width:6px; height:6px; border-radius:50%; background:#22c55e; flex-shrink:0; animation:onlinePulse 2s ease-in-out infinite; }
+    @keyframes onlinePulse { 0%,100%{box-shadow:0 0 6px rgba(34,197,94,0.5);}50%{box-shadow:0 0 14px rgba(34,197,94,0.95);} }
+    .contact__socials { display:flex; gap:9px; margin-top:auto; }
+    .contact__social { width:52px; height:52px; border-radius:12px; display:flex; align-items:center; justify-content:center; border:1px solid rgba(255,255,255,0.1); background:rgba(255,255,255,0.04); color:rgba(255,255,255,0.6); transition:all 0.3s; }
+    .contact__social svg { width:22px; height:22px; }
+    .contact__social--ig:hover { background:rgba(225,48,108,0.12); border-color:rgba(225,48,108,0.35); color:#e1306c; transform:translateY(-3px); box-shadow:0 8px 20px rgba(225,48,108,0.18); }
+    .contact__social--fb:hover { background:rgba(24,119,242,0.12); border-color:rgba(24,119,242,0.35); color:#1877f2; transform:translateY(-3px); box-shadow:0 8px 20px rgba(24,119,242,0.18); }
+    .contact__social--li:hover { background:rgba(10,102,194,0.12); border-color:rgba(10,102,194,0.35); color:#0a66c2; transform:translateY(-3px); box-shadow:0 8px 20px rgba(10,102,194,0.18); }
+    .contact__social--wa:hover { background:rgba(37,211,102,0.12); border-color:rgba(37,211,102,0.35); color:#25d366; transform:translateY(-3px); box-shadow:0 8px 20px rgba(37,211,102,0.18); }
+    .contact__mobile-cta { display:none; }
+    .contact__panel-divider { background:linear-gradient(to bottom,transparent 0%,rgba(88,28,180,0.45) 50%,transparent 100%); position:relative; z-index:1; }
+    .contact__panel-right { padding:56px 60px; position:relative; z-index:1; display:flex; flex-direction:column; }
+    .contact__form-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:28px; gap:12px; }
+    .contact__form-title { font-family:var(--font-hero); font-size:1.55rem; font-weight:700; color:#fff; letter-spacing:0.02em; margin-bottom:4px; }
+    .contact__form-sub { font-size:0.73rem; color:rgba(255,255,255,0.28); }
+    .contact__response-badge { display:inline-flex; align-items:center; gap:6px; flex-shrink:0; background:rgba(124,58,237,0.1); border:1px solid rgba(124,58,237,0.25); border-radius:20px; padding:5px 12px; font-size:0.6rem; font-weight:700; color:#a78bfa; text-transform:uppercase; letter-spacing:0.1em; }
+    .contact__form { display:flex; flex-direction:column; gap:8px; flex:1; }
+    .contact__row { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+    .contact__field { display:flex; flex-direction:column; gap:6px; padding:11px 14px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.07); border-radius:10px; transition:border-color 0.3s,background 0.3s,box-shadow 0.3s; }
+    .contact__field--grow { flex:1; }
+    .contact__field--grow .contact__textarea { flex:1; min-height:0; height:100%; }
+    .contact__field:focus-within { border-color:rgba(124,58,237,0.5); background:rgba(124,58,237,0.04); box-shadow:0 0 0 3px rgba(124,58,237,0.07); }
+    .contact__label { font-size:0.54rem; font-weight:700; letter-spacing:0.18em; color:rgba(255,255,255,0.25); text-transform:uppercase; transition:color 0.3s; }
+    .contact__field:focus-within .contact__label { color:#a78bfa; }
+    .contact__input { background:transparent; border:none; outline:none; font-family:var(--font-body); font-size:0.88rem; color:#fff; width:100%; resize:none; padding:0; }
+    .contact__input::placeholder { color:rgba(255,255,255,0.13); }
+    .contact__textarea { min-height:80px; padding-top:2px; }
+    .contact__submit { position:relative; overflow:hidden; display:flex; align-items:center; justify-content:center; gap:10px; width:100%; margin-top:4px; padding:16px 32px; background:var(--gradient-cta); border:none; border-radius:10px; font-family:var(--font-body); font-size:0.82rem; font-weight:700; color:#fff; text-transform:uppercase; letter-spacing:0.14em; cursor:pointer; transition:opacity 0.3s,transform 0.2s,box-shadow 0.3s; }
+    .contact__submit svg { width:15px; height:15px; transition:transform 0.3s; flex-shrink:0; }
+    .contact__submit:hover { opacity:0.95; transform:translateY(-2px); box-shadow:0 12px 36px rgba(142,45,226,0.35); }
+    .contact__submit:active { transform:scale(0.95); }
+    .contact__submit:hover svg { transform:translateX(5px); }
+    .contact__shimmer { position:absolute; top:0; left:-100%; width:60%; height:100%; background:linear-gradient(90deg,transparent,rgba(255,255,255,0.15),transparent); transition:left 0.55s ease; pointer-events:none; }
+    .contact__submit:hover .contact__shimmer { left:160%; }
+    .contact__success { display:none; align-items:center; gap:10px; margin-top:10px; padding:13px 16px; background:rgba(34,197,94,0.07); border:1px solid rgba(34,197,94,0.18); border-radius:10px; font-size:0.83rem; color:#22c55e; font-weight:500; }
+    .contact__success svg { width:18px; height:18px; flex-shrink:0; }
+    .contact__success.show { display:flex; }
+    @media (max-width:1024px) { .contact__panel { grid-template-columns:1fr; } .contact__panel-divider { display:none; } .contact__panel-right { border-top:1px solid rgba(76,29,149,0.2); } }
+    @media (max-width:600px) { .contact__panel-left,.contact__panel-right { padding:32px 24px; } .contact__headline { font-size:clamp(1.8rem,8vw,2.4rem); white-space:normal; } .contact__row { grid-template-columns:1fr; } .contact__submit { padding:15px 24px; } }
+  </style>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2026 Kesh Aura. All rights reserved.</p>
+      <p class="footer__powered">Designed &amp; built by <span>Kesh Aura</span></p>
+      <p class="footer__copy">Morocco · Marrakech</p>
+    </div>
+    <!-- SEO crawler text — invisible to users, indexed by Google -->
+    <p class="footer__seo-index" aria-hidden="true">
+      Expertise: SMMA · Agence Marketing Digital · Agence de Communication · Web Design · Branding · SEO Marrakech · Publicité Meta &amp; Google · Création de site web Marrakech · Growth Marketing · Performance Acquisition · Brand Activation Studio · Conseil Transformation Digitale
+    </p>
+  </footer>
+
+  <style>
+    .footer { border-top:1px solid rgba(255,255,255,0.06); padding:0; margin:0; }
+    .footer__bottom { display:flex; align-items:center; justify-content:space-between; padding:22px clamp(24px,4vw,80px); gap:20px; flex-wrap:wrap; }
+    .footer__copy { font-family:var(--font-body); font-size:0.75rem; color:rgba(255,255,255,0.22); letter-spacing:0.04em; }
+    .footer__powered { font-family:var(--font-body); font-size:0.75rem; color:rgba(255,255,255,0.22); letter-spacing:0.04em; text-align:center; }
+    .footer__powered span { background:var(--gradient-cta); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; font-weight:700; }
+    /* SEO index line — nearly invisible to human eye, fully readable by crawlers */
+    .footer__seo-index {
+      font-family: var(--font-body);
+      font-size: 0.55rem;
+      color: rgba(255,255,255,0.045);
+      letter-spacing: 0.06em;
+      padding: 6px clamp(24px,4vw,80px) 14px;
+      line-height: 1.8;
+      pointer-events: none;
+      user-select: none;
+    }
+    @media (max-width:580px) { .footer__bottom { flex-direction:column; align-items:center; gap:8px; text-align:center; } }
+  </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+    /* ── MAGNETIC BUTTONS ── */
+    (function() {
+      var wraps = document.querySelectorAll('.mag-wrap');
+      wraps.forEach(function(wrap) {
+        var btn  = wrap.querySelector('.mag-btn');
+        var text = wrap.querySelector('.mag-btn__text');
+        if (!btn) return;
+        wrap.addEventListener('mousemove', function(e) {
+          var r = btn.getBoundingClientRect();
+          var dx = e.clientX - (r.left + r.width/2);
+          var dy = e.clientY - (r.top + r.height/2);
+          gsap.to(btn,  { x:dx*0.38, y:dy*0.38, duration:0.4, ease:'power3.out' });
+          if (text) gsap.to(text, { x:dx*0.18, y:dy*0.18, duration:0.4, ease:'power3.out' });
+        });
+        wrap.addEventListener('mouseleave', function() {
+          gsap.to(btn,  { x:0, y:0, duration:0.7, ease:'elastic.out(1,0.4)' });
+          if (text) gsap.to(text, { x:0, y:0, duration:0.7, ease:'elastic.out(1,0.4)' });
+        });
+      });
+    })();
+
+    /* ── SERVICE CARDS HOVER ── */
+    (function() {
+      if (window.innerWidth <= 768) return;
+      var grid = document.querySelector('.services__grid');
+      if (!grid) return;
+      var cards = Array.from(grid.querySelectorAll('.service-card'));
+      var current = null;
+      function activate(active) {
+        if (current === active) return;
+        current = active;
+        cards.forEach(function(card) {
+          gsap.killTweensOf(card);
+          if (card === active) {
+            gsap.to(card, { scale:1.22, opacity:1, zIndex:10, borderColor:'rgba(124,58,237,0.45)', boxShadow:'0 20px 40px rgba(0,0,0,0.5),0 0 20px rgba(124,58,237,0.1)', duration:0.45, ease:'expo.out' });
+            card.classList.add('is-active');
+          } else {
+            gsap.to(card, { scale:0.88, opacity:0.5, zIndex:1, borderColor:'rgba(255,255,255,0.02)', boxShadow:'none', duration:0.45, ease:'expo.out' });
+            card.classList.remove('is-active');
+          }
+        });
+      }
+      function reset() {
+        current = null;
+        cards.forEach(function(card) {
+          gsap.killTweensOf(card);
+          gsap.to(card, { scale:1, opacity:1, zIndex:1, borderColor:'rgba(255,255,255,0.07)', boxShadow:'none', duration:0.45, ease:'expo.out' });
+          card.classList.remove('is-active');
+        });
+      }
+      cards.forEach(function(c) { c.addEventListener('mouseenter', function() { activate(c); }); });
+      grid.addEventListener('mouseleave', reset);
+    })();
+
+    /* ── ARTICLES CAROUSEL ── */
+    (function() {
+      var track  = document.getElementById('articlesTrack');
+      var prev   = document.getElementById('articlesPrev');
+      var next   = document.getElementById('articlesNext');
+      var dotsEl = document.getElementById('articlesDots');
+      if (!track) return;
+      var cards = Array.from(track.querySelectorAll('.article-card'));
+      var dots  = dotsEl ? Array.from(dotsEl.querySelectorAll('.articles-dot')) : [];
+      var idx = 0;
+      if (window.innerWidth <= 768) {
+        track.addEventListener('scroll', function() {
+          var w = cards[0] ? cards[0].offsetWidth + 16 : 1;
+          var i = Math.max(0, Math.min(Math.round(track.scrollLeft / w), cards.length - 1));
+          if (i !== idx) { idx = i; dots.forEach(function(d,j) { d.classList.toggle('active', j===idx); }); }
+        }, { passive:true });
+        dots.forEach(function(d,i) { d.addEventListener('click', function() { track.scrollTo({ left:i*(cards[0].offsetWidth+16), behavior:'smooth' }); }); });
+        return;
+      }
+      function goTo(n) {
+        idx = Math.max(0, Math.min(n, cards.length-1));
+        gsap.to(track, { x:-idx*(cards[0].offsetWidth+28), duration:0.5, ease:'expo.out' });
+        dots.forEach(function(d,i) { d.classList.toggle('active', i===idx); });
+      }
+      if (next) next.addEventListener('click', function() { goTo(idx+1); });
+      if (prev) prev.addEventListener('click', function() { goTo(idx-1); });
+      dots.forEach(function(d,i) { d.addEventListener('click', function() { goTo(i); }); });
+    })();
+
+    /* ── NAVBAR SCROLL (fallback if navbar.js not loaded) ── */
+    (function() {
+      var navbar = document.getElementById('ka-nav') || document.getElementById('navbar');
+      if (!navbar) return;
+      window.addEventListener('scroll', function() { navbar.classList.toggle('stuck', window.scrollY > 50); }, { passive:true });
+    })();
+
+    /* ── SCROLL REVEALS ── */
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.utils.toArray('.services,.why-us,.articles-section,.contact').forEach(function(el) {
+      gsap.fromTo(el, { opacity:0, y:40 }, { opacity:1, y:0, duration:0.9, ease:'power3.out', scrollTrigger:{ trigger:el, start:'top 88%' } });
+    });
+
+    /* ── WORD CYCLE ── */
+    (function() {
+      var items = document.querySelectorAll('.word-cycle__item');
+      if (!items.length) return;
+      var idx = 0;
+      setInterval(function() {
+        items[idx].classList.remove('is-active');
+        idx = (idx+1) % items.length;
+        items[idx].classList.add('is-active');
+      }, 2800);
+    })();
+  </script>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+  <style>
+    .scroll-top { position:fixed; bottom:24px; right:24px; z-index:9990; width:44px; height:44px; border-radius:50%; background:linear-gradient(135deg,#8E2DE2 0%,#4A00E0 100%); border:none; cursor:pointer; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 20px rgba(142,45,226,0.45); opacity:0; visibility:hidden; transform:translateY(12px); transition:opacity 0.3s,visibility 0.3s,transform 0.3s,box-shadow 0.3s; }
+    .scroll-top.visible { opacity:1; visibility:visible; transform:translateY(0); }
+    .scroll-top:hover { box-shadow:0 8px 28px rgba(142,45,226,0.55); transform:translateY(-3px); }
+    .scroll-top:active { transform:translateY(-1px) scale(0.95); }
+    .scroll-top svg { width:18px; height:18px; color:#fff; }
+  </style>
+  <script>
+    (function(){
+      var btn = document.getElementById('scrollTop');
+      window.addEventListener('scroll', function() { btn.classList.toggle('visible', window.scrollY > 300); }, { passive:true });
+      btn.addEventListener('click', function() { window.scrollTo({ top:0, behavior:'smooth' }); });
+    })();
+  </script>
+
+  <script src="mobile.js"></script>
+  <script>
+    document.querySelectorAll('.hero__mascot,.why-us__mascot').forEach(function(img) {
+      ['dragstart','drag','dragend','mousedown','mouseup','mousemove','touchstart','touchmove','touchend','contextmenu','click','selectstart'].forEach(function(ev) {
+        img.addEventListener(ev, function(e) { e.preventDefault(); e.stopPropagation(); return false; }, { passive:false, capture:true });
+      });
+      img.setAttribute('draggable','false');
+      img.style.pointerEvents = 'none';
+      img.style.userSelect = 'none';
+      img.style.webkitUserDrag = 'none';
+    });
+  </script>
+  <script src="whatsapp-widget.js"></script>
+</body>
+</html>

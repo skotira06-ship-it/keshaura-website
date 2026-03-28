@@ -1,0 +1,777 @@
+/*
+ * mobile.css — Kesh Aura
+ * Phone styles only (max-width: 768px). Desktop untouched.
+ * Place in kesh-aura/ root next to index.html
+ */
+
+@media (max-width:768px) {
+  html, body { overflow-x: clip; }
+
+  /* ── NAVBAR ──────────────────────────────────────────────────────────── */
+  .navbar {
+    height: 64px !important;
+    padding: 0 18px !important;
+    background: transparent !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+  }
+  .navbar.stuck {
+    background: rgba(5,5,16,0.92) !important;
+    backdrop-filter: blur(20px) !important;
+    border-bottom: 1px solid rgba(124,58,237,0.15) !important;
+  }
+  .nav__links, .nav__cta { display: none !important; }
+  .nav__burger            { display: flex !important; background: none !important; border: none !important; padding: 8px !important; }
+  .nav__burger span       { width: 24px !important; height: 2px !important; background: rgba(255,255,255,0.9) !important; }
+  .logo__icon             { width: 82px !important; height: 82px !important; }
+  .logo__name             { font-size: 1rem !important; letter-spacing: 0.10em !important; }
+  .logo__tagline          { font-size: 0.46rem !important; letter-spacing: 0.22em !important; }
+
+  /* ── HERO ────────────────────────────────────────────────────────────── */
+  .hero {
+    height: 100vh !important; min-height: 100vh !important;
+    max-height: 100vh !important; padding: 0 !important; overflow: hidden !important;
+  }
+  .hero__container {
+    display: flex !important; flex-direction: column !important;
+    align-items: center !important; justify-content: flex-end !important;
+    padding: 0 20px 3vh !important; padding-top: 15vh !important;
+    width: 100% !important; height: auto !important; gap: 0 !important;
+  }
+  .hero__visual {
+    order: -1 !important; width: 100% !important;
+    display: flex !important; align-items: center !important;
+    justify-content: center !important; margin-bottom: 20px !important; flex-shrink: 0 !important;
+  }
+  .hero__mascot-wrap {
+    width: 100% !important; display: flex !important;
+    align-items: center !important; justify-content: center !important;
+  }
+  .hero__mascot {
+    height: 36vh !important; width: auto !important;
+    animation: floatMascot 5.5s ease-in-out infinite !important;
+    filter: drop-shadow(0 0 20px rgba(124,58,237,0.5)) drop-shadow(0 15px 35px rgba(0,0,0,0.6)) !important;
+  }
+  .cube { display: none !important; }
+  .metric-cards { display: none !important; }
+  /* 7 cubes spread around the hero mascot */
+  .c1  { display:block!important; width:15px!important; height:15px!important; border-radius:3px!important; top:8%!important;   right:10%!important; left:auto!important; bottom:auto!important; animation-duration:6s!important; animation-delay:0s!important; }
+  .c3  { display:block!important; width:11px!important; height:11px!important; border-radius:3px!important; top:38%!important;  right:6%!important;  left:auto!important; bottom:auto!important; animation-duration:7s!important; animation-delay:0.5s!important; }
+  .c5  { display:block!important; width:9px!important;  height:9px!important;  border-radius:3px!important; bottom:18%!important; right:8%!important; left:auto!important; top:auto!important;   animation-duration:5.5s!important; animation-delay:0.3s!important; }
+  .c9  { display:block!important; width:12px!important; height:12px!important; border-radius:3px!important; top:10%!important;  left:10%!important;  right:auto!important; bottom:auto!important; animation-duration:6s!important; animation-delay:0.2s!important; }
+  .c7  { display:block!important; width:10px!important; height:10px!important; border-radius:3px!important; top:42%!important;  left:6%!important;   right:auto!important; bottom:auto!important; animation-duration:7.5s!important; animation-delay:2.2s!important; }
+  .c4  { display:block!important; width:14px!important; height:14px!important; border-radius:3px!important; bottom:14%!important; left:12%!important; right:auto!important; top:auto!important;   animation-duration:8s!important; animation-delay:1.8s!important; }
+  .c10 { display:block!important; width:8px!important;  height:8px!important;  border-radius:3px!important; top:22%!important;  right:18%!important; left:auto!important; bottom:auto!important; animation-duration:7.2s!important; animation-delay:1.6s!important; }
+  .hero__content {
+    order: 2 !important; display: flex !important; flex-direction: column !important;
+    align-items: center !important; text-align: center !important;
+    gap: 8px !important; padding: 0 !important; width: 100% !important;
+  }
+  .hero__badge    { display: none !important; }
+  .hero__title    { font-size: clamp(1.95rem,9.5vw,2.7rem) !important; line-height: 1.05 !important; margin: 0 !important; text-align: center !important; width: 100% !important; }
+  .hero__title span { display: block !important; text-align: center !important; width: 100% !important; }
+  .hero__title--sub { margin: 0.15em 0 0.1em 0 !important; letter-spacing: 0.28em !important; text-align: center !important; width: 100% !important; }
+  .word-cycle { display: block !important; text-align: center !important; width: 100% !important; }
+  /* French mobile hero title: keep safe spacing with longer words */
+  .ka-fr-mobile .hero__title {
+    font-size: clamp(1.55rem, 8.4vw, 2.3rem) !important;
+    line-height: 1.02 !important;
+    max-width: 92vw !important;
+    margin: 0 auto !important;
+  }
+  .ka-fr-mobile .hero__title--sub {
+    font-size: 0.34em !important;
+    letter-spacing: 0.16em !important;
+    margin: 0.2em 0 0.12em 0 !important;
+  }
+  .ka-fr-mobile .word-cycle {
+    height: 1.08em !important;
+  }
+  /* Hero subtitle — same short copy as desktop (EN + FR from HTML / mobile.js) */
+  .hero__subtitle {
+    font-size: 0.78rem !important;
+    line-height: 1.6 !important;
+    max-width: 290px !important;
+    margin: 10px auto 0 !important;
+    text-align: center !important;
+    color: rgba(255,255,255,0.55) !important;
+  }
+  .ka-fr-mobile .hero__subtitle {
+    font-size: 0.78rem !important;
+  }
+  .hero__cta {
+    display: flex !important; flex-direction: row !important;
+    justify-content: center !important; gap: 10px !important;
+    width: 100% !important; margin: 18px 0 20px !important;
+  }
+  .hero__cta .mag-wrap { margin: 0 !important; padding: 5px !important; }
+  .btn            { padding: 12px 22px !important; font-size: 0.82rem !important; white-space: nowrap !important; }
+  /* Let's Talk = red, Who We Are = ghost secondary */
+  .btn--red {
+    background: linear-gradient(135deg,#dc2626 0%,#b91c1c 50%,#ef4444 100%) !important;
+    box-shadow: 0 4px 16px rgba(220,38,38,0.4) !important;
+    border: none !important;
+  }
+  /* Keep purple glow animation only on non-red primary buttons */
+  .btn--primary:not(.btn--red) { animation: mobileBtnGlow 3.5s ease-in-out infinite !important; }
+  .btn--primary:not(.btn--red):active { transform: scale(0.95) !important; }
+  @keyframes mobileBtnGlow {
+    0%,100% { box-shadow: 0 3px 12px rgba(142,45,226,0.28); }
+    50%     { box-shadow: 0 4px 22px rgba(142,45,226,0.42), 0 0 24px rgba(74,0,224,0.22); }
+  }
+  /* ── MARQUEE STATS BAR ──────────────────────────────────────────────────
+     Container clips overflow. Inner track scrolls via translateX animation.
+     Services ticker — seamless infinite loop, premium style.
+  ── */
+
+  /* Hide the original stats completely on mobile */
+  .hero__stats { display: none !important; }
+
+  /* Premium services ticker */
+  .ka-ticker {
+    width: 100% !important;
+    overflow: hidden !important;
+    padding: 14px 0 !important;
+    border-top: 1px solid rgba(124,58,237,0.2) !important;
+    border-bottom: 1px solid rgba(124,58,237,0.2) !important;
+    background: rgba(124,58,237,0.04) !important;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%) !important;
+    mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%) !important;
+    order: 3;
+  }
+  .ka-ticker__track {
+    display: flex !important;
+    align-items: center !important;
+    width: max-content !important;
+    will-change: transform !important;
+    animation: kaTicker 22s linear infinite !important;
+  }
+  @keyframes kaTicker {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .ka-ticker__item {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    padding: 0 28px !important;
+    flex-shrink: 0 !important;
+    white-space: nowrap !important;
+    font-family: 'Rajdhani', sans-serif !important;
+    font-size: 0.78rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.12em !important;
+    color: rgba(255,255,255,0.55) !important;
+  }
+  .ka-ticker__dot {
+    width: 4px !important;
+    height: 4px !important;
+    border-radius: 50% !important;
+    background: linear-gradient(135deg, #8E2DE2, #4A00E0) !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* ── SERVICES CAROUSEL ───────────────────────────────────────────────── */
+  .services {
+    /* Reduce top — section above already has bottom padding */
+    padding: 36px 0 32px !important;
+    overflow: visible !important;
+  }
+  .services__inner {
+    display: block !important;
+    overflow: visible !important;
+  }
+  /* Panel — generous internal spacing so content breathes */
+  .services__panel {
+    display: block !important;
+    padding: 8px 24px 40px !important;
+    border: none !important;
+  }
+  /* Eyebrow — lifted up with more top breathing room */
+  .services__eyebrow {
+    margin-bottom: 16px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+  }
+
+  /* ── ALL EYEBROW LINES: move from left to right on mobile ───────────────
+     Desktop uses ::before (line LEFT of text).
+     Mobile: hide ::before, show ::after so line sits RIGHT of text.
+  ── */
+  .services__eyebrow::before,
+  .why-us__eyebrow::before,
+  .articles-section__eyebrow::before,
+  .contact__eyebrow::before {
+    display: none !important;
+  }
+  .services__eyebrow::after,
+  .why-us__eyebrow::after,
+  .articles-section__eyebrow::after,
+  .contact__eyebrow::after {
+    content: '' !important;
+    display: inline-block !important;
+    width: 18px !important;
+    height: 1px !important;
+    background: var(--accent-cyan) !important;
+    opacity: 0.5 !important;
+    flex-shrink: 0 !important;
+    vertical-align: middle !important;
+  }
+  /* articles-section eyebrow is display:block by default — fix to flex for ::after */
+  .articles-section__eyebrow {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+  }
+  /* Headline — bigger, more commanding */
+  .services__label {
+    font-size: clamp(2.1rem,9vw,2.8rem) !important;
+    margin-bottom: 24px !important;
+    line-height: 1.0 !important;
+    letter-spacing: -0.01em !important;
+  }
+  /* Pitch — generous line-height, comfortable to read */
+  .services__pitch {
+    max-width: 100% !important;
+    margin: 0 !important;
+    font-size: 0.90rem !important;
+    line-height: 1.85 !important;
+    color: rgba(255,255,255,0.62) !important;
+  }
+  .services__panel-divider { display: none !important; }
+  .services__metrics       { display: none !important; }
+  /* Hide desktop button from panel on mobile — shown below carousel instead */
+  .services__cta-desktop   { display: none !important; }
+  .services__panel .mag-wrap { display: none !important; }
+  /* Button — clear separation from pitch text */
+  .services__cta {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    margin-top: 16px !important;
+    padding: 13px 24px !important;
+    border-radius: 50px !important;
+    font-size: 0.86rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.03em !important;
+    color: rgba(255,255,255,0.9) !important;
+    border: 1.5px solid rgba(124,58,237,0.45) !important;
+    background: rgba(124,58,237,0.08) !important;
+    backdrop-filter: blur(8px) !important;
+    transition: border-color 0.3s ease, background 0.3s ease !important;
+  }
+  .services__panel-spacer  { display: none !important; }
+  /* Panel mag-wrap hidden — mobile uses svc-cta-mobile instead */
+
+  /*
+   * CAROUSEL CLIPPING FIX:
+   * .services__grid-wrap uses overflow-x:hidden to clip the scroll track.
+   * padding-top creates breathing room so the card glow/border is NOT clipped.
+   * overflow-y must be visible on both wrapper AND track — but since
+   * overflow-x:hidden forces overflow-y:auto on the same element (browser spec),
+   * we use a negative margin trick: push the wrapper UP by the padding amount
+   * so the visible area is taller than the scroll track, letting shadows show.
+   */
+  .services__grid-wrap {
+    overflow-x: hidden !important;
+    overflow-y: visible !important;
+    padding-top: 16px !important;
+    padding-bottom: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  /* Scrollable track — flex row, no grid */
+  .services__grid {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: scroll !important;
+    overflow-y: visible !important;
+    scroll-snap-type: x proximity !important;
+    gap: 14px !important;
+    padding: 8px 0 16px !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important;
+    grid-template-columns: unset !important;
+  }
+  .services__grid::-webkit-scrollbar { display: none !important; }
+
+  /* Cards — keep design exactly, JS handles visual effects */
+  .service-card {
+    flex: 0 0 78vw !important;
+    width: 78vw !important;
+    max-width: 310px !important;
+    min-width: 0 !important;
+    min-height: auto !important;
+    scroll-snap-align: center !important;
+    transition: none !important;
+  }
+  /* First/last margins centre first and last card in viewport */
+  .service-card:first-child { margin-left:  calc(50vw - 39vw) !important; }
+  .service-card:last-child  { margin-right: calc(50vw - 39vw) !important; }
+
+  /* ── 3-DOT MINIMAL INDICATOR ────────────────────────────────────────────
+     Static centered block — NEVER scrolls, never moves.
+     Sits in DOM between panel and carousel.
+  ── */
+  .svc-ui-wrap {
+    width: 100% !important;
+    padding: 4px 0 14px 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    /* Prevent any transform from carousel affecting this */
+    position: relative !important;
+    z-index: 10 !important;
+  }
+  .svc-progress-wrap {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .svc-progress-track {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 7px !important;
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+  .svc-seg {
+    display: block !important;
+    border-radius: 50% !important;
+    flex: none !important;
+    transition:
+      width   0.38s cubic-bezier(0.16,1,0.3,1),
+      height  0.38s cubic-bezier(0.16,1,0.3,1),
+      opacity 0.38s ease,
+      background 0.32s ease !important;
+  }
+  .svc-seg[data-dist="0"] {
+    width: 7px !important;
+    height: 7px !important;
+    opacity: 1 !important;
+    background: #7c3aed !important;
+  }
+  .svc-seg[data-dist="1"] {
+    width: 5px !important;
+    height: 5px !important;
+    opacity: 0.4 !important;
+    background: rgba(124,58,237,0.7) !important;
+  }
+  .svc-seg[data-dist="2"] {
+    width: 4px !important;
+    height: 4px !important;
+    opacity: 0.2 !important;
+    background: rgba(124,58,237,0.5) !important;
+  }
+  .svc-seg[data-dist="3"],
+  .svc-seg[data-dist="far"] {
+    width: 3px !important;
+    height: 3px !important;
+    opacity: 0 !important;
+    background: transparent !important;
+  }
+  .svc-counter__num { display: none !important; }
+
+  /* ── MOBILE CTA — centered below carousel ───────────────────────────── */
+  .svc-cta-mobile {
+    display: flex !important;
+    justify-content: center !important;
+    padding: 20px 24px 0 !important;
+  }
+  .svc-cta-mobile .services__cta {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    padding: 13px 28px !important;
+    border-radius: 50px !important;
+    font-size: 0.86rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.03em !important;
+    color: rgba(255,255,255,0.9) !important;
+    border: 1.5px solid rgba(124,58,237,0.45) !important;
+    background: rgba(124,58,237,0.08) !important;
+    backdrop-filter: blur(8px) !important;
+    text-decoration: none !important;
+    margin-top: 0 !important;
+  }
+
+
+  /* ── READ MORE — animated on mobile so user knows it's tappable ─────── */
+  .service-card__readmore {
+    /* Brighter on mobile — more visible */
+    color: rgba(124,58,237,0.85) !important;
+    font-size: 0.72rem !important;
+    gap: 8px !important;
+    margin-top: 16px !important;
+  }
+  /* Arrow bounces right continuously — signals "tap me" */
+  .service-card__readmore svg {
+    animation: arrowBounce 1.8s ease-in-out infinite !important;
+    width: 12px !important;
+    height: 12px !important;
+  }
+  @keyframes arrowBounce {
+    0%, 100% { transform: translateX(0); opacity: 1; }
+    50%       { transform: translateX(4px); opacity: 0.6; }
+  }
+  /* Active card — full brightness */
+  .service-card__readmore:active {
+    color: #a78bfa !important;
+    transform: scale(0.97) !important;
+  }
+
+  /* ── WHY US ──────────────────────────────────────────────────────────── */
+  .why-us {
+    padding: 20px 20px 52px !important;
+    overflow-x: clip !important;
+  }
+  /* WHY US MASCOT — override every desktop rule that clips or shrinks it */
+  .why-us__container {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0 !important;
+    min-height: unset !important;
+  }
+  /* Mascot container — hidden on mobile, no space */
+  .why-us__right  { display: none !important; }
+  .why-us__mascot { display: none !important; }
+  .why-us__glow   { display: none !important; }
+  .why-us__shadow { display: none !important; }
+
+  /* ── PULSE RINGS — 2 rings only, ultra minimal, no glow ────────────────
+     Strategy:
+     - scale() animation only — GPU accelerated, zero layout reflow
+     - border only, no fill, no box-shadow — pure transparency = premium
+     - 2 rings with 1.8s offset — heartbeat breathing rhythm
+     - Centered exactly on mascot center using absolute + translate
+     - pointer-events:none — never blocks any tap
+  ── */
+  /* Pulse rings — contain inside why-us__right, no overflow escape */
+  .why-pulse { display: none !important; }
+  .why-pulse-hidden {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    /* Start small — scale up via keyframe, never exceed container */
+    width: 140px !important;
+    height: 140px !important;
+    border-radius: 50% !important;
+    border: 1px solid rgba(124,58,237,0.22) !important;
+    background: transparent !important;
+    pointer-events: none !important;
+    z-index: 1 !important;
+    will-change: transform, opacity !important;
+    animation: whyPulseRing 3.6s cubic-bezier(0.2, 0.6, 0.4, 1) infinite !important;
+    animation-fill-mode: both !important;
+  }
+  .why-pulse--1 { animation-delay: 0s !important; }
+  .why-pulse--2 { animation-delay: 1.8s !important; }
+
+  @keyframes whyPulseRing {
+    0%   { transform: translate(-50%, -50%) scale(0.4); opacity: 0; }
+    10%  { opacity: 1; }
+    100% { transform: translate(-50%, -50%) scale(2.0); opacity: 0; }
+  }
+
+  /* Text side */
+  .why-us__left { padding-right: 0 !important; }
+  .why-us__eyebrow { margin-bottom: 10px !important; }
+  .why-us__headline {
+    font-size: clamp(1.9rem,8.5vw,2.8rem) !important;
+    white-space: normal !important;
+    margin-bottom: 20px !important;
+  }
+  /* Why Us pitch — clean readable typography */
+  .why-us__pitch {
+    font-size: 0.92rem !important;
+    line-height: 1.75 !important;
+    color: rgba(255,255,255,0.68) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 14px !important;
+    /* Prevent text overflow */
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+    hyphens: auto !important;
+  }
+  .why-us__pitch p { display: block !important; margin: 0 !important; }
+  .why-us__pitch .pitch-statement {
+    font-size: 1rem !important;
+    font-weight: 700 !important;
+    color: #fff !important;
+    line-height: 1.5 !important;
+  }
+  .why-us__pitch .pitch-proof {
+    font-size: 0.82rem !important;
+    color: rgba(255,255,255,0.38) !important;
+  }
+  .why-us__pitch .pitch-close {
+    font-size: 0.92rem !important;
+    color: rgba(255,255,255,0.65) !important;
+    font-style: italic !important;
+  }
+
+  .why-us__stats { flex-wrap: wrap !important; gap: 12px 0 !important; margin-top: 20px !important; padding-top: 18px !important; border-top: 1px solid rgba(255,255,255,0.07) !important; }
+  .why-stat {
+    flex: 1 1 45% !important;
+    border-right: none !important;
+    padding: 0 10px 0 0 !important;
+  }
+  .why-stat__val { font-size: 1.6rem !important; }
+  .why-us .mag-wrap { margin-top: 20px !important; display: block !important; }
+  .why-us .services__cta.mag-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    font-size: 0.86rem !important;
+    font-weight: 600 !important;
+    padding: 13px 24px !important;
+    border-radius: 50px !important;
+    letter-spacing: 0.03em !important;
+    color: rgba(255,255,255,0.9) !important;
+    border: 1.5px solid rgba(124,58,237,0.45) !important;
+    background: rgba(124,58,237,0.08) !important;
+    backdrop-filter: blur(8px) !important;
+  }
+
+  /* ── NAVBAR: hide "Start a Project" CTA on mobile ───────────────────── */
+  .nav__cta   { display: none !important; }
+  /* Also hide it from the mobile overlay */
+  .nav__mobile-overlay .mob-cta { display: none !important; }
+
+  /* ── CONTACT — minimal, identity-matched, mobile only ───────────────── */
+  .contact {
+    padding: 48px 0 0 !important;
+  }
+  .contact__panel {
+    grid-template-columns: 1fr !important;
+    background: transparent !important;
+    border: none !important;
+    border-top: 1px solid rgba(124,58,237,0.12) !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+  .contact__panel:hover {
+    box-shadow: none !important;
+    border-color: rgba(124,58,237,0.12) !important;
+  }
+  .contact__panel-divider { display: none !important; }
+
+  /* Left side — keep info but make it compact */
+  .contact__panel-left {
+    padding: 28px 24px 20px !important;
+    border-bottom: 1px solid rgba(255,255,255,0.05) !important;
+  }
+  .contact__status { display: none !important; }
+  .contact__eyebrow { margin-bottom: 8px !important; }
+  .contact__headline {
+    font-size: clamp(1.6rem, 8vw, 2.2rem) !important;
+    white-space: normal !important;
+    margin-bottom: 10px !important;
+  }
+  .contact__sub {
+    font-size: 0.75rem !important;
+    color: rgba(255,255,255,0.28) !important;
+    margin-bottom: 20px !important;
+  }
+  /* Details — tighter */
+  .contact__details { margin-bottom: 20px !important; }
+  .contact__detail  { padding: 9px 0 !important; }
+  .contact__dicon   { width: 30px !important; height: 30px !important; }
+  .contact__dvalue  { font-size: 0.82rem !important; }
+  /* Socials — smaller, more subtle */
+  .contact__social  {
+    width: 42px !important; height: 42px !important;
+    border-radius: 10px !important;
+  }
+  .contact__social svg { width: 18px !important; height: 18px !important; }
+
+  /* Right side — hide entire form panel on mobile */
+  .contact__panel-right { display: none !important; }
+
+  /* CTA button — goes to contact.html, shown only on mobile */
+  .contact__mobile-cta {
+    display: flex !important;
+    justify-content: center !important;
+    padding: 24px 24px 8px !important;
+  }
+  .contact__mobile-cta a {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    padding: 14px 32px !important;
+    background: linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%) !important;
+    border-radius: 50px !important;
+    font-family: var(--font-body) !important;
+    font-size: 0.84rem !important;
+    font-weight: 700 !important;
+    color: #fff !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.1em !important;
+    box-shadow: 0 4px 20px rgba(142,45,226,0.4) !important;
+    transition: opacity 0.2s ease, transform 0.2s ease !important;
+  }
+  .contact__mobile-cta a:active {
+    opacity: 0.95 !important;
+    transform: scale(0.95) !important;
+  }
+
+  /* ── REORDER: articles moves below contact on mobile ────────────────── */
+  body {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .navbar              { order: 0 !important; }
+  .nav__mobile-overlay { order: 0 !important; }
+  .hero                { order: 1 !important; }
+  .section-divider     { order: 2 !important; }
+  .services            { order: 3 !important; }
+  .why-us              { order: 4 !important; }
+  .contact             { order: 5 !important; }
+  .articles-section    { order: 6 !important; }
+  .footer              { order: 7 !important; }
+  .scroll-top          { order: 99 !important; position: fixed !important; }
+
+  /* ── ARTICLES — minimal ghost list, sits quietly after contact ───────── */
+  .articles-section {
+    padding: 32px 0 40px !important;
+    overflow-x: hidden !important;
+    border-top: 1px solid rgba(255,255,255,0.04) !important;
+  }
+  /* Dim the grid background texture on mobile */
+  .articles-section::before { opacity: 0.4 !important; }
+
+  .articles-section__inner  { padding: 0 24px !important; }
+  .articles-section__header { margin-bottom: 20px !important; }
+
+  /* Eyebrow — very small and quiet */
+  .articles-section__eyebrow {
+    font-size: 0.52rem !important;
+    letter-spacing: 0.2em !important;
+    color: rgba(6,182,212,0.55) !important;
+    margin-bottom: 6px !important;
+  }
+
+  /* Headline — small, not screaming */
+  .articles-section__headline {
+    font-size: clamp(1.1rem, 5vw, 1.4rem) !important;
+    color: rgba(255,255,255,0.55) !important;
+    font-weight: 700 !important;
+  }
+  .articles-section__headline span {
+    -webkit-text-fill-color: rgba(124,58,237,0.7) !important;
+  }
+
+  /* "View all" link — subtle */
+  .articles-section__viewall {
+    font-size: 0.62rem !important;
+    color: rgba(255,255,255,0.28) !important;
+    letter-spacing: 0.1em !important;
+  }
+  .articles-section__title-row { margin-top: 6px !important; }
+
+  /* Track — horizontal scroll, no snap drama */
+  .articles-track-wrapper { overflow: hidden !important; }
+  .articles-track {
+    display: flex !important;
+    gap: 12px !important;
+    padding: 4px 24px 16px !important;
+    overflow-x: scroll !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .articles-track::-webkit-scrollbar { display: none !important; }
+
+  /* Cards — compact, muted, ghost style */
+  .article-card {
+    flex: 0 0 72vw !important;
+    max-width: 260px !important;
+    scroll-snap-align: start !important;
+    background: rgba(255,255,255,0.02) !important;
+    border: 1px solid rgba(255,255,255,0.05) !important;
+    border-radius: 12px !important;
+    opacity: 0.75 !important;
+    transition: opacity 0.3s ease, border-color 0.3s ease !important;
+  }
+  .article-card:active {
+    opacity: 1 !important;
+    border-color: rgba(124,58,237,0.3) !important;
+  }
+
+  /* Card image — smaller ratio */
+  .article-card__img {
+    aspect-ratio: 16/8 !important;
+  }
+  .article-card__img img {
+    filter: brightness(0.6) saturate(0.7) !important;
+  }
+
+  /* Category badge — tiny */
+  .article-card__cat {
+    font-size: 0.5rem !important;
+    padding: 3px 8px !important;
+    background: rgba(124,58,237,0.6) !important;
+  }
+
+  /* Body — tight */
+  .article-card__body {
+    padding: 14px 16px 18px !important;
+    gap: 6px !important;
+  }
+  .article-card__meta  { font-size: 0.58rem !important; opacity: 0.5 !important; }
+  .article-card__title { font-size: 0.8rem !important; color: rgba(255,255,255,0.75) !important; line-height: 1.35 !important; }
+  .article-card__excerpt { display: none !important; }
+
+  /* Nav buttons — hidden */
+  .articles-nav { display: none !important; }
+
+  /* Dots — tiny, minimal */
+  .articles-dots {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 5px !important;
+    margin-top: 12px !important;
+  }
+  .articles-dot {
+    width: 4px !important; height: 4px !important;
+    border-radius: 50% !important;
+    background: rgba(255,255,255,0.12) !important;
+    transition: width 0.38s cubic-bezier(0.16,1,0.3,1), background 0.38s ease !important;
+  }
+  .articles-dot.active {
+    width: 16px !important;
+    border-radius: 2px !important;
+    background: rgba(124,58,237,0.6) !important;
+  }
+
+  /* ── FOOTER ──────────────────────────────────────────────────────────── */
+  .footer__bottom  { flex-direction: column !important; align-items: center !important; gap: 6px !important; text-align: center !important; }
+  .footer__powered { justify-content: center !important; }
+
+  /* ── SCROLL TOP ───────────────────────────────────────────────────────── */
+  .scroll-top { bottom: 18px !important; right: 16px !important; width: 40px !important; height: 40px !important; }
+}
+
+@media (max-width:480px) {
+  .hero__title  { font-size: clamp(1.8rem,11.5vw,2.6rem) !important; }
+  .ka-fr-mobile .hero__title { font-size: clamp(1.42rem,10vw,2rem) !important; }
+  .hero__subtitle { font-size: 0.74rem !important; }
+  .service-card { flex: 0 0 84vw !important; max-width: 300px !important; }
+  .service-card:first-child { margin-left:  calc(50vw - 42vw) !important; }
+  .service-card:last-child  { margin-right: calc(50vw - 42vw) !important; }
+  .why-us__right  { display: none !important; }
+  .why-us__mascot { display: none !important; }
+  .why-stat      { flex: 1 1 100% !important; }
+  .article-card  { flex: 0 0 88vw !important; }
+}

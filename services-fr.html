@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="manifest" href="./site.webmanifest">
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services digitaux premium | Kesh Aura</title>
+  <meta name="description" content="Stratégie, réseaux sociaux, SEO, publicité et IA : accélérez votre croissance avec Kesh Aura à Marrakech. Contactez nos experts.">
+  <meta name="keywords" content="agence digitale Marrakech, marketing digital Maroc, réseaux sociaux, SEO Marrakech, publicité en ligne, automatisation IA, Kesh Aura">
+  <meta name="author" content="Kesh Aura">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://keshaura.com/services-fr.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Services digitaux premium | Kesh Aura">
+  <meta property="og:description" content="Stratégie, réseaux sociaux, SEO, publicité et IA : accélérez votre croissance avec Kesh Aura à Marrakech. Contactez nos experts.">
+  <meta property="og:url" content="https://keshaura.com/services-fr.html">
+  <meta property="og:image" content="https://keshaura.com/./og-image.jpg">
+  <meta property="og:site_name" content="Kesh Aura">
+  <meta property="og:locale" content="fr_FR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Services digitaux premium | Kesh Aura">
+  <meta name="twitter:description" content="Stratégie, réseaux sociaux, SEO, publicité et IA : accélérez votre croissance avec Kesh Aura à Marrakech. Contactez nos experts.">
+  <meta name="twitter:image" content="https://keshaura.com/./og-image.jpg">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --purple: #7c3aed; --cyan: #06b6d4; --pink: #ec4899;
+      --grad-primary: linear-gradient(135deg, #7c3aed 0%, #ec4899 100%);
+      --grad-cta:     linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%);
+      --grad-accent:  linear-gradient(90deg,  #7c3aed 0%, #06b6d4 100%);
+      --bg: #050510;
+      --font-hero: 'Fontspring-DEMO-sonnygothic-black', 'Rajdhani', sans-serif;
+      --font-display: 'Rajdhani', sans-serif;
+      --font-body: 'Inter', sans-serif;
+    }
+    @font-face {
+      font-family: 'Fontspring-DEMO-sonnygothic-black';
+      src: url('./Fontspring-DEMO-sonnygothic-black.otf') format('opentype');
+    }
+    html { scroll-behavior: smooth; overflow-x: hidden; }
+    body { background: var(--bg); color: #fff; font-family: var(--font-body); overflow-x: hidden; }
+
+    /* BG */
+    .bg-grid {
+      position: fixed; inset: 0; z-index: 0; pointer-events: none;
+      background-image:
+        linear-gradient(to right,  rgba(124,58,237,0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(124,58,237,0.04) 1px, transparent 1px);
+      background-size: 48px 48px;
+    }
+
+    /* NAV */
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    /* HERO */
+    .hero {
+      position: relative; z-index: 1;
+      padding-top: 80px;
+      padding: 140px clamp(24px,5vw,80px) 80px;
+      max-width: 1380px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: end;
+    }
+    .hero__left {}
+    .hero__eyebrow {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-size: 0.6rem; font-weight: 700; color: var(--cyan);
+      text-transform: uppercase; letter-spacing: 0.25em; margin-bottom: 20px;
+    }
+    .hero__eyebrow::before { content:''; width:18px; height:1px; background:var(--cyan); }
+    .hero__headline {
+      font-family: var(--font-hero);
+      font-size: clamp(3rem, 6vw, 6.5rem);
+      font-weight: 900; text-transform: uppercase; line-height: 0.9;
+    }
+    .hero__headline em {
+      font-style: normal; display: block;
+      background: linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .hero__right {
+      padding-bottom: 12px;
+    }
+    .hero__intro {
+      font-size: 1.05rem; color: rgba(255,255,255,0.45); line-height: 1.85;
+      border-left: 2px solid rgba(124,58,237,0.4); padding-left: 24px;
+    }
+    .hero__intro strong { color: rgba(255,255,255,0.85); font-weight: 600; }
+
+    /* SERVICE SECTIONS */
+    .service-section {
+      position: relative; z-index: 1;
+      max-width: 1380px; margin: 0 auto;
+      padding: 0 clamp(24px,5vw,80px);
+    }
+
+    .service-block {
+      padding: 80px 0;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      display: grid;
+      grid-template-columns: 340px 1fr;
+      gap: 80px;
+      opacity: 0; transform: translateY(40px);
+      scroll-margin-top: 80px;
+    }
+    .service-block:last-child { border-bottom: 1px solid rgba(255,255,255,0.06); }
+
+    /* LEFT — sticky label */
+    .service-block__left {
+      position: sticky; top: 100px;
+      align-self: start;
+    }
+    .service-block__num {
+      font-family: var(--font-display);
+      font-size: 0.62rem; font-weight: 700;
+      color: rgba(255,255,255,0.15); letter-spacing: 0.2em;
+      text-transform: uppercase; margin-bottom: 20px;
+    }
+    .service-block__icon {
+      width: 100%; height: 90px; border-radius: 16px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 24px;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .service-block__icon svg { width: 42px; height: 42px; }
+    .service-block__name {
+      font-family: var(--font-display);
+      font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+      font-weight: 900; text-transform: uppercase; line-height: 1.05;
+      margin-bottom: 16px;
+    }
+    .service-block__tagline {
+      font-size: 0.8rem; color: rgba(255,255,255,0.3); line-height: 1.7;
+    }
+
+    /* Tags */
+    .service-block__tags {
+      display: flex; flex-wrap: wrap; gap: 6px; margin-top: 20px;
+      align-items: flex-start;
+    }
+    .service-block__tag {
+      flex: 0 0 auto;
+      padding: 3px 10px; border-radius: 20px;
+      border: 1px solid rgba(255,255,255,0.08);
+      font-size: 0.58rem; font-weight: 600;
+      color: rgba(255,255,255,0.28);
+      text-transform: uppercase; letter-spacing: 0.1em;
+      white-space: nowrap;
+      line-height: 1.8;
+    }
+
+    /* RIGHT — content */
+    .service-block__right {}
+
+    .service-block__lead {
+      font-size: clamp(1.15rem, 2vw, 1.5rem);
+      font-weight: 400; color: rgba(255,255,255,0.75);
+      line-height: 1.7; margin-bottom: 36px;
+    }
+    .service-block__lead strong {
+      color: #fff; font-weight: 600;
+    }
+
+    .service-block__body {
+      font-size: 0.95rem; color: rgba(255,255,255,0.38);
+      line-height: 1.9; margin-bottom: 40px;
+    }
+    .service-block__body p { margin-bottom: 16px; }
+    .service-block__body p:last-child { margin-bottom: 0; }
+
+    /* Profit box */
+    .profit-box {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 16px;
+      padding: 32px 36px;
+      margin-bottom: 32px;
+    }
+    .profit-box__title {
+      font-size: 0.58rem; font-weight: 700;
+      color: rgba(255,255,255,0.25); text-transform: uppercase;
+      letter-spacing: 0.2em; margin-bottom: 20px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .profit-box__title::before {
+      content:''; width:12px; height:1px; background:currentColor;
+    }
+    .profit-box__list {
+      display: flex; flex-direction: column; gap: 14px;
+    }
+    .profit-box__item {
+      display: flex; align-items: flex-start; gap: 14px;
+    }
+    .profit-box__check {
+      width: 20px; height: 20px; border-radius: 6px; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      margin-top: 1px;
+    }
+    .profit-box__check svg { width: 10px; height: 10px; }
+    .profit-box__text {
+      font-size: 0.9rem; color: rgba(255,255,255,0.6); line-height: 1.6;
+    }
+    .profit-box__text strong { color: #fff; font-weight: 600; }
+
+    /* Divider line */
+    .service-block__divider {
+      height: 1px; margin: 32px 0;
+      background: linear-gradient(90deg, rgba(255,255,255,0.07), transparent);
+    }
+
+    /* CTA link */
+    .service-block__cta {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-size: 0.78rem; font-weight: 700; color: rgba(255,255,255,0.4);
+      text-decoration: none; text-transform: uppercase; letter-spacing: 0.14em;
+      transition: color 0.3s, gap 0.3s;
+    }
+    .service-block__cta svg { width: 13px; height: 13px; transition: transform 0.3s; }
+    .service-block__cta:hover { color: #fff; gap: 14px; }
+    .service-block__cta:hover svg { transform: translateX(4px); }
+
+    /* BOTTOM CTA */
+    .page-cta {
+      position: relative; z-index: 1;
+      padding: 100px clamp(24px,5vw,80px);
+      text-align: center;
+    }
+    .page-cta__eyebrow {
+      font-size: 0.6rem; font-weight: 700; color: var(--cyan);
+      text-transform: uppercase; letter-spacing: 0.25em; margin-bottom: 16px;
+    }
+    /* CTA headline — container */
+    .page-cta__headline {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 3.5vw, 3.6rem);
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 1.05;
+      margin-bottom: 36px;
+      color: #ffffff;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.05em;
+    }
+
+    /* Each line — gradient spotlight clipped to text */
+    .cta-line {
+      display: block;
+      /* White base via background color */
+      background:
+        radial-gradient(
+          circle 120px at var(--cta-x, -9999px) var(--cta-y, -9999px),
+          #7c3aed 0%,
+          #06b6d4 60%,
+          transparent 100%
+        ),
+        #ffffff;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: #ffffff;
+    }
+    .page-cta__btn {
+      position: relative; overflow: hidden;
+      display: inline-flex; align-items: center; gap: 12px;
+      padding: 14px 32px;
+      background: var(--grad-cta);
+      border: none; border-radius: 8px;
+      font-family: var(--font-body);
+      font-size: 0.82rem; font-weight: 700; color: #fff; text-decoration: none;
+      text-transform: uppercase; letter-spacing: 0.1em;
+      box-shadow: 0 4px 18px rgba(142,45,226,0.30);
+      transition: opacity 0.3s, transform 0.3s, box-shadow 0.3s;
+    }
+    .page-cta__btn::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(255,255,255,0.12) 0%, transparent 100%);
+      opacity: 0; transition: opacity 0.3s;
+    }
+    .page-cta__btn__shimmer {
+      position: absolute; top: 0; left: -100%; width: 60%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+      transition: left 0.55s ease;
+    }
+    .page-cta__btn__arrow {
+      width: 26px; height: 26px; border-radius: 50%; flex-shrink: 0;
+      background: rgba(255,255,255,0.18);
+      display: flex; align-items: center; justify-content: center;
+      transition: transform 0.3s cubic-bezier(0.16,1,0.3,1);
+    }
+    .page-cta__btn__arrow svg { width: 11px; height: 11px; }
+    .page-cta__btn:hover {
+      opacity: 0.88; transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(142,45,226,0.40);
+    }
+    .page-cta__btn:hover::before { opacity: 1; }
+    .page-cta__btn:hover .page-cta__btn__shimmer { left: 160%; }
+    .page-cta__btn:hover .page-cta__btn__arrow { transform: translateX(4px); }
+
+    /* FOOTER */
+    .footer-bar {
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding: 22px clamp(24px,4vw,80px);
+      display: flex; align-items: center; justify-content: space-between;
+      position: relative; z-index: 1; flex-wrap: wrap; gap: 12px;
+    }
+    .footer-bar p { font-size: 0.74rem; color: rgba(255,255,255,0.2); }
+    .footer-bar span {
+      background: var(--grad-primary);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text; font-weight: 700;
+    }
+
+    @media (max-width: 1024px) {
+      .hero { grid-template-columns: 1fr; gap: 40px; }
+      .service-block { grid-template-columns: 1fr; gap: 40px; }
+      .service-block__left { position: static; }
+    }
+    .mob-talk { display: none; }
+    @media (max-width: 768px) {
+      .service-block { padding: 48px 0; }
+      .profit-box { padding: 24px 20px; }
+
+      /* Hide the desktop CTA section on mobile */
+      .page-cta { display: none !important; }
+
+      /* ── Mobile Let's Talk section ── */
+      .mob-talk {
+        display: block;
+        background: #050510;
+        border-top: 1px solid rgba(124,58,237,0.2);
+        position: relative;
+        overflow: hidden;
+      }
+      .mob-talk::before {
+        content: '';
+        position: absolute;
+        top: -80px; left: -80px;
+        width: 300px; height: 300px;
+        background: radial-gradient(ellipse, rgba(124,58,237,0.14) 0%, transparent 65%);
+        pointer-events: none;
+      }
+      .mob-talk__inner {
+        padding: 44px 22px 40px;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+      }
+      .mob-talk__eyebrow {
+        font-family: var(--font-display);
+        font-size: 0.50rem;
+        font-weight: 700;
+        letter-spacing: 0.22em;
+        color: #7c3aed;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+      .mob-talk__heading {
+        font-family: var(--font-display);
+        font-size: clamp(2.4rem, 12vw, 3.6rem);
+        font-weight: 700;
+        text-transform: lowercase;
+        letter-spacing: -0.02em;
+        line-height: 0.88;
+        color: #fff;
+        margin-bottom: 18px;
+        display: flex;
+        align-items: baseline;
+        gap: 0.22em;
+      }
+      .mob-talk__heading em {
+        font-style: normal;
+        background: linear-gradient(135deg,#7c3aed,#ec4899);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .mob-talk__socials {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 24px;
+      }
+      .mob-talk__social {
+        width: 42px; height: 42px;
+        border-radius: 10px;
+        display: flex; align-items: center; justify-content: center;
+        background: rgba(124,58,237,0.06);
+        border: 1px solid rgba(124,58,237,0.2);
+        color: rgba(255,255,255,0.45);
+        text-decoration: none;
+      }
+      .mob-talk__social svg { width: 16px; height: 16px; }
+      .mob-talk__body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px 16px;
+        border-top: 1px solid rgba(124,58,237,0.15);
+        border-bottom: 1px solid rgba(124,58,237,0.12);
+        padding: 22px 0;
+        margin-bottom: 28px;
+      }
+      .mob-talk__group { display: flex; flex-direction: column; gap: 4px; }
+      .mob-talk__label {
+        font-family: var(--font-body);
+        font-size: 0.42rem;
+        font-weight: 700;
+        color: rgba(255,255,255,0.22);
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        display: block;
+      }
+      .mob-talk__value {
+        font-family: var(--font-body);
+        font-size: 0.78rem;
+        color: rgba(255,255,255,0.65);
+        font-weight: 500;
+        text-decoration: none;
+      }
+      .mob-talk__cta {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 15px 28px;
+        font-family: var(--font-display);
+        font-size: 0.80rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: #fff;
+        text-decoration: none;
+        background: var(--grad-cta);
+        box-shadow: 0 4px 16px rgba(142,45,226,0.28);
+        border-radius: 12px;
+      }
+      .mob-talk__cta svg { width: 13px; height: 13px; }
+    }
+
+    /* ---- SCROLL DOWN INDICATOR ---- */
+    .scroll-indicator {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-top: 48px;
+      opacity: 1;
+      transition: opacity 0.6s ease;
+      width: 100%;
+    }
+    .scroll-indicator.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+    .scroll-indicator__arrow {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .scroll-indicator__arrow svg {
+      width: 36px;
+      height: 36px;
+      color: #f59e0b;
+      animation: arrowBounce 1.6s ease-in-out infinite;
+    }
+    .scroll-indicator__label {
+      font-family: var(--font-display);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.35);
+    }
+    @keyframes arrowBounce {
+      0%, 100% { transform: translateY(0); }
+      50%       { transform: translateY(7px); }
+    }
+
+    /* ---- ANIMATED ICONS ---- */
+    .service-block__icon svg { width: 42px; height: 42px; overflow: visible; }
+
+    @keyframes smc-ring1 { 0%,100%{r:3;opacity:1} 50%{r:5;opacity:.5} }
+    @keyframes smc-ring2 { 0%,100%{r:5;opacity:.6} 50%{r:7;opacity:.2} }
+    @keyframes smc-ring3 { 0%,100%{r:7;opacity:.3} 50%{r:9;opacity:0} }
+    @keyframes smc-dot   { 0%,100%{opacity:1} 50%{opacity:.4} }
+    .ic-smc-dot   { animation: smc-dot   2.4s ease-in-out infinite; }
+    .ic-smc-r1    { animation: smc-ring1 2.4s ease-in-out infinite 0.1s; }
+    .ic-smc-r2    { animation: smc-ring2 2.4s ease-in-out infinite 0.3s; }
+    .ic-smc-r3    { animation: smc-ring3 2.4s ease-in-out infinite 0.5s; }
+    .ic-smc-node  { animation: smc-dot   2.4s ease-in-out infinite 0.8s; }
+
+    @keyframes ai-dash  { 0%{stroke-dashoffset:60} 60%{stroke-dashoffset:0} 100%{stroke-dashoffset:0} }
+    @keyframes ai-pulse { 0%,100%{opacity:1;r:2} 50%{opacity:.3;r:3} }
+    .ic-ai-path  { stroke-dasharray:60; animation: ai-dash  2.8s ease-in-out infinite; }
+    .ic-ai-node  { animation: ai-pulse 2.8s ease-in-out infinite; }
+    .ic-ai-node2 { animation: ai-pulse 2.8s ease-in-out infinite 0.6s; }
+    .ic-ai-node3 { animation: ai-pulse 2.8s ease-in-out infinite 1.2s; }
+
+    @keyframes wd-cursor  { 0%,49%{opacity:1} 50%,100%{opacity:0} }
+    @keyframes wd-bracket { 0%,100%{transform:translateX(0)} 50%{transform:translateX(-1px)} }
+    .ic-wd-cursor { animation: wd-cursor  1.1s step-end infinite; }
+    .ic-wd-bl     { animation: wd-bracket 2.2s ease-in-out infinite; }
+    .ic-wd-br     { animation: wd-bracket 2.2s ease-in-out infinite 1.1s; }
+
+    @keyframes gd-draw { 0%{stroke-dashoffset:40} 70%{stroke-dashoffset:0} 100%{stroke-dashoffset:0} }
+    @keyframes gd-nib  { 0%,100%{transform:translate(0,0)} 50%{transform:translate(2px,-2px)} }
+    .ic-gd-path { stroke-dasharray:40; animation: gd-draw 2.6s ease-in-out infinite; }
+    .ic-gd-nib  { animation: gd-nib 2.6s ease-in-out infinite; transform-origin:center; }
+
+    @keyframes ph-shutter { 0%,85%,100%{opacity:0;transform:scale(1)} 88%{opacity:1;transform:scale(0.7)} 92%{opacity:0;transform:scale(1)} }
+    @keyframes ph-lens    { 0%,100%{r:4.5} 88%{r:3.5} }
+    .ic-ph-shutter { animation: ph-shutter 3s ease-in-out infinite; transform-origin:center; }
+    .ic-ph-lens    { animation: ph-lens    3s ease-in-out infinite; }
+
+    @keyframes da-bar1  { 0%,100%{transform:scaleY(1)}   50%{transform:scaleY(0.5)} }
+    @keyframes da-bar2  { 0%,100%{transform:scaleY(1)}   50%{transform:scaleY(1.3)} }
+    @keyframes da-bar3  { 0%,100%{transform:scaleY(1)}   50%{transform:scaleY(0.7)} }
+    @keyframes da-arrow { 0%,100%{transform:translate(0,0)} 50%{transform:translate(1px,-2px)} }
+    .ic-da-b1    { animation: da-bar1  2s ease-in-out infinite;      transform-origin: center bottom; }
+    .ic-da-b2    { animation: da-bar2  2s ease-in-out infinite 0.3s; transform-origin: center bottom; }
+    .ic-da-b3    { animation: da-bar3  2s ease-in-out infinite 0.6s; transform-origin: center bottom; }
+    .ic-da-arrow { animation: da-arrow 2s ease-in-out infinite; }
+
+    @keyframes seo-scan { 0%,100%{transform:translate(0,0) rotate(-5deg)} 50%{transform:translate(2px,2px) rotate(5deg)} }
+    @keyframes seo-line { 0%,100%{opacity:0.2} 50%{opacity:0.8} }
+    .ic-seo-glass { animation: seo-scan 2.5s ease-in-out infinite; transform-origin:10px 10px; }
+    .ic-seo-line  { animation: seo-line 2.5s ease-in-out infinite; }
+
+    @keyframes sw-cur { 0%,49%{opacity:1} 50%,100%{opacity:0} }
+    .ic-sw-cur { animation: sw-cur 1s step-end infinite; }
+
+    @keyframes bs-needle { 0%{transform:rotate(-20deg)} 50%{transform:rotate(20deg)} 100%{transform:rotate(-20deg)} }
+    @keyframes bs-ring   { 0%,100%{opacity:.4} 50%{opacity:1} }
+    .ic-bs-needle { animation: bs-needle 3s ease-in-out infinite; transform-origin: 12px 12px; }
+    .ic-bs-ring   { animation: bs-ring   3s ease-in-out infinite; }
+  
+  /* ── Scroll to Top ── */
+  .scroll-top {
+    position: fixed;
+    bottom:24px;right:24px; z-index: 9990;
+    width: 44px; height: 44px; border-radius: 50%;
+    background: var(--grad-cta);
+    border: none; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 4px 20px rgba(142,45,226,0.45);
+    opacity: 0; visibility: hidden; transform: translateY(12px);
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .scroll-top.visible { opacity: 1; visibility: visible; transform: translateY(0); }
+  .scroll-top:hover { box-shadow: 0 8px 28px rgba(142,45,226,0.55); transform: translateY(-3px); }
+  .scroll-top svg { width: 18px; height: 18px; color: #fff; }
+</style>
+</head>
+<body>
+  <script src="navbar.js?v=services-fix-1" data-page="services"></script>
+  <script>
+    (function () {
+      function lockServicesNavbarSize() {
+        var nav = document.getElementById('ka-nav');
+        if (!nav) return;
+        nav.style.height = '72px';
+        nav.style.padding = '0 clamp(24px,5vw,80px)';
+
+        var logo = nav.querySelector('.logo');
+        if (logo) {
+          logo.style.transform = 'scale(1)';
+          logo.style.transformOrigin = 'left center';
+        }
+
+        var img = nav.querySelector('.logo img');
+        if (img) {
+          img.style.width = '88px';
+          img.style.height = '88px';
+          img.style.minWidth = '88px';
+          img.style.maxWidth = '88px';
+          img.style.minHeight = '88px';
+          img.style.maxHeight = '88px';
+          img.style.marginLeft = '-10px';
+          img.style.marginRight = '-14px';
+          img.style.transform = 'scale(1)';
+        }
+
+        var name = nav.querySelector('.logo-name');
+        if (name) {
+          name.style.fontSize = '1.05rem';
+          name.style.letterSpacing = '.10em';
+        }
+
+        var tag = nav.querySelector('.logo-tag');
+        if (tag) {
+          tag.style.fontSize = '.48rem';
+          tag.style.letterSpacing = '.26em';
+        }
+      }
+
+      lockServicesNavbarSize();
+      window.addEventListener('load', lockServicesNavbarSize);
+      setTimeout(lockServicesNavbarSize, 0);
+      setTimeout(lockServicesNavbarSize, 150);
+    })();
+  </script>
+
+
+<div class="bg-grid"></div>
+
+<!-- NAV -->
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero__left">
+    <p class="hero__eyebrow">Ce que nous proposons</p>
+    <h1 class="hero__headline">Nos<br><em>Services</em></h1>
+  </div>
+  <div class="hero__right">
+    <p class="hero__intro">
+      La plupart des agences vendent un forfait. Nous, nous bâtissons un <strong>système</strong> — cohérent, piloté, mesurable.<br><br>
+      Chaque offre ci-dessous vise un objectif : <strong>une croissance tangible</strong> pour votre marque. Pas de vanity metrics, pas de likes vains. Des résultats qui se lisent dans votre chiffre d'affaires.
+    </p>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<div class="service-section">
+
+  <!-- 01 Social Media -->
+  <div class="service-block" id="social-media">
+    <div class="service-block__left">
+      <p class="service-block__num">01 — Service</p>
+      <div class="service-block__icon" style="background:rgba(168,85,247,0.08);border-color:rgba(168,85,247,0.2)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-linecap="round">
+          <circle cx="12" cy="12" r="2" fill="#a855f7" class="ic-smc-dot"/>
+          <circle cx="12" cy="12" r="5"  fill="none" stroke-width="1.2" class="ic-smc-r1"/>
+          <circle cx="12" cy="12" r="8"  fill="none" stroke-width="1"   class="ic-smc-r2"/>
+          <circle cx="12" cy="12" r="11" fill="none" stroke-width="0.7" class="ic-smc-r3"/>
+          <circle cx="4.5" cy="4.5" r="1.5" fill="#a855f7" class="ic-smc-node"/>
+          <circle cx="19.5" cy="4.5" r="1.5" fill="#a855f7" class="ic-smc-node"/>
+          <circle cx="4.5" cy="19.5" r="1.5" fill="#a855f7" class="ic-smc-node"/>
+        </svg>
+      </div>
+      <h2 class="service-block__name">Gestion des réseaux sociaux<span style="color:#a855f7;-webkit-text-fill-color:#a855f7;">?</span></h2>
+      <p class="service-block__tagline">Transformez vos profils en votre canal de conversion le plus puissant.</p>
+      <div class="service-block__tags">
+        <span class="service-block__tag">Instagram</span>
+        <span class="service-block__tag">TikTok</span>
+        <span class="service-block__tag">Meta</span>
+        <span class="service-block__tag">LinkedIn</span>
+        <span class="service-block__tag">Content</span>
+        <span class="service-block__tag">Community</span>
+
+      <div class="scroll-indicator">
+        <div class="scroll-indicator__arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="5" x2="12" y2="19"/>
+            <polyline points="19 12 12 19 5 12"/>
+          </svg>
+        </div>
+        <span class="scroll-indicator__label">Faire défiler</span>
+      </div>
+      </div>
+    </div>
+    <div class="service-block__right">
+      <p class="service-block__lead">Votre audience est déjà sur les réseaux. La vraie question : voit-elle <strong>vous</strong> avant vos concurrents ?</p>
+      <div class="service-block__body">
+        <p>Nous endossons la responsabilité complète de votre présence sociale — de la stratégie à la publication quotidienne. Nous étudions votre audience, analysons vos concurrents et produisons des contenus qui ne se contentent pas de briller : ils incitent à l'action.</p>
+        <p>Chaque post, chaque légende, chaque story est pensé avec intention. Nous suivons l'engagement, testons les formats et ajustons la stratégie chaque mois à partir de données réelles — jamais au hasard. Nous gérons aussi vos messages et votre communauté, pour qu'aucun prospect ne reste sans réponse.</p>
+        <p>Résultat : une présence régulière et premium qui crée la confiance, attire des abonnés qualifiés et les transforme en clients payants — mois après mois.</p>
+      </div>
+      <div class="profit-box">
+        <p class="profit-box__title">Ce que vous gagnez</p>
+        <div class="profit-box__list">
+          <div class="profit-box__item">
+            <div class="profit-box__check" style="background:rgba(168,85,247,0.1)"><svg viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p class="profit-box__text"><strong>Des demandes entrantes</strong> — on vous découvre organiquement et l'on vous contacte directement via vos contenus</p>
+          </div>
+          <div class="profit-box__item">
+            <div class="profit-box__check" style="background:rgba(168,85,247,0.1)"><svg viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p class="profit-box__text"><strong>Une autorité de marque</strong> — un fil constant et exigeant vous positionne comme l'option premium avant le premier échange</p>
+          </div>
+          <div class="profit-box__item">
+            <div class="profit-box__check" style="background:rgba(168,85,247,0.1)"><svg viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p class="profit-box__text"><strong>Votre temps retrouvé</strong> — fini les posts improvisés : nous pilotons l'ensemble pendant que vous concentrez votre énergie sur le business</p>
+          </div>
+          <div class="profit-box__item">
+            <div class="profit-box__check" style="background:rgba(168,85,247,0.1)"><svg viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p class="profit-box__text"><strong>Une croissance qui se capitalise</strong> — chaque mois, votre audience et votre portée progressent, et votre coût d'acquisition tend à baisser</p>
+          </div>
+        </div>
+      </div>
+      <a href="contact-fr.html" class="service-block__cta">Lancer ma stratégie social media <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+
+  <!-- 02 Automation -->
+  <div class="service-block" id="automation">
+    <div class="service-block__left">
+      <p class="service-block__num">02 — Service</p>
+      <div class="service-block__icon" style="background:rgba(6,182,212,0.08);border-color:rgba(6,182,212,0.2)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-linecap="round">
+          <path d="M3 12 Q7 5 12 12 Q17 19 21 12" stroke-width="1.6" class="ic-ai-path" fill="none"/>
+          <circle cx="3"  cy="12" r="2" fill="#06b6d4" class="ic-ai-node"/>
+          <circle cx="12" cy="12" r="2" fill="#06b6d4" class="ic-ai-node2"/>
+          <circle cx="21" cy="12" r="2" fill="#06b6d4" class="ic-ai-node3"/>
+          <circle cx="12" cy="2.5"  r="1" fill="#06b6d4" opacity="0.5" class="ic-ai-node"/>
+          <circle cx="12" cy="21.5" r="1" fill="#06b6d4" opacity="0.5" class="ic-ai-node2"/>
+        </svg>
+      </div>
+      <h2 class="service-block__name">IA et automatisation<span style="color:#06b6d4;-webkit-text-fill-color:#06b6d4;">?</span></h2>
+      <p class="service-block__tagline">Laissez l'intelligence artificielle porter la charge opérationnelle ; votre équipe se concentre sur l'essentiel.</p>
+      <div class="service-block__tags">
+        <span class="service-block__tag">CRM</span>
+        <span class="service-block__tag">Lead Nurturing</span>
+        <span class="service-block__tag">E-mail Sequences</span>
+        <span class="service-block__tag">Reporting</span>
+
+      <div class="scroll-indicator">
+        <div class="scroll-indicator__arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="5" x2="12" y2="19"/>
+            <polyline points="19 12 12 19 5 12"/>
+          </svg>
+        </div>
+        <span class="scroll-indicator__label">Faire défiler</span>
+      </div>
+      </div>
+    </div>
+    <div class="service-block__right">
+      <p class="service-block__lead">En 2026, les marques qui gagnent sont celles qui font <strong>davantage avec moins</strong> — en automatisant l'exécution pour libérer l'intelligence humaine.</p>
+      <div class="service-block__body">
+        <p>Nous cartographions chaque tâche manuelle et répétitive qui épuise vos équipes — relances commerciales, saisie, onboarding client, reporting, rappels de rendez-vous — puis nous les automatisons avec des outils intelligents, calibrés sur votre réalité.</p>
+        <p>Chatbots qui qualifient les leads 24h/24, workflows qui traitent les données et réagissent sans friction : nous concevons des systèmes qui agissent pour vous. Chaque implémentation est pensée sur mesure autour de vos processus.</p>
+        <p>Résultat : vous accélérez, vous sécurisez la qualité, vous maîtrisez les coûts — avec l'IA au service de votre rythme, jour et nuit.</p>
+      </div>
+      <div class="profit-box">
+        <p class="profit-box__title">Ce que vous gagnez</p>
+        <div class="profit-box__list">
+          <div class="profit-box__item">
+            <div class="profit-box__check" style="background:rgba(6,182,212,0.1)"><svg viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p class="profit-box__text"><strong>Des heures libérées chaque semaine</strong> — vos collaborateurs quittent la besogne manuelle pour les missions à forte valeur ajoutée</p>
+          </div>
+          <div class="profit-box__item">
+            <div class="profit-box__check" style="background:rgba(6,182,212,0.1)"><svg viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p class="profit-box__text"><strong>Aucune opportunité perdue</strong> — chaque demande est captée, relancée et nourrie automatiquement, même à 2h du matin</p>
+          </div>
+          <div class="profit-box__item">
+            <div class="profit-box__check" style="background:rgba(6,182,212,0.1)"><svg viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p class="profit-box__text"><strong>Des coûts opérationnels mieux maîtrisés</strong> — l'automatisation remplace des charges qu'on aurait sinon ajoutées en interne</p>
+          </div>
+          <div class="profit-box__item">
+            <div class="profit-box__check" style="background:rgba(6,182,212,0.1)"><svg viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p class="profit-box__text"><strong>Une croissance plus rapide</strong> — des systèmes qui montent en charge sans recrutements successifs ni surcharge managériale</p>
+          </div>
+        </div>
+      </div>
+      <a href="contact-fr.html" class="service-block__cta">Automatiser mon entreprise <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+
+  <!-- 03 Web Dev -->
+  <div class="service-block" id="web-dev">
+    <div class="service-block__left">
+      <p class="service-block__num">03 — Service</p>
+      <div class="service-block__icon" style="background:rgba(168,85,247,0.08);border-color:rgba(168,85,247,0.2)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <g class="ic-wd-bl"><polyline points="8 6 3 12 8 18"/></g>
+          <g class="ic-wd-br"><polyline points="16 6 21 12 16 18"/></g>
+          <line x1="12" y1="8" x2="12" y2="16" stroke="#a855f7" stroke-width="2.5" class="ic-wd-cursor"/>
+        </svg>
+      </div>
+      <h2 class="service-block__name">Développement web<span style="color:#a855f7;-webkit-text-fill-color:#a855f7;">?</span></h2>
+      <p class="service-block__tagline">Votre site est votre meilleur commercial : nous le faisons conclure.</p>
+      <div class="service-block__tags">
+        <span class="service-block__tag">Landing Pages</span>
+        <span class="service-block__tag">E-commerce</span>
+        <span class="service-block__tag">Web Apps</span>
+        <span class="service-block__tag">Speed</span>
+        <span class="service-block__tag">Conversion</span>
+
+      <div class="scroll-indicator">
+        <div class="scroll-indicator__arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="5" x2="12" y2="19"/>
+            <polyline points="19 12 12 19 5 12"/>
+          </svg>
+        </div>
+        <span class="scroll-indicator__label">Faire défiler</span>
+      </div>
+      </div>
+    </div>
+    <div class="service-block__right">
+      <p class="service-block__lead">Un site lent ou daté ne fait pas qu'essuyer une mauvaise impression — il vous <strong>fait perdre des clients chaque jour</strong>.</p>
+      <div class="service-block__body">
+        <p>Nous concevons des sites dont la priorité absolue est la conversion : chaque grille, chaque mot, chaque CTA s'appuie sur la psychologie d'achat et sur le comportement réel des visiteurs.</p>
+        <p>Nous gérons design, développement, rédaction, mobile, performance et mise en ligne. Vous obtenez une vitrine qui charge en un éclair, impeccable sur tous les écrans, structurée pour le référencement.</p>
+        <p>Landing page à fort taux de conversion, site corporate ou e-commerce exigeant : nous bâtissons pour les résultats — sans sacrifier l'esthétique.</p>
+      </div>
+      <div class="profit-box">
+        <p class="profit-box__title">Ce que vous gagnez</p>
+        <div class="profit-box__list">
+          <div class="profit-box__item">
+            <div class="profit-box__check" style="background:rgba(168,85,247,0.1)"><svg viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p class="profit-box__text"><strong>Un taux de conversion supérieur</strong> — davantage de visiteurs deviennent clients payants</p>
+          </div>
+          <div class="profit-box__item">
+            <div class="profit-box__check" style="background:rgba(168,85,247,0.1)"><svg viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p class="profit-box__text"><strong>Une crédibilité immédiate</strong> — un site premium vous place comme la référence naturelle de votre marché</p>
+          </div>
+          <div class="profit-box__item">
+            <div class="profit-box__check" style="background:rgba(168,85,247,0.1)"><svg viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p class="profit-box__text"><strong>Une génération de leads 24/7</strong> — votre site travaille pendant votre sommeil et qualifie les demandes</p>
+          </div>
+          <div class="profit-box__item">
+            <div class="profit-box__check" style="background:rgba(168,85,247,0.1)"><svg viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p class="profit-box__text"><strong>Un meilleur positionnement Google</strong> — rapidité et architecture propre attirent le trafic organique durablement</p>
+          </div>
+        </div>
+      </div>
+      <a href="contact-fr.html" class="service-block__cta">Créer mon site web <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+
+  <!-- 04 Design & Video -->
+  <div class="service-block" id="design-video">
+    <div class="service-block__left">
+      <p class="service-block__num">04 — Service</p>
+      <div class="service-block__icon" style="background:rgba(236,72,153,0.08);border-color:rgba(236,72,153,0.2)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 21 Q7 15 11 11" class="ic-gd-path"/>
+          <g class="ic-gd-nib">
+            <path d="M11 11 L15 7 L18 9 L14 15 Z" fill="none"/>
+            <line x1="15" y1="7" x2="21" y2="4" opacity="0.5"/>
+            <circle cx="11" cy="11" r="1.5" fill="#ec4899"/>
+          </g>
+        </svg>
+      </div>
+      <h2 class="service-block__name">Design graphique<span style="color:#ec4899;-webkit-text-fill-color:#ec4899;">?</span></h2>
+      <p class="service-block__tagline">Des visuels qui arrêtent le scroll et ancrent votre marque dans les mémoires.</p>
+      <div class="service-block__tags">
+        <span class="service-block__tag">Brand Identity</span>
+        <span class="service-block__tag">Motion Graphics</span>
+        <span class="service-block__tag">Video Editing</span>
+        <span class="service-block__tag">Reels</span>
+        <span class="service-block__tag">Print</span>
+
+      <div class="scroll-indicator">
+        <div class="scroll-indicator__arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="5" x2="12" y2="19"/>
+            <polyline points="19 12 12 19 5 12"/>
+          </svg>
+        </div>
+        <span class="scroll-indicator__label">Faire défiler</span>
+      </div>
+      </div>
+    </div>
+    <div class="service-block__right">
+      <p class="service-block__lead">Dans un monde saturé de contenus, <strong>le design est votre levier stratégique</strong>. L'ordinaire disparaît ; l'excellence s'impose.</p>
+      <div class="service-block__body">
+        <p>Nous produisons des assets visuels qui plaçent votre marque au niveau qu'elle mérite : identité, réseaux sociaux, créations média, pitch decks et contenus vidéo.</p>
+        <p>Notre studio couvre les Reels et TikToks optimisés pour la rétention comme les films de marque long format qui racontent votre histoire. Chaque plan est intentionnel ; chaque mouvement a une fonction.</p>
+        <p>Nous ne faisons pas que décorer : nous concevons pour la performance — des visuels pensés pour les clics, les sauvegardes, le partage et la conversion.</p>
+      </div>
+      <div class="profit-box">
+        <p class="profit-box__title">Ce que vous gagnez</p>
+        <div class="profit-box__list">
+          <div class="profit-box__item">
+            <div class="profit-box__check" style="background:rgba(236,72,153,0.1)"><svg viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p class="profit-box__text"><strong>Un scroll qui stoppe net</strong> — une accroche visuelle dès les deux premières secondes, puis une rétention maîtrisée</p>
+          </div>
+          <div class="profit-box__item">
+            <div class="profit-box__check" style="background:rgba(236,72,153,0.1)"><svg viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p class="profit-box__text"><strong>Une perception premium</strong> — la qualité visuelle annonce l'excellence de votre offre avant même l'échange</p>
+          </div>
+          <div class="profit-box__item">
+            <div class="profit-box__check" style="background:rgba(236,72,153,0.1)"><svg viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p class="profit-box__text"><strong>Des médias qui convertissent</strong> — une création affinée abaisse le coût au clic et maximise le retour sur spend</p>
+          </div>
+          <div class="profit-box__item">
+            <div class="profit-box__check" style="background:rgba(236,72,153,0.1)"><svg viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p class="profit-box__text"><strong>Une reconnaissance instantanée</strong> — une identité cohérente vous rend identifiable sur chaque canal</p>
+          </div>
+        </div>
+      </div>
+      <a href="contact-fr.html" class="service-block__cta">Valoriser mon image <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+
+  <!-- 05 Photography -->
+  <div class="service-block" id="photography">
+    <div class="service-block__left">
+      <p class="service-block__num">05 — Service</p>
+      <div class="service-block__icon" style="background:rgba(6,182,212,0.08);border-color:rgba(6,182,212,0.2)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="1.6" stroke-linecap="round">
+          <circle cx="12" cy="12" r="9"/>
+          <circle cx="12" cy="12" r="4.5" class="ic-ph-lens"/>
+          <g class="ic-ph-shutter" stroke-width="1.2" opacity="0.6">
+            <line x1="12" y1="3"    x2="12" y2="7.5"/>
+            <line x1="12" y1="16.5" x2="12" y2="21"/>
+            <line x1="3"  y1="12"   x2="7.5" y2="12"/>
+            <line x1="16.5" y1="12" x2="21" y2="12"/>
+          </g>
+          <circle cx="12" cy="12" r="1.5" fill="#06b6d4"/>
+        </svg>
+      </div>
+      <h2 class="service-block__name">Photographie et vidéographie<span style="color:#06b6d4;-webkit-text-fill-color:#06b6d4;">?</span></h2>
+      <p class="service-block__tagline">Un contenu cinématographique pour les marques qui refusent l'anonymat.</p>
+      <div class="service-block__tags">
+        <span class="service-block__tag">Product Shoots</span>
+        <span class="service-block__tag">Brand Films</span>
+        <span class="service-block__tag">Events</span>
+        <span class="service-block__tag">Reels</span>
+
+      <div class="scroll-indicator">
+        <div class="scroll-indicator__arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="5" x2="12" y2="19"/>
+            <polyline points="19 12 12 19 5 12"/>
+          </svg>
+        </div>
+        <span class="scroll-indicator__label">Faire défiler</span>
+      </div>
+      </div>
+    </div>
+    <div class="service-block__right">
+      <p class="service-block__lead">Les banques d'images disent que vous faites comme tout le monde. <strong>La vraie photographie prouve votre exigence</strong>.</p>
+      <div class="service-block__body">
+        <p>Nous produisons des shootings photo et vidéo qui montrent votre entreprise comme elle doit l'être vue — à son sommet. Packshot irrésistible, films de marque de soixante secondes : tout est pensé pour convaincre.</p>
+        <p>Nous pilotons l'ensemble : concept, lieu, direction artistique, tournage, post-production et livrables — vous repartez avec une bibliothèque d'assets prêts pour chaque point de contact.</p>
+        <p>Nos contenus ne se contentent pas de séduire : ils renforcent la confiance, nourrissent l'engagement et transforment les spectateurs en clients.</p>
+      </div>
+      <div class="profit-box">
+        <p class="profit-box__title">Ce que vous gagnez</p>
+        <div class="profit-box__list">
+          <div class="profit-box__item">
+            <div class="profit-box__check" style="background:rgba(6,182,212,0.1)"><svg viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p class="profit-box__text"><strong>Une intention d'achat renforcée</strong> — une photographie produit professionnelle élève directement la probabilité de conversion</p>
+          </div>
+          <div class="profit-box__item">
+            <div class="profit-box__check" style="background:rgba(6,182,212,0.1)"><svg viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p class="profit-box__text"><strong>Des mois de contenus</strong> — une production unique alimente vos canaux pendant des semaines</p>
+          </div>
+          <div class="profit-box__item">
+            <div class="profit-box__check" style="background:rgba(6,182,212,0.1)"><svg viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p class="profit-box__text"><strong>Un lien émotionnel durable</strong> — la vidéo porte votre histoire au-delà de tout texte ou visuel statique</p>
+          </div>
+          <div class="profit-box__item">
+            <div class="profit-box__check" style="background:rgba(6,182,212,0.1)"><svg viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p class="profit-box__text"><strong>Un positionnement premium immédiat</strong> — l'exigence de vos images reflète celle de votre service</p>
+          </div>
+        </div>
+      </div>
+      <a href="contact-fr.html" class="service-block__cta">Réserver une production <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+
+  <!-- 06 Advertising -->
+  <div class="service-block" id="advertising">
+    <div class="service-block__left">
+      <p class="service-block__num">06 — Service</p>
+      <div class="service-block__icon" style="background:rgba(168,85,247,0.08);border-color:rgba(168,85,247,0.2)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-linecap="round">
+          <line x1="2" y1="20" x2="22" y2="20" stroke-width="1" opacity="0.3"/>
+          <rect x="3"  y="13" width="4" height="7" rx="1" fill="#a855f7" opacity="0.45" class="ic-da-b1"/>
+          <rect x="10" y="8"  width="4" height="12" rx="1" fill="#a855f7" opacity="0.65" class="ic-da-b2"/>
+          <rect x="17" y="11" width="4" height="9"  rx="1" fill="#a855f7" opacity="0.45" class="ic-da-b3"/>
+          <g class="ic-da-arrow" stroke-width="1.6">
+            <polyline points="3 10 8 5 13 8 20 2"/>
+            <polyline points="17 2 20 2 20 5"/>
+          </g>
+        </svg>
+      </div>
+      <h2 class="service-block__name">Publicité digitale<span style="color:#a855f7;-webkit-text-fill-color:#a855f7;">?</span></h2>
+      <p class="service-block__tagline">Exposez votre marque aux profils prêts à passer à l'acte.</p>
+      <div class="service-block__tags">
+        <span class="service-block__tag">Meta Ads</span>
+        <span class="service-block__tag">Google Ads</span>
+        <span class="service-block__tag">TikTok Ads</span>
+        <span class="service-block__tag">Retargeting</span>
+        <span class="service-block__tag">ROI</span>
+
+      <div class="scroll-indicator">
+        <div class="scroll-indicator__arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="5" x2="12" y2="19"/>
+            <polyline points="19 12 12 19 5 12"/>
+          </svg>
+        </div>
+        <span class="scroll-indicator__label">Faire défiler</span>
+      </div>
+      </div>
+    </div>
+    <div class="service-block__right">
+      <p class="service-block__lead">Nous ne diffusons pas seulement des annonces : nous construisons des <strong>moteurs de revenus</strong> — des systèmes média qui rapportent plus qu'ils ne coûtent, chaque mois.</p>
+      <div class="service-block__body">
+        <p>Nous pilotons vos campagnes payantes Meta, Google et TikTok de bout en bout — recherche d'audience, créations, paramétrage, optimisation quotidienne et reporting limpide. Rien n'est lancé puis abandonné.</p>
+        <p>Nous commençons par votre modèle économique, vos marges et votre client idéal. Ensuite, nous ciblons précisément ces profils — bon message, bon moment, bon canal. Tests incessants, montée en puissance sur ce qui performe.</p>
+        <p>Notre ligne de conduite : chaque dirham investi doit revenir multiplié. Nous traçons clics, leads et ventes, puis optimisons sans relâche jusqu'au ROAS qui vous convient.</p>
+      </div>
+      <div class="profit-box">
+        <p class="profit-box__title">Ce que vous gagnez</p>
+        <div class="profit-box__list">
+          <div class="profit-box__item">
+            <div class="profit-box__check" style="background:rgba(168,85,247,0.1)"><svg viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p class="profit-box__text"><strong>Un chiffre d'affaires plus prévisible</strong> — un flux scalable de nouveaux clients, mois après mois</p>
+          </div>
+          <div class="profit-box__item">
+            <div class="profit-box__check" style="background:rgba(168,85,247,0.1)"><svg viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p class="profit-box__text"><strong>Un ciblage chirurgical</strong> — âge, zone, centres d'intérêt, comportements, intention : zéro gaspillage média</p>
+          </div>
+          <div class="profit-box__item">
+            <div class="profit-box__check" style="background:rgba(168,85,247,0.1)"><svg viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p class="profit-box__text"><strong>Un ROI lisible</strong> — vous voyez exactement ce que rapporte chaque dirham engagé, en toute transparence</p>
+          </div>
+          <div class="profit-box__item">
+            <div class="profit-box__check" style="background:rgba(168,85,247,0.1)"><svg viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p class="profit-box__text"><strong>Une montée en charge rapide</strong> — quand la formule est trouvée, nous amplifions et en faisons votre levier central de croissance</p>
+          </div>
+        </div>
+      </div>
+      <a href="contact-fr.html" class="service-block__cta">Lancer mes campagnes <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+
+  <!-- 07 SEO -->
+  <div class="service-block" id="seo">
+    <div class="service-block__left">
+      <p class="service-block__num">07 — Service</p>
+      <div class="service-block__icon" style="background:rgba(6,182,212,0.08);border-color:rgba(6,182,212,0.2)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="1.6" stroke-linecap="round">
+          <g class="ic-seo-glass">
+            <circle cx="10" cy="10" r="6"/>
+            <line x1="14.5" y1="14.5" x2="20" y2="20" stroke-width="2"/>
+            <line x1="7.5" y1="10" x2="12.5" y2="10" class="ic-seo-line" stroke-width="1.2"/>
+            <line x1="10"  y1="7.5" x2="10"  y2="12.5" class="ic-seo-line" stroke-width="1.2"/>
+          </g>
+        </svg>
+      </div>
+      <h2 class="service-block__name">SEO<span style="color:#06b6d4;-webkit-text-fill-color:#06b6d4;">?</span></h2>
+      <p class="service-block__tagline">Soyez trouvé par ceux qui vous cherchent déjà.</p>
+      <div class="service-block__tags">
+        <span class="service-block__tag">SEO Technique</span>
+        <span class="service-block__tag">Mots-clés</span>
+        <span class="service-block__tag">Netlinking</span>
+        <span class="service-block__tag">SEO Local</span>
+        <span class="service-block__tag">Content</span>
+
+      <div class="scroll-indicator">
+        <div class="scroll-indicator__arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="5" x2="12" y2="19"/>
+            <polyline points="19 12 12 19 5 12"/>
+          </svg>
+        </div>
+        <span class="scroll-indicator__label">Faire défiler</span>
+      </div>
+      </div>
+    </div>
+    <div class="service-block__right">
+      <p class="service-block__lead">Les publicités s'arrêtent quand vous coupez le budget. <strong>Le SEO continue de performer durablement</strong>, avec des gains qui s'amplifient chaque mois.</p>
+      <div class="service-block__body">
+        <p>Nous auditons techniquement votre site, corrigeons les freins, puis bâtissons une stratégie de mots-clés alignée sur les requêtes de vos clients idéaux. Ensuite, nous produisons le contenu et l'autorité nécessaires pour tenir la première page — et y rester.</p>
+        <p>On-page, architecture, vitesse, données structurées, SEO local, netlinking stratégique : chaque levier est arbitré avec des preuves, exécuté avec finesse.</p>
+        <p>Le SEO est un investissement long terme ; une fois mature, c'est souvent votre canal au coût d'acquisition le plus bas. C'est le marché qui vient à vous.</p>
+      </div>
+      <div class="profit-box">
+        <p class="profit-box__title">Ce que vous gagnez</p>
+        <div class="profit-box__list">
+          <div class="profit-box__item">
+            <div class="profit-box__check" style="background:rgba(6,182,212,0.1)"><svg viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p class="profit-box__text"><strong>Du trafic qualifié sans média</strong> — vous êtes découvert sur Google sans dépendre du budget pub</p>
+          </div>
+          <div class="profit-box__item">
+            <div class="profit-box__check" style="background:rgba(6,182,212,0.1)"><svg viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p class="profit-box__text"><strong>Des leads à forte intention</strong> — celui qui recherche a déjà identifié son besoin ; il vous suffit d'exister au bon endroit</p>
+          </div>
+          <div class="profit-box__item">
+            <div class="profit-box__check" style="background:rgba(6,182,212,0.1)"><svg viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p class="profit-box__text"><strong>Une domination de marché</strong> — être au-dessus de vos concurrents, c'est devenir l'option par défaut</p>
+          </div>
+          <div class="profit-box__item">
+            <div class="profit-box__check" style="background:rgba(6,182,212,0.1)"><svg viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p class="profit-box__text"><strong>Un effet boule de neige</strong> — contrairement à la pub pure, le SEO accroît sa valeur mois après mois</p>
+          </div>
+        </div>
+      </div>
+      <a href="contact-fr.html" class="service-block__cta">Positionner mon entreprise <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+
+  <!-- 08 Software -->
+  <div class="service-block" id="software">
+    <div class="service-block__left">
+      <p class="service-block__num">08 — Service</p>
+      <div class="service-block__icon" style="background:rgba(236,72,153,0.08);border-color:rgba(236,72,153,0.2)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="1.4" stroke-linecap="round">
+          <rect x="2" y="3" width="20" height="18" rx="2" fill="none"/>
+          <line x1="6" y1="8"  x2="16" y2="8"  opacity="0.8"/>
+          <line x1="6" y1="12" x2="13" y2="12" opacity="0.55"/>
+          <line x1="6" y1="16" x2="10" y2="16" opacity="0.35"/>
+          <line x1="17" y1="11" x2="17" y2="13" stroke-width="2.2" stroke-linecap="square" class="ic-sw-cur"/>
+        </svg>
+      </div>
+      <h2 class="service-block__name">Logiciel sur mesure<span style="color:#ec4899;-webkit-text-fill-color:#ec4899;">?</span></h2>
+      <p class="service-block__tagline">Pensé précisément pour votre entreprise — pas pour un modèle générique.</p>
+      <div class="service-block__tags">
+        <span class="service-block__tag">Mobile Apps</span>
+        <span class="service-block__tag">SaaS</span>
+        <span class="service-block__tag">Dashboards</span>
+        <span class="service-block__tag">Integrations</span>
+        <span class="service-block__tag">APIs</span>
+
+      <div class="scroll-indicator">
+        <div class="scroll-indicator__arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="5" x2="12" y2="19"/>
+            <polyline points="19 12 12 19 5 12"/>
+          </svg>
+        </div>
+        <span class="scroll-indicator__label">Faire défiler</span>
+      </div>
+      </div>
+    </div>
+    <div class="service-block__right">
+      <p class="service-block__lead">Les outils génériques conviennent aux entreprises génériques. <strong>La vôtre est singulière</strong> — pourquoi acceptez-vous des compromis ?</p>
+      <div class="service-block__body">
+        <p>Nous architecturons et développons des logiciels sur mesure : applications mobiles, plateformes web, tableaux de bord internes, portails clients, réservations, CRM propriétaire — tout ce qui manque ou peine à suivre votre ambition.</p>
+        <p>Une phase de discovery approfondie précède conception, développement, tests et déploiement, calés sur votre workflow, vos équipes et vos clients.</p>
+        <p>Chaque ligne de code est un investissement opérationnel. Un outil taillé pour vous crée un écart compétitif qu'aucun SaaS standard ne peut dupliquer.</p>
+      </div>
+      <div class="profit-box">
+        <p class="profit-box__title">Ce que vous gagnez</p>
+        <div class="profit-box__list">
+          <div class="profit-box__item">
+            <div class="profit-box__check" style="background:rgba(236,72,153,0.1)"><svg viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p class="profit-box__text"><strong>Une efficacité opérationnelle maximale</strong> — un produit calé sur votre process supprime les frictions et accélère les équipes</p>
+          </div>
+          <div class="profit-box__item">
+            <div class="profit-box__check" style="background:rgba(236,72,153,0.1)"><svg viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p class="profit-box__text"><strong>Un avantage durable</strong> — vos concurrents ne peuvent pas cloner un logiciel moulé sur votre modèle</p>
+          </div>
+          <div class="profit-box__item">
+            <div class="profit-box__check" style="background:rgba(236,72,153,0.1)"><svg viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p class="profit-box__text"><strong>Une propriété totale</strong> — vous maîtrisez l'actif, sans licences récurrentes ni dépendance tierce incontrôlée</p>
+          </div>
+          <div class="profit-box__item">
+            <div class="profit-box__check" style="background:rgba(236,72,153,0.1)"><svg viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p class="profit-box__text"><strong>Une scalabilité native</strong> — nouvelles fonctionnalités, utilisateurs ou marchés quand vous le décidez</p>
+          </div>
+        </div>
+      </div>
+      <a href="contact-fr.html" class="service-block__cta">Développer mon logiciel <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+
+  <!-- 09 Stratégie de marque -->
+  <div class="service-block" id="brand-strategy">
+    <div class="service-block__left">
+      <p class="service-block__num">09 — Service</p>
+      <div class="service-block__icon" style="background:rgba(168,85,247,0.08);border-color:rgba(168,85,247,0.2)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="1.6" stroke-linecap="round">
+          <circle cx="12" cy="12" r="9" class="ic-bs-ring"/>
+          <circle cx="12" cy="12" r="1.5" fill="#a855f7"/>
+          <g class="ic-bs-needle">
+            <line x1="12" y1="12" x2="12" y2="5.5" stroke-width="1.8"/>
+            <polygon points="12,4.5 10.8,7 13.2,7" fill="#a855f7"/>
+            <line x1="12" y1="12" x2="12" y2="17" opacity="0.3" stroke-width="1.4"/>
+          </g>
+          <circle cx="12" cy="3"  r="0.7" fill="#a855f7" opacity="0.5"/>
+          <circle cx="12" cy="21" r="0.7" fill="#a855f7" opacity="0.5"/>
+          <circle cx="3"  cy="12" r="0.7" fill="#a855f7" opacity="0.5"/>
+          <circle cx="21" cy="12" r="0.7" fill="#a855f7" opacity="0.5"/>
+        </svg>
+      </div>
+      <h2 class="service-block__name">Stratégie de marque<span style="color:#a855f7;-webkit-text-fill-color:#a855f7;">?</span></h2>
+      <p class="service-block__tagline">Définissez qui vous êtes avant que le marché ne le fasse à votre place.</p>
+      <div class="service-block__tags">
+        <span class="service-block__tag">Positioning</span>
+        <span class="service-block__tag">Messaging</span>
+        <span class="service-block__tag">Naming</span>
+        <span class="service-block__tag">Competitor Analysis</span>
+        <span class="service-block__tag">Identity</span>
+
+      <div class="scroll-indicator">
+        <div class="scroll-indicator__arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="5" x2="12" y2="19"/>
+            <polyline points="19 12 12 19 5 12"/>
+          </svg>
+        </div>
+        <span class="scroll-indicator__label">Faire défiler</span>
+      </div>
+      </div>
+    </div>
+    <div class="service-block__right">
+      <p class="service-block__lead">Des tactiques sans stratégie ne produisent que du bruit. <strong>La stratégie de marque est le socle de tout le reste.</strong></p>
+      <div class="service-block__body">
+        <p>Nous posons les fondations stratégiques pour une croissance intentionnelle — pas seulement une effervescence d'actions. Positionnement, client idéal, architecture de messages, ton de voix, promesse unique : tout est aligné.</p>
+        <p>Analyse concurrentielle poussée, identification des angles vacants, puis occupation de ces terrains. Nous créons un système de messages cohérent du site aux réseaux, de la pub aux appels de vente.</p>
+        <p>Avec une stratégie juste, chaque autre livrable gagne en puissance : meilleures conversions média, contenus plus tranchants, recommandations facilitées. La stratégie multiplie l'impact.</p>
+      </div>
+      <div class="profit-box">
+        <p class="profit-box__title">Ce que vous gagnez</p>
+        <div class="profit-box__list">
+          <div class="profit-box__item">
+            <div class="profit-box__check" style="background:rgba(168,85,247,0.1)"><svg viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p class="profit-box__text"><strong>Clarté et cap partagé</strong> — toute l'équipe sait qui vous êtes, ce que vous défendez et qui vous compte</p>
+          </div>
+          <div class="profit-box__item">
+            <div class="profit-box__check" style="background:rgba(168,85,247,0.1)"><svg viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p class="profit-box__text"><strong>Un positionnement premium assumé</strong> — une marque affirmée autorise des prix plus hauts et des clients plus exigeants</p>
+          </div>
+          <div class="profit-box__item">
+            <div class="profit-box__check" style="background:rgba(168,85,247,0.1)"><svg viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p class="profit-box__text"><strong>Une différenciation nette</strong> — quittez la guerre des prix ; gagnez sur l'identité et la niche</p>
+          </div>
+          <div class="profit-box__item">
+            <div class="profit-box__check" style="background:rgba(168,85,247,0.1)"><svg viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <p class="profit-box__text"><strong>Des performances amplifiées</strong> — média, contenu et vente montent d'un cran lorsqu'ils s'appuient sur un socle stratégique</p>
+          </div>
+        </div>
+      </div>
+      <a href="contact-fr.html" class="service-block__cta">Construire ma stratégie de marque <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+
+</div>
+
+<!-- CTA -->
+<section class="page-cta">
+  <p class="page-cta__eyebrow">Passons à l'action</p>
+  <div class="page-cta__wrapper" id="ctaWrapper">
+    <h2 class="page-cta__headline" id="ctaHeadline">
+      <span class="cta-line">Votre marque mérite mieux.</span>
+    </h2>
+  </div>
+  <a href="contact-fr.html" class="page-cta__btn">
+    <span class="page-cta__btn__shimmer"></span>
+    Démarrer un projet
+    <span class="page-cta__btn__arrow">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </span>
+  </a>
+</section>
+
+<div class="mob-talk">
+    <div class="mob-talk__inner">
+      <span class="mob-talk__eyebrow">— Contactez-nous</span>
+      <h2 class="mob-talk__heading">parlons <em>ensemble</em></h2>
+      <div class="mob-talk__socials">
+        <a href="https://www.instagram.com/keshaura_agency/" target="_blank" class="mob-talk__social" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="https://wa.me/212687714699" target="_blank" class="mob-talk__social" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        </a>
+      </div>
+      <div class="mob-talk__body">
+        <div class="mob-talk__group">
+          <span class="mob-talk__label">Téléphone</span>
+          <a href="tel:+212727095894" class="mob-talk__value">+212 727 095 894</a>
+        </div>
+        <div class="mob-talk__group">
+          <span class="mob-talk__label">WhatsApp</span>
+          <a href="https://wa.me/212687714699" target="_blank" class="mob-talk__value">+212 687 714 699</a>
+        </div>
+        <div class="mob-talk__group">
+          <span class="mob-talk__label">E-mail</span>
+          <a href="mailto:contact@keshaura.com" class="mob-talk__value">contact@keshaura.com</a>
+        </div>
+        <div class="mob-talk__group">
+          <span class="mob-talk__label">Instagram</span>
+          <a href="https://www.instagram.com/keshaura_agency/" target="_blank" class="mob-talk__value">@keshaura_agency</a>
+        </div>
+        <div class="mob-talk__group">
+          <span class="mob-talk__label">Horaires</span>
+          <span class="mob-talk__value">Lun – Sam, 9h – 19h</span>
+        </div>
+        <div class="mob-talk__group">
+          <span class="mob-talk__label">Localisation</span>
+          <span class="mob-talk__value">100% en ligne</span>
+        </div>
+      </div>
+      <a href="contact-fr.html" class="mob-talk__cta">
+        Démarrer un projet
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+
+<footer class="footer-bar">
+  <p>© 2026 Kesh Aura. Tous droits réservés.</p>
+  <p>Design &amp; développement par <span>Kesh Aura</span></p>
+  <p>Morocco · Marrakech</p>
+</footer>
+
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+
+
+  // Hero fade in
+  gsap.from('.hero__left', { opacity:0, y:40, duration:0.9, delay:0.2, ease:'power3.out' });
+  gsap.from('.hero__right', { opacity:0, y:30, duration:0.8, delay:0.4, ease:'power3.out' });
+
+  // CTA Headline — mouse gradient follow per line
+  (function() {
+    const headline = document.getElementById('ctaHeadline');
+    const lines = document.querySelectorAll('.cta-line');
+    if (!headline || !lines.length) return;
+
+    document.addEventListener('mousemove', function(e) {
+      lines.forEach(function(line) {
+        const rect = line.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        line.style.setProperty('--cta-x', x + 'px');
+        line.style.setProperty('--cta-y', y + 'px');
+      });
+    });
+
+    document.addEventListener('mouseleave', function() {
+      lines.forEach(function(line) {
+        line.style.setProperty('--cta-x', '-9999px');
+        line.style.setProperty('--cta-y', '-9999px');
+      });
+    });
+  })();
+
+  gsap.utils.toArray('.service-block').forEach((block, i) => {
+    gsap.to(block, {
+      scrollTrigger: { trigger: block, start: 'top 85%' },
+      opacity:1, y:0, duration:0.8, ease:'power3.out'
+    });
+  });
+
+  // If page loaded with a hash, make that block visible immediately and scroll to it
+  (function() {
+    var hash = window.location.hash;
+    if (!hash) return;
+    var target = document.querySelector(hash);
+    if (!target) return;
+    // Make it visible right away — don't wait for scroll trigger
+    gsap.set(target, { opacity: 1, y: 0 });
+    // Small delay to let page fully render then scroll
+    setTimeout(function() {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 100);
+  })();
+</script>
+
+  <script>
+    // Show scroll indicator while inside a section, hide when leaving
+    document.querySelectorAll('.service-block').forEach(function(block) {
+      var indicator = block.querySelector('.scroll-indicator');
+      if (!indicator) return;
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            indicator.classList.remove('hidden');
+          } else {
+            indicator.classList.add('hidden');
+          }
+        });
+      }, { threshold: 0.15 });
+      observer.observe(block);
+    });
+  </script>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+  <script>
+    // Scroll to top
+    (function(){
+      var btn = document.getElementById('scrollTop');
+      if(!btn) return;
+      window.addEventListener('scroll', function(){ btn.classList.toggle('visible', window.scrollY > 300); }, { passive:true });
+      btn.addEventListener('click', function(){ window.scrollTo({ top:0, behavior:'smooth' }); });
+    })();
+  </script>
+  <script src="whatsapp-widget.js"></script>
+</body>
+</html>

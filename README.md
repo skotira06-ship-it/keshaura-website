@@ -1,95 +1,87 @@
-# KESH AURA — Premium Digital Agency Website
+# KESH AURA — Digital Marketing & Growth Agency Website (2026)
 
-## 🚀 PREMIUM $100K QUALITY BUILD
+## Overview
 
-This is a professional-grade website built with:
-- ✨ Glassmorphism effects
-- 🎨 Premium gradients and animations
-- 💎 Refined typography hierarchy
-- ⚡ Smooth micro-interactions
-- 📱 Fully responsive design
-- 🎯 Awwwards-level quality
+**Kesh Aura** is the official web presence for a **Digital Marketing Agency Marrakesh** clients trust for strategy, creative, and measurable growth. The site positions the brand as a **360° Growth Partner**: one team spanning social, brand, performance media, web, **SEO & AI Automation Morocco**-wide and internationally.
+
+The experience is built for clarity, speed, and conversion—reflecting a modern agency that delivers **360° digital solutions** without noise.
 
 ---
 
-## 📁 PROJECT STRUCTURE
+## Tech Stack
+
+| Layer | Technologies |
+|--------|----------------|
+| **Markup & structure** | HTML5 (semantic sections, accessible landmarks) |
+| **Styling** | CSS3 (custom properties, responsive layouts, component-scoped styles) |
+| **Motion** | **GSAP** (scroll-linked and UI animations) |
+| **Lead capture** | **Formspree** (AJAX-ready contact flows on key pages) |
+| **Navigation & UX** | JavaScript (`navbar.js`, `mobile.js`, splash and widget scripts) |
+
+Supporting assets include web fonts, optimized imagery, `site.webmanifest`, and structured data where implemented on core pages.
+
+---
+
+## Key Features
+
+### Multilingual experience (English / French)
+
+- Parallel **English** and **French** page sets (`index` / `index-fr`, services, about, contact, articles, and article detail pages).
+- **`hreflang`** alternates (`en`, `fr`, **`x-default`**) on designated URLs so search engines understand language targeting.
+- Language switcher integrated with navigation for a consistent journey across locales.
+
+### Technical SEO
+
+- **Canonical** URLs on primary templates, aligned with the production host (**`https://keshaura.com`**, apex / no `www`—consistent with **Google Search Console Domain property** verification and indexing).
+- Optimized **metadata** (titles, descriptions) and social tags on key templates.
+- Repository **audited and cleaned**: legacy **`sections/`**-style stub partials and obsolete fragment files have been **removed** from the documented codebase so the project reflects a single, maintainable set of **production HTML pages** at the repository root—no duplicate or orphaned section scaffolding in the official tree.
+
+### Performance & delivery
+
+- Lean, page-local CSS where appropriate; shared scripts loaded intentionally.
+- Fast first paint priorities: critical UI, deferred non-blocking resources where possible, and disciplined asset references for **performance-focused** delivery and **clean asset management**.
+
+---
+
+## Project layout (high level)
 
 ```
-kesh-aura/
-├── index.html                 ← Open this file in your browser
-├── assets/
-│   └── mascot.png            ← 3D mascot image
-├── sections/
-│   ├── 01-navbar.html        ← Premium navigation
-│   ├── 02-hero.html          ← Hero section (ACTIVE)
-│   ├── 03-services.html      ← Empty placeholder
-│   ├── 04-portfolio.html     ← Empty placeholder
-│   └── 05-contact.html       ← Empty placeholder
-└── styles/
-    └── style-variables.css   ← All design tokens
+keshaura-website/
+├── index.html / index-fr.html     # Home (EN / FR)
+├── services.html / services-fr.html
+├── about.html / about-fr.html
+├── contact.html / contact-fr.html
+├── articles.html / articles-fr.html
+├── article-*.html                   # Article detail pages (EN / FR)
+├── navbar.js                        # Shared navigation + language logic
+├── mobile.js / mobile.css           # Responsive behaviors
+├── splash.js                        # Entry experience
+├── whatsapp-widget.js
+├── style-variables.css, franklin-gothic-heavy.css
+├── robots.txt, sitemap-new.xml, site.webmanifest
+└── README.md
 ```
 
----
-
-## 🎯 HOW TO USE
-
-1. **Extract the ZIP file**
-2. **Open `index.html`** in your browser (Chrome/Firefox recommended)
-3. **You'll see:** Premium navbar + hero section only
-4. **Mascot is LARGE** as requested in the screenshot
+*Adjust filenames to match your deployment root; paths assume a flat static host.*
 
 ---
 
-## ✅ WHAT'S INCLUDED
+## Performance & indexing
 
-### ✨ Active Sections:
-- **Navbar** — Glassmorphic, sticky, mobile-responsive
-- **Hero** — Large mascot, floating metrics, premium animations
-
-### 📋 Placeholder Sections (Ready to Build):
-- Services
-- Portfolio
-- Contact
+This project is intended to be served under a **Search Console Domain property** for **`keshaura.com`**, with canonical and alternate URLs using **`https://keshaura.com/...`** (HTTPS, no `www`) so reported coverage, hreflang, and URL inspection stay aligned with how the site is crawled and indexed.
 
 ---
 
-## 🎨 DESIGN FEATURES
+## Local preview
 
-- **Premium Color Palette** — Deep blacks, purple/cyan accents
-- **Refined Typography** — Inter + Space Grotesk fonts
-- **Smooth Animations** — Cubic bezier curves, floating effects
-- **Glassmorphism** — Backdrop blur, subtle borders
-- **Gradient Mesh Background** — Animated grid + radial gradients
-- **Floating Metric Cards** — Hover effects, stagger animations
-- **Large Mascot** — 3x bigger than before, with drop shadow
+1. Clone or download the repository.
+2. Open **`index.html`** in a modern browser, or serve the folder with any static file server (recommended for full path behavior).
+3. Use the in-site **EN | FR** switcher and navigation to validate both locales.
 
 ---
 
-## 📱 RESPONSIVE
+## Vision
 
-- **Desktop**: Full experience, all animations
-- **Tablet**: Adjusted layout, metric cards visible
-- **Mobile**: Stacked layout, simplified animations
+Kesh Aura’s digital flagship should feel as intentional as the campaigns it runs: **professional**, **bold**, and **visionary**—a **Digital Marketing Agency Marrakesh** can be proud of, and a **360° Growth Partner** global brands can rely on.
 
----
-
-## 🔧 CUSTOMIZATION
-
-All colors, fonts, and spacing are in:
-`styles/style-variables.css`
-
-Change values there to customize the entire site.
-
----
-
-## 🚀 NEXT STEPS
-
-When ready to add more sections:
-1. Tell me which section to build
-2. I'll create it with the same $100K quality
-3. Replace the empty placeholder file
-
----
-
-Built with precision for **Kesh Aura** 🎯
-Morocco's Premier Digital Agency
+© 2026 **Kesh Aura**. All rights reserved.

@@ -682,22 +682,53 @@
       });
     });
 
-    /* ── FORM SUBMIT ── */
+    /* ── FORM SUBMIT → Formspree (AJAX, same endpoint as index) ── */
     document.getElementById('contactForm').addEventListener('submit', function(e) {
       e.preventDefault();
-      var form    = document.getElementById('contactForm');
+      var form = document.getElementById('contactForm');
       var success = document.getElementById('formSuccess');
-      gsap.to(form, {
-        opacity: 0, y: -12, duration: 0.35, ease: 'power2.in',
-        onComplete: function() {
-          form.style.display = 'none';
-          success.style.display = 'flex';
-          gsap.fromTo(success,
-            { opacity: 0, y: 16 },
-            { opacity: 1, y: 0, duration: 0.6, ease: 'expo.out' }
-          );
-        }
+      var submitBtn = form.querySelector('button[type="submit"]');
+      if (submitBtn) submitBtn.disabled = true;
+
+      var fd = new FormData(form);
+      var services = [];
+      document.querySelectorAll('.service-chip.active').forEach(function(chip) {
+        services.push(chip.getAttribute('data-service'));
       });
+      if (services.length) fd.append('services', services.join(', '));
+
+      fetch(form.action, {
+        method: 'POST',
+        body: fd,
+        headers: { Accept: 'application/json' }
+      })
+        .then(function(response) {
+          if (submitBtn) submitBtn.disabled = false;
+          if (response.ok) {
+            gsap.to(form, {
+              opacity: 0, y: -12, duration: 0.35, ease: 'power2.in',
+              onComplete: function() {
+                form.style.display = 'none';
+                success.style.display = 'flex';
+                gsap.fromTo(success,
+                  { opacity: 0, y: 16 },
+                  { opacity: 1, y: 0, duration: 0.6, ease: 'expo.out' }
+                );
+              }
+            });
+            return;
+          }
+          return response.json().then(function(data) {
+            var msg = (data && data.error) ? data.error : 'Something went wrong. Please try again.';
+            alert(msg);
+          }).catch(function() {
+            alert('Something went wrong. Please try again.');
+          });
+        })
+        .catch(function() {
+          if (submitBtn) submitBtn.disabled = false;
+          alert('Network error. Please check your connection and try again.');
+        });
     });
   </script>
 

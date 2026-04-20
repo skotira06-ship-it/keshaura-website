@@ -1,0 +1,45 @@
+name: Add GA Tag to All HTML Files
+
+on:
+  workflow_dispatch:
+
+jobs:
+  add-ga-tag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Add GA tag to all HTML files
+        run: |
+          python3 << 'EOF'
+          import glob
+
+          ga_tag = """<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RK0NNFE5HC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RK0NNFE5HC');
+</script>"""
+
+          files = glob.glob('*.html')
+          for filepath in files:
+              with open(filepath, 'r', encoding='utf-8') as f:
+                  content = f.read()
+              if 'G-RK0NNFE5HC' not in content and '</head>' in content:
+                  content = content.replace('</head>', ga_tag + '\n</head>', 1)
+                  with open(filepath, 'w', encoding='utf-8') as f:
+                      f.write(content)
+                  print(f'Done: {filepath}')
+              else:
+                  print(f'Skipped: {filepath}')
+          EOF
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git diff --staged --quiet || git commit -m "Add GA tag to all HTML pages"
+          git push

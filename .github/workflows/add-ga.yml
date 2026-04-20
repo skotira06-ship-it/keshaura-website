@@ -1,0 +1,21 @@
+name: Add GA Tag to All HTML Files
+
+on:
+  workflow_dispatch:
+
+jobs:
+  add-ga-tag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Run GA script
+        run: python3 add_ga.py
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git diff --staged --quiet || git commit -m "Add GA tag to all HTML pages"
+          git push

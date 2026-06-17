@@ -1,0 +1,31 @@
+# Kesh Aura
+
+Kesh Aura is a 360° digital marketing agency and growth partner based in Marrakesh, Morocco, founded in 2023.
+
+## Services
+The agency offers 9 core services:
+1. Social Media Strategy and Management
+2. Brand Identity and Visual Storytelling
+3. Performance Advertising on Meta, Google, and TikTok
+4. Web Design and Development
+5. SEO and Technical Optimization
+6. AI Automation
+7. Photography and Videography
+8. Custom Software Development
+9. Brand Strategy
+
+## Areas Served
+The agency serves clients across Morocco, Europe, and the Middle East.
+
+## Contact Information
+- Website: https://keshaura.com
+- Email: contact@keshaura.com
+- Phone: +212727095894
+- Business Hours: Monday to Saturday, 9:00 AM to 7:00 PM
+
+## Sitemap / Main Pages
+- Homepage: https://keshaura.com/
+- About: https://keshaura.com/about.html
+- Services: https://keshaura.com/services.html
+- Contact: https://keshaura.com/contact.html
+- Articles: https://keshaura.com/articles.html
